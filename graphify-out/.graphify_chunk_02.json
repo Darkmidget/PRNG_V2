@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "display_renderer_h",
+      "label": "Display Renderer Interface",
+      "file_type": "code",
+      "source_file": "feather_display/src/display_renderer.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_interface_h",
+      "label": "FPGA Interface",
+      "file_type": "code",
+      "source_file": "feather_display/src/fpga_interface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gameoflife_h",
+      "label": "Game of Life",
+      "file_type": "code",
+      "source_file": "feather_display/src/gameoflife.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "feather_main_cpp",
+      "label": "Feather Display Main",
+      "file_type": "code",
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "as606_interface_h",
+      "label": "AS606 Interface",
+      "file_type": "code",
+      "source_file": "src/as606_interface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prng_main_cpp",
+      "label": "PRNG Main",
+      "file_type": "code",
+      "source_file": "src/main.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_serial_h",
+      "label": "FPGA Serial",
+      "file_type": "code",
+      "source_file": "src/fpga_serial.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "collect_ps1",
+      "label": "Collect Scripts",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/collect_random_100k.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "feather_main_cpp",
+      "target": "display_renderer_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "feather_main_cpp",
+      "target": "fpga_interface_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prng_main_cpp",
+      "target": "as606_interface_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fpga_interface_h",
+      "target": "fpga_serial_h",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "feather_display/src/fpga_interface.h",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "fpga_communications",
+      "label": "FPGA Communications",
+      "nodes": [
+        "fpga_interface_h",
+        "fpga_serial_h",
+        "collect_ps1"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "feather_display/src/fpga_interface.h"
+    }
+  ],
+  "input_tokens": 1200,
+  "output_tokens": 500
+}

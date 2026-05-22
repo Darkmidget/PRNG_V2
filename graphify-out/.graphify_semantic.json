@@ -1,0 +1,2744 @@
+{
+  "nodes": [
+    {
+      "id": "debug_csv_script",
+      "label": "debug_csv.py",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "id": "explore_csv_script",
+      "label": "explore_csv.py",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/explore_csv.py"
+    },
+    {
+      "id": "pandas_load_script",
+      "label": "pandas_load.py",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/pandas_load.py"
+    },
+    {
+      "id": "plot_analysis_script",
+      "label": "plot_analysis (Python Script)",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "id": "randomness_analyzer_RandomnessAnalyzer",
+      "label": "RandomnessAnalyzer (Python Class)",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "id": "json_randomness_results",
+      "label": "randomness_results.json",
+      "file_type": "document",
+      "source_file": "data analysis/pythonscripts/randomness_results.json"
+    },
+    {
+      "id": "fingerprint_capture_FingerprintCapture",
+      "label": "FingerprintCapture (Python Class)",
+      "file_type": "code",
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "id": "get_thumbprint_script",
+      "label": "get_thumbprint.py",
+      "file_type": "code",
+      "source_file": "esp32_fingerprint/get_thumbprint.py"
+    },
+    {
+      "id": "save_fingerprint_script",
+      "label": "save_fingerprint.py",
+      "file_type": "code",
+      "source_file": "esp32_fingerprint/save_fingerprint.py"
+    },
+    {
+      "id": "as606_interface_AS606Interface",
+      "label": "AS606Interface (C++ Class)",
+      "file_type": "code",
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "id": "adafruit_fingerprint",
+      "label": "Adafruit_Fingerprint",
+      "file_type": "code",
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "id": "display_renderer_h",
+      "label": "Display Renderer Interface",
+      "file_type": "code",
+      "source_file": "feather_display/src/display_renderer.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_interface_h",
+      "label": "FPGA Interface",
+      "file_type": "code",
+      "source_file": "feather_display/src/fpga_interface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gameoflife_h",
+      "label": "Game of Life",
+      "file_type": "code",
+      "source_file": "feather_display/src/gameoflife.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "feather_main_cpp",
+      "label": "Feather Display Main",
+      "file_type": "code",
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "as606_interface_h",
+      "label": "AS606 Interface",
+      "file_type": "code",
+      "source_file": "src/as606_interface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_serial_h",
+      "label": "FPGA Serial",
+      "file_type": "code",
+      "source_file": "src/fpga_serial.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prng_main_cpp",
+      "label": "PRNG Main",
+      "file_type": "code",
+      "source_file": "src/main.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "collect_ps1",
+      "label": "Collect Scripts",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/collect_random_100k.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "build_ps1_build",
+      "label": "build.ps1",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/scripts/build.ps1"
+    },
+    {
+      "id": "lfsr_nl_seed_uart_v_lfsr_nl_seed_uart",
+      "label": "lfsr_nl_seed_uart",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/lfsr_nl_seed_uart.v"
+    },
+    {
+      "id": "concept_uart",
+      "label": "UART Communication",
+      "file_type": "rationale",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/lfsr_nl_seed_uart.v"
+    },
+    {
+      "id": "reaction_game_v_reaction_game",
+      "label": "reaction_game",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/reaction_game.v"
+    },
+    {
+      "id": "concept_lfsr",
+      "label": "Linear Feedback Shift Register (LFSR)",
+      "file_type": "rationale",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/reaction_game.v"
+    },
+    {
+      "id": "ring_osc_v_ring_osc",
+      "label": "ring_osc",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/ring_osc.v"
+    },
+    {
+      "id": "concept_ring_oscillator",
+      "label": "Ring Oscillator",
+      "file_type": "rationale",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/ring_osc.v"
+    },
+    {
+      "id": "reaction_game_tb_v_reaction_game_tb",
+      "label": "reaction_game_tb",
+      "file_type": "code",
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/testbench/reaction_game_tb.v"
+    },
+    {
+      "id": "randomness_report",
+      "label": "Randomness Analysis Report",
+      "file_type": "document",
+      "source_file": "data analysis/pythonscripts/randomness_report.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nist_sp_800_22",
+      "label": "NIST SP 800-22",
+      "file_type": "paper",
+      "source_file": "data analysis/pythonscripts/randomness_report.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_distribution_overview_image",
+      "label": "Randomness Analysis Data Distribution Overview Image",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uniform_distribution_analysis",
+      "label": "Uniform Distribution Analysis",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bit_distribution_balance",
+      "label": "16-Bit Distribution Balance (Ratio: 0.5001)",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "02_test_results_summary",
+      "label": "Randomness Test Results Summary Image",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "chi_square_test",
+      "label": "Chi Square Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "frequency_test",
+      "label": "Frequency Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "entropy_test",
+      "label": "Entropy Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "runs_test",
+      "label": "Runs Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ks_test",
+      "label": "Ks Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "autocorrelation_test",
+      "label": "Autocorrelation Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "serial_test",
+      "label": "Serial Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linear_complexity_test",
+      "label": "Linear Complexity Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "approx_entropy_test",
+      "label": "Approx Entropy Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cumsum_test",
+      "label": "Cumsum Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "03_autocorrelation_analysis_plot",
+      "label": "Autocorrelation Analysis Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "autocorrelation_function_acf",
+      "label": "Autocorrelation Function (ACF)",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "significant_lags_detection",
+      "label": "Significant Lags Detection",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "04_bit_level_analysis_image",
+      "label": "Bit-Level Analysis Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bit_distribution",
+      "label": "Individual Bit Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_per_bit_chi_square",
+      "label": "Per-Bit Chi-square Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bit_pair_correlations",
+      "label": "Bit Pair Correlations",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "05_entropy_analysis",
+      "label": "Entropy and Information Analysis Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "entropy_byte_distribution",
+      "label": "High vs Low Byte Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "entropy_per_chunk",
+      "label": "Entropy per Chunk",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "frequency_distribution_of_values",
+      "label": "Frequency Distribution of Values",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "value_coverage_analysis",
+      "label": "Value Coverage",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uart_loopback_module",
+      "label": "uart_loopback (Verilog Module)",
+      "file_type": "code",
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "id": "uart_rx_module",
+      "label": "uart_rx (Verilog Module)",
+      "file_type": "code",
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "id": "uart_tx_module",
+      "label": "uart_tx (Verilog Module)",
+      "file_type": "code",
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "id": "csv_random_values_ojas_flsr",
+      "label": "random_values_ojas_flsr.csv",
+      "file_type": "document",
+      "source_file": "data analysis/random_values_ojas_flsr.csv"
+    },
+    {
+      "id": "csv_templates",
+      "label": "templates.csv",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/fingerprints/templates.csv"
+    },
+    {
+      "id": "csv_events",
+      "label": "events.csv",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/fingerprints/events.csv"
+    },
+    {
+      "id": "csv_index",
+      "label": "index.csv",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/fingerprints/index.csv"
+    },
+    {
+      "id": "streaming_stats_script",
+      "label": "streaming_stats.py",
+      "file_type": "code",
+      "source_file": "streaming_stats.py"
+    },
+    {
+      "id": "Adafruit_UC8276.h_Adafruit_UC8276",
+      "label": "Adafruit_UC8276",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/drivers/Adafruit_UC8276.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Grayscale4_M05.h_ThinkInk_154_Grayscale4_M05",
+      "label": "ThinkInk_154_Grayscale4_M05",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Grayscale4_M05.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Grayscale4_T8.h_ThinkInk_154_Grayscale4_T8",
+      "label": "ThinkInk_154_Grayscale4_T8",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Grayscale4_T8.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Mono_D27.h_ThinkInk_154_Mono_D27",
+      "label": "ThinkInk_154_Mono_D27",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Mono_D27.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Mono_D67.h_ThinkInk_154_Mono_D67",
+      "label": "ThinkInk_154_Mono_D67",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Mono_D67.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Mono_M10.h_ThinkInk_154_Mono_M10",
+      "label": "ThinkInk_154_Mono_M10",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Mono_M10.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Tricolor_RW.h_ThinkInk_154_Tricolor_RW",
+      "label": "ThinkInk_154_Tricolor_RW",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Tricolor_RW.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Tricolor_Z17.h_ThinkInk_154_Tricolor_Z17",
+      "label": "ThinkInk_154_Tricolor_Z17",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Tricolor_Z17.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_154_Tricolor_Z90.h_ThinkInk_154_Tricolor_Z90",
+      "label": "ThinkInk_154_Tricolor_Z90",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Tricolor_Z90.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Grayscale4_MFGN.h_ThinkInk_213_Grayscale4_MFGN",
+      "label": "ThinkInk_213_Grayscale4_MFGN",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Grayscale4_MFGN.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Grayscale4_T5.h_ThinkInk_213_Grayscale4_T5",
+      "label": "ThinkInk_213_Grayscale4_T5",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Grayscale4_T5.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Mono_B72.h_ThinkInk_213_Mono_B72",
+      "label": "ThinkInk_213_Mono_B72",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_B72.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Mono_B73.h_ThinkInk_213_Mono_B73",
+      "label": "ThinkInk_213_Mono_B73",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_B73.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Mono_BN.h_ThinkInk_213_Mono_BN",
+      "label": "ThinkInk_213_Mono_BN",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_BN.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Mono_GDEY0213B74.h_ThinkInk_213_Mono_GDEY0213B74",
+      "label": "ThinkInk_213_Mono_GDEY0213B74",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_GDEY0213B74.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Mono_M21.h_ThinkInk_213_Mono_M21",
+      "label": "ThinkInk_213_Mono_M21",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_M21.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Quadcolor_AJHE5.h_ThinkInk_213_Quadcolor_AJHE5",
+      "label": "ThinkInk_213_Quadcolor_AJHE5",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Quadcolor_AJHE5.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Tricolor_MFGNR.h_ThinkInk_213_Tricolor_MFGNR",
+      "label": "ThinkInk_213_Tricolor_MFGNR",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Tricolor_MFGNR.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Tricolor_RW.h_ThinkInk_213_Tricolor_RW",
+      "label": "ThinkInk_213_Tricolor_RW",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Tricolor_RW.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_213_Tricolor_Z16.h_ThinkInk_213_Tricolor_Z16",
+      "label": "ThinkInk_213_Tricolor_Z16",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Tricolor_Z16.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_266_Grayscale4_MFGN.h_ThinkInk_266_Grayscale4_MFGN",
+      "label": "ThinkInk_266_Grayscale4_MFGN",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_266_Grayscale4_MFGN.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_266_Tricolor_MFGNR.h_ThinkInk_266_Tricolor_MFGNR",
+      "label": "ThinkInk_266_Tricolor_MFGNR",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_266_Tricolor_MFGNR.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_270_Grayscale4_W3.h_ThinkInk_270_Grayscale4_W3",
+      "label": "ThinkInk_270_Grayscale4_W3",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_270_Grayscale4_W3.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_270_Tricolor_C44.h_ThinkInk_270_Tricolor_C44",
+      "label": "ThinkInk_270_Tricolor_C44",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_270_Tricolor_C44.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ThinkInk_270_Tricolor_Z70.h_ThinkInk_270_Tricolor_Z70",
+      "label": "ThinkInk_270_Tricolor_Z70",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_270_Tricolor_Z70.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lfsr_nl_seed_uart",
+      "label": "UART-Seeded LFSR_NL Module",
+      "file_type": "code",
+      "source_file": "IMPLEMENTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "von_neumann_corrector",
+      "label": "Von Neumann Corrector",
+      "file_type": "rationale",
+      "source_file": "IMPLEMENTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "adafruit_feather_m4",
+      "label": "Adafruit Feather M4 Express",
+      "file_type": "rationale",
+      "source_file": "WORKFLOW.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "UsbMscDriver_UsbMscDriver",
+      "label": "UsbMscDriver",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/examples/UsbKey/UsbMscDriver.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "BufferedPrint_BufferedPrint",
+      "label": "BufferedPrint",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/BufferedPrint.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "MinimumSerial_MinimumSerial",
+      "label": "MinimumSerial",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/MinimumSerial.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "RingBuf_RingBuf",
+      "label": "RingBuf",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/RingBuf.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "RingBuf_F",
+      "label": "F",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/RingBuf.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdExFat",
+      "label": "SdExFat",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_Fmt",
+      "label": "Fmt",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdFs",
+      "label": "SdFs",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdBase",
+      "label": "SdBase",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdFile",
+      "label": "SdFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_Vol",
+      "label": "Vol",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdFat32",
+      "label": "SdFat32",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_constructors",
+      "label": "constructors",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_UsbMscDriver",
+      "label": "UsbMscDriver",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_is",
+      "label": "is",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_driver",
+      "label": "driver",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ArduinoFiles_StreamFile",
+      "label": "StreamFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/ArduinoFiles.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ArduinoFiles_BaseFile",
+      "label": "BaseFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/ArduinoFiles.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ArduinoFiles_PrintFile",
+      "label": "PrintFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/ArduinoFiles.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "FsBlockDeviceInterface_FsBlockDeviceInterface",
+      "label": "FsBlockDeviceInterface",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/FsBlockDeviceInterface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "FsCache_FsCache",
+      "label": "FsCache",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/FsCache.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "diagnostic_test_cpp_main",
+      "label": "Diagnostic Test Main",
+      "file_type": "code",
+      "source_file": "src/diagnostic_test.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_diagnostic_cpp_run",
+      "label": "FPGA Diagnostic Run",
+      "file_type": "code",
+      "source_file": "src/fpga_diagnostic.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_interface_h_interface",
+      "label": "FPGA Interface",
+      "file_type": "code",
+      "source_file": "src/fpga_interface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "monitor_serial_py_monitor",
+      "label": "Serial Monitor",
+      "file_type": "code",
+      "source_file": "scripts/monitor_serial.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uart_loopback_v_module",
+      "label": "UART Loopback Module",
+      "file_type": "code",
+      "source_file": "verilog/uart_loopback.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "collect_random_data_ps1_script",
+      "label": "Collect Random Data Script",
+      "file_type": "code",
+      "source_file": "scripts/collect_random_data.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "test_a1_a4_serial_ps1_script",
+      "label": "Test A1 A4 Serial Script",
+      "file_type": "code",
+      "source_file": "scripts/test-a1-a4-serial.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prng_testing_concept",
+      "label": "PRNG Diagnostics and UART Testing",
+      "file_type": "rationale",
+      "source_file": "scripts/run_diagnostic.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Scripts and code designed to run diagnostics on the PRNG via UART interface."
+    },
+    {
+      "id": "build_and_deploy_instructions",
+      "label": "FPGA Build & Deployment Instructions",
+      "file_type": "document",
+      "source_file": "docs/BUILD_AND_DEPLOY.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cheatsheet",
+      "label": "Cheatsheet",
+      "file_type": "document",
+      "source_file": "docs/CHEATSHEET.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "collection_instructions",
+      "label": "Collection Instructions",
+      "file_type": "document",
+      "source_file": "docs/COLLECTION_INSTRUCTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "completion_report",
+      "label": "Completion Report",
+      "file_type": "document",
+      "source_file": "docs/COMPLETION_REPORT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fingerprint_sensor",
+      "label": "Fingerprint Sensor README",
+      "file_type": "document",
+      "source_file": "docs/FINGERPRINT_SENSOR_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "implementation",
+      "label": "Implementation Details",
+      "file_type": "document",
+      "source_file": "docs/IMPLEMENTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "quick_start",
+      "label": "Quick Start Guide",
+      "file_type": "document",
+      "source_file": "docs/QUICK_START.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme2",
+      "label": "Readme2",
+      "file_type": "document",
+      "source_file": "docs/Readme2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_simple",
+      "label": "README Simple",
+      "file_type": "document",
+      "source_file": "docs/README_SIMPLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "streamline_summary",
+      "label": "Streamline Summary",
+      "file_type": "document",
+      "source_file": "docs/STREAMLINE_SUMMARY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "test_results",
+      "label": "Test Results",
+      "file_type": "document",
+      "source_file": "docs/TEST_RESULTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "workflow",
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "docs/WORKFLOW.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "debug_csv_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "source": "debug_csv_script",
+      "target": "explore_csv_script",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "source": "explore_csv_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/explore_csv.py"
+    },
+    {
+      "source": "pandas_load_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/pandas_load.py"
+    },
+    {
+      "source": "plot_analysis_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "source": "plot_analysis_script",
+      "target": "json_randomness_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "source": "randomness_analyzer_RandomnessAnalyzer",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "source": "randomness_analyzer_RandomnessAnalyzer",
+      "target": "json_randomness_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_events",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "get_thumbprint_script",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/get_thumbprint.py"
+    },
+    {
+      "source": "save_fingerprint_script",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/save_fingerprint.py"
+    },
+    {
+      "source": "as606_interface_AS606Interface",
+      "target": "adafruit_fingerprint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "source": "fpga_interface_h",
+      "target": "fpga_serial_h",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "feather_display/src/fpga_interface.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "feather_main_cpp",
+      "target": "display_renderer_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "feather_main_cpp",
+      "target": "fpga_interface_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prng_main_cpp",
+      "target": "as606_interface_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lfsr_nl_seed_uart_v_lfsr_nl_seed_uart",
+      "target": "concept_uart",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/lfsr_nl_seed_uart.v"
+    },
+    {
+      "source": "lfsr_nl_seed_uart_v_lfsr_nl_seed_uart",
+      "target": "concept_lfsr",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/lfsr_nl_seed_uart.v"
+    },
+    {
+      "source": "reaction_game_v_reaction_game",
+      "target": "concept_lfsr",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/reaction_game.v"
+    },
+    {
+      "source": "ring_osc_v_ring_osc",
+      "target": "concept_ring_oscillator",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/ring_osc.v"
+    },
+    {
+      "source": "ring_osc_v_ring_osc",
+      "target": "concept_lfsr",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/src/ring_osc.v"
+    },
+    {
+      "source": "reaction_game_tb_v_reaction_game_tb",
+      "target": "reaction_game_v_reaction_game",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/testbench/reaction_game_tb.v"
+    },
+    {
+      "source": "randomness_report",
+      "target": "nist_sp_800_22",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_report.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_distribution_overview_image",
+      "target": "uniform_distribution_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_distribution_overview_image",
+      "target": "bit_distribution_balance",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "chi_square_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "frequency_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "entropy_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "runs_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "ks_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "autocorrelation_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "serial_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "linear_complexity_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "approx_entropy_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "cumsum_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "entropy_test",
+      "target": "approx_entropy_test",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "serial_test",
+      "target": "autocorrelation_test",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "03_autocorrelation_analysis_plot",
+      "target": "autocorrelation_function_acf",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "03_autocorrelation_analysis_plot",
+      "target": "significant_lags_detection",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_bit_distribution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_per_bit_chi_square",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_bit_pair_correlations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "entropy_byte_distribution",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "entropy_per_chunk",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "frequency_distribution_of_values",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "value_coverage_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uart_loopback_module",
+      "target": "uart_rx_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "source": "uart_loopback_module",
+      "target": "uart_tx_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "source": "randomness_analyzer_RandomnessAnalyzer",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "source": "plot_analysis_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "source": "plot_analysis_script",
+      "target": "json_randomness_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "source": "randomness_analyzer_RandomnessAnalyzer",
+      "target": "json_randomness_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_events",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "save_fingerprint_script",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/save_fingerprint.py"
+    },
+    {
+      "source": "get_thumbprint_script",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/get_thumbprint.py"
+    },
+    {
+      "source": "as606_interface_AS606Interface",
+      "target": "adafruit_fingerprint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "source": "debug_csv_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "source": "explore_csv_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/explore_csv.py"
+    },
+    {
+      "source": "pandas_load_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/pandas_load.py"
+    },
+    {
+      "source": "streaming_stats_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "streaming_stats.py"
+    },
+    {
+      "source": "debug_csv_script",
+      "target": "explore_csv_script",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "source": "feather_main_cpp",
+      "target": "display_renderer_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "feather_main_cpp",
+      "target": "fpga_interface_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "feather_display/src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "prng_main_cpp",
+      "target": "as606_interface_h",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/main.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fpga_interface_h",
+      "target": "fpga_serial_h",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "feather_display/src/fpga_interface.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "Adafruit_UC8276.h_Adafruit_UC8276",
+      "target": "unknown_Adafruit_EPD",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/drivers/Adafruit_UC8276.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Grayscale4_M05.h_ThinkInk_154_Grayscale4_M05",
+      "target": "unknown_Adafruit_SSD1681",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Grayscale4_M05.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Grayscale4_T8.h_ThinkInk_154_Grayscale4_T8",
+      "target": "unknown_Adafruit_IL0373",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Grayscale4_T8.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Mono_D27.h_ThinkInk_154_Mono_D27",
+      "target": "unknown_Adafruit_SSD1608",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Mono_D27.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Mono_D67.h_ThinkInk_154_Mono_D67",
+      "target": "unknown_Adafruit_SSD1681",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Mono_D67.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Mono_M10.h_ThinkInk_154_Mono_M10",
+      "target": "unknown_Adafruit_UC8151D",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Mono_M10.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Tricolor_RW.h_ThinkInk_154_Tricolor_RW",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Tricolor_RW.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Tricolor_Z17.h_ThinkInk_154_Tricolor_Z17",
+      "target": "unknown_Adafruit_IL0373",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Tricolor_Z17.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_154_Tricolor_Z90.h_ThinkInk_154_Tricolor_Z90",
+      "target": "unknown_Adafruit_SSD1681",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_154_Tricolor_Z90.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Grayscale4_MFGN.h_ThinkInk_213_Grayscale4_MFGN",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Grayscale4_MFGN.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Grayscale4_T5.h_ThinkInk_213_Grayscale4_T5",
+      "target": "unknown_Adafruit_IL0373",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Grayscale4_T5.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Mono_B72.h_ThinkInk_213_Mono_B72",
+      "target": "unknown_Adafruit_SSD1675",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_B72.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Mono_B73.h_ThinkInk_213_Mono_B73",
+      "target": "unknown_Adafruit_SSD1675B",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_B73.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Mono_BN.h_ThinkInk_213_Mono_BN",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_BN.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Mono_GDEY0213B74.h_ThinkInk_213_Mono_GDEY0213B74",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_GDEY0213B74.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Mono_M21.h_ThinkInk_213_Mono_M21",
+      "target": "unknown_Adafruit_UC8151D",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Mono_M21.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Quadcolor_AJHE5.h_ThinkInk_213_Quadcolor_AJHE5",
+      "target": "unknown_Adafruit_JD79661",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Quadcolor_AJHE5.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Tricolor_MFGNR.h_ThinkInk_213_Tricolor_MFGNR",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Tricolor_MFGNR.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Tricolor_RW.h_ThinkInk_213_Tricolor_RW",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Tricolor_RW.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_213_Tricolor_Z16.h_ThinkInk_213_Tricolor_Z16",
+      "target": "unknown_Adafruit_IL0373",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_213_Tricolor_Z16.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_266_Grayscale4_MFGN.h_ThinkInk_266_Grayscale4_MFGN",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_266_Grayscale4_MFGN.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_266_Tricolor_MFGNR.h_ThinkInk_266_Tricolor_MFGNR",
+      "target": "unknown_Adafruit_SSD1680",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_266_Tricolor_MFGNR.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_270_Grayscale4_W3.h_ThinkInk_270_Grayscale4_W3",
+      "target": "unknown_Adafruit_IL91874",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_270_Grayscale4_W3.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_270_Tricolor_C44.h_ThinkInk_270_Tricolor_C44",
+      "target": "unknown_Adafruit_IL91874",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_270_Tricolor_C44.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ThinkInk_270_Tricolor_Z70.h_ThinkInk_270_Tricolor_Z70",
+      "target": "unknown_Adafruit_EK79686",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".pio/libdeps/feather_m4/Adafruit EPD/src/panels/ThinkInk_270_Tricolor_Z70.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lfsr_nl_seed_uart",
+      "target": "von_neumann_corrector",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "IMPLEMENTATION.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "randomness_report",
+      "target": "nist_sp_800_22",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_report.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_distribution_overview_image",
+      "target": "uniform_distribution_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_distribution_overview_image",
+      "target": "bit_distribution_balance",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "chi_square_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "frequency_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "entropy_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "runs_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "ks_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "autocorrelation_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "serial_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "linear_complexity_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "approx_entropy_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary",
+      "target": "cumsum_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "entropy_test",
+      "target": "approx_entropy_test",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "serial_test",
+      "target": "autocorrelation_test",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "03_autocorrelation_analysis_plot",
+      "target": "autocorrelation_function_acf",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "03_autocorrelation_analysis_plot",
+      "target": "significant_lags_detection",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_bit_distribution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_per_bit_chi_square",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_bit_pair_correlations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "entropy_byte_distribution",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "entropy_per_chunk",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "frequency_distribution_of_values",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "value_coverage_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "diagnostic_test_cpp_main",
+      "target": "fpga_diagnostic_cpp_run",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/diagnostic_test.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fpga_diagnostic_cpp_run",
+      "target": "fpga_interface_h_interface",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/fpga_diagnostic.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "monitor_serial_py_monitor",
+      "target": "uart_loopback_v_module",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/monitor_serial.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "collect_random_data_ps1_script",
+      "target": "prng_testing_concept",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/collect_random_data.ps1",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "test_a1_a4_serial_ps1_script",
+      "target": "prng_testing_concept",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/test-a1-a4-serial.ps1",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "build_and_deploy_instructions",
+      "target": "collection_instructions",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/BUILD_AND_DEPLOY.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "implementation",
+      "target": "test_results",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/IMPLEMENTATION.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "fpga_communications",
+      "label": "FPGA Communications",
+      "nodes": [
+        "fpga_interface_h",
+        "fpga_serial_h",
+        "collect_ps1"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "feather_display/src/fpga_interface.h"
+    },
+    {
+      "id": "passed_randomness_tests",
+      "label": "Passed Randomness Tests",
+      "nodes": [
+        "chi_square_test",
+        "frequency_test",
+        "runs_test",
+        "ks_test",
+        "serial_test",
+        "linear_complexity_test",
+        "cumsum_test"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png"
+    },
+    {
+      "id": "failed_randomness_tests",
+      "label": "Failed Randomness Tests",
+      "nodes": [
+        "entropy_test",
+        "autocorrelation_test",
+        "approx_entropy_test"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png"
+    },
+    {
+      "id": "bit_level_metrics",
+      "label": "Bit-Level Metrics",
+      "nodes": [
+        "concept_bit_distribution",
+        "concept_per_bit_chi_square",
+        "concept_bit_pair_correlations"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png"
+    },
+    {
+      "id": "entropy_analysis_subplots",
+      "label": "Entropy Analysis Metrics",
+      "nodes": [
+        "entropy_byte_distribution",
+        "entropy_per_chunk",
+        "frequency_distribution_of_values",
+        "value_coverage_analysis"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png"
+    },
+    {
+      "id": "csv_analysis_scripts",
+      "label": "CSV Data Exploration Scripts",
+      "nodes": [
+        "debug_csv_script",
+        "explore_csv_script",
+        "pandas_load_script",
+        "streaming_stats_script"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "fingerprint_data_management",
+      "label": "Fingerprint Data Acquisition and Storage",
+      "nodes": [
+        "fingerprint_capture_FingerprintCapture",
+        "get_thumbprint_script",
+        "save_fingerprint_script",
+        "csv_templates",
+        "csv_events",
+        "csv_index"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "randomness_testing_pipeline",
+      "label": "Statistical Testing and Visualization Pipeline",
+      "nodes": [
+        "randomness_analyzer_RandomnessAnalyzer",
+        "json_randomness_results",
+        "plot_analysis_script",
+        "csv_random_values_ojas_flsr"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "fpga_communications",
+      "label": "FPGA Communications",
+      "nodes": [
+        "fpga_interface_h",
+        "fpga_serial_h",
+        "collect_ps1"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "feather_display/src/fpga_interface.h"
+    },
+    {
+      "id": "thinkink_epd_panels",
+      "label": "ThinkInk EPD Panels",
+      "nodes": [
+        "Adafruit_UC8276.h_Adafruit_UC8276",
+        "ThinkInk_154_Grayscale4_M05.h_ThinkInk_154_Grayscale4_M05",
+        "ThinkInk_154_Grayscale4_T8.h_ThinkInk_154_Grayscale4_T8",
+        "ThinkInk_154_Mono_D27.h_ThinkInk_154_Mono_D27",
+        "ThinkInk_154_Mono_D67.h_ThinkInk_154_Mono_D67",
+        "ThinkInk_154_Mono_M10.h_ThinkInk_154_Mono_M10",
+        "ThinkInk_154_Tricolor_RW.h_ThinkInk_154_Tricolor_RW",
+        "ThinkInk_154_Tricolor_Z17.h_ThinkInk_154_Tricolor_Z17",
+        "ThinkInk_154_Tricolor_Z90.h_ThinkInk_154_Tricolor_Z90",
+        "ThinkInk_213_Grayscale4_MFGN.h_ThinkInk_213_Grayscale4_MFGN",
+        "ThinkInk_213_Grayscale4_T5.h_ThinkInk_213_Grayscale4_T5",
+        "ThinkInk_213_Mono_B72.h_ThinkInk_213_Mono_B72",
+        "ThinkInk_213_Mono_B73.h_ThinkInk_213_Mono_B73",
+        "ThinkInk_213_Mono_BN.h_ThinkInk_213_Mono_BN",
+        "ThinkInk_213_Mono_GDEY0213B74.h_ThinkInk_213_Mono_GDEY0213B74",
+        "ThinkInk_213_Mono_M21.h_ThinkInk_213_Mono_M21",
+        "ThinkInk_213_Quadcolor_AJHE5.h_ThinkInk_213_Quadcolor_AJHE5",
+        "ThinkInk_213_Tricolor_MFGNR.h_ThinkInk_213_Tricolor_MFGNR",
+        "ThinkInk_213_Tricolor_RW.h_ThinkInk_213_Tricolor_RW",
+        "ThinkInk_213_Tricolor_Z16.h_ThinkInk_213_Tricolor_Z16",
+        "ThinkInk_266_Grayscale4_MFGN.h_ThinkInk_266_Grayscale4_MFGN",
+        "ThinkInk_266_Tricolor_MFGNR.h_ThinkInk_266_Tricolor_MFGNR",
+        "ThinkInk_270_Grayscale4_W3.h_ThinkInk_270_Grayscale4_W3",
+        "ThinkInk_270_Tricolor_C44.h_ThinkInk_270_Tricolor_C44",
+        "ThinkInk_270_Tricolor_Z70.h_ThinkInk_270_Tricolor_Z70"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Adafruit EPD/src/panels"
+    },
+    {
+      "id": "passed_randomness_tests",
+      "label": "Passed Randomness Tests",
+      "nodes": [
+        "chi_square_test",
+        "frequency_test",
+        "runs_test",
+        "ks_test",
+        "serial_test",
+        "linear_complexity_test",
+        "cumsum_test"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png"
+    },
+    {
+      "id": "failed_randomness_tests",
+      "label": "Failed Randomness Tests",
+      "nodes": [
+        "entropy_test",
+        "autocorrelation_test",
+        "approx_entropy_test"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png"
+    },
+    {
+      "id": "bit_level_metrics",
+      "label": "Bit-Level Metrics",
+      "nodes": [
+        "concept_bit_distribution",
+        "concept_per_bit_chi_square",
+        "concept_bit_pair_correlations"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png"
+    },
+    {
+      "id": "entropy_analysis_subplots",
+      "label": "Entropy Analysis Metrics",
+      "nodes": [
+        "entropy_byte_distribution",
+        "entropy_per_chunk",
+        "frequency_distribution_of_values",
+        "value_coverage_analysis"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png"
+    },
+    {
+      "id": "uart_testing_suite",
+      "label": "UART Testing Suite",
+      "nodes": [
+        "monitor_serial_py_monitor",
+        "uart_loopback_v_module",
+        "prng_testing_concept",
+        "test_a1_a4_serial_ps1_script"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/run_diagnostic.ps1"
+    }
+  ],
+  "input_tokens": 5100,
+  "output_tokens": 2400
+}

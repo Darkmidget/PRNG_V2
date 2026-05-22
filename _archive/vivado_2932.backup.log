@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Apr 22 21:37:13 2026
+# Process ID         : 2932
+# Current directory  : G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template
+# Command line       : vivado.exe -mode batch -source scripts/program.tcl
+# Log file           : G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/vivado.log
+# Journal file       : G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template\vivado.jou
+# Running On         : DESKTOP-NP0GIO7
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16904 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 19991 MB
+# Available Virtual  : 6148 MB
+#-----------------------------------------------------------
+source scripts/program.tcl
+# set script_dir [file dirname [file normalize [info script]]]
+# set config_file [file normalize "$script_dir/config.tcl"]
+# if {![file exists $config_file]} {
+#     puts "ERROR: Configuration file not found: $config_file"
+#     puts "Please create config.tcl in the scripts directory"
+#     exit 1
+# }
+# source $config_file
+## set PROJECT_NAME "cmod_a7_project"
+## set TOP_MODULE "lfsr_nl_seed_uart"
+## set PART_NAME "xc7a35tcpg236-1"
+## set SOURCE_FILES [list "lfsr_nl_seed_uart.v"]
+## set CONSTRAINT_FILES [list "lfsr_nl_seed.xdc"]
+## set BUILD_DIR "build"
+## set SYNTH_STRATEGY "Vivado Synthesis Defaults"
+## set IMPL_STRATEGY "Vivado Implementation Defaults"
+## puts "INFO: Loaded configuration for project: $PROJECT_NAME"
+INFO: Loaded configuration for project: cmod_a7_project
+## puts "INFO: Top module: $TOP_MODULE"
+INFO: Top module: lfsr_nl_seed_uart
+## puts "INFO: Target device: $PART_NAME"
+INFO: Target device: xc7a35tcpg236-1
+# set project_dir [file normalize "$script_dir/../$BUILD_DIR"]
+# set project_name $PROJECT_NAME
+# set bitstream_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.bit"
+# if {![file exists $bitstream_file]} {
+#     puts "ERROR: Bitstream file not found: $bitstream_file"
+#     puts "Please run build.tcl first to generate the bitstream"
+#     exit 1
+# }
+# open_hw_manager
+open_hw_manager: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 665.695 ; gain = 223.727
+# connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2025.2
+  **** Build date : Oct 28 2025 at 10:03:13
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.2.0
+  ****** Build date   : Nov 14 2025-07:16:52
+    **** Build number : 2025.2.1763075812
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 669.660 ; gain = 3.965
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210328B995F4A
+# set device [lindex [get_hw_devices] 0]
+# current_hw_device $device
+# puts "Programming FPGA with: $bitstream_file"
+Programming FPGA with: G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/build/cmod_a7_project.runs/impl_1/lfsr_nl_seed_uart.bit
+# set_property PROGRAM.FILE $bitstream_file $device
+# program_hw_devices $device
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# refresh_hw_device $device
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported soft debug core(s) in it.
+# puts "Programming completed successfully!"
+Programming completed successfully!
+# close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210328B995F4A
+# disconnect_hw_server
+# close_hw_manager
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 21:37:30 2026...

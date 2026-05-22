@@ -1,0 +1,301 @@
+{
+  "nodes": [
+    {
+      "id": "uart_loopback_module",
+      "label": "uart_loopback (Verilog Module)",
+      "file_type": "code",
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "id": "uart_rx_module",
+      "label": "uart_rx (Verilog Module)",
+      "file_type": "code",
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "id": "uart_tx_module",
+      "label": "uart_tx (Verilog Module)",
+      "file_type": "code",
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "id": "randomness_analyzer_RandomnessAnalyzer",
+      "label": "RandomnessAnalyzer (Python Class)",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "id": "plot_analysis_script",
+      "label": "plot_analysis (Python Script)",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "id": "csv_random_values_ojas_flsr",
+      "label": "random_values_ojas_flsr.csv",
+      "file_type": "document",
+      "source_file": "data analysis/random_values_ojas_flsr.csv"
+    },
+    {
+      "id": "json_randomness_results",
+      "label": "randomness_results.json",
+      "file_type": "document",
+      "source_file": "data analysis/pythonscripts/randomness_results.json"
+    },
+    {
+      "id": "fingerprint_capture_FingerprintCapture",
+      "label": "FingerprintCapture (Python Class)",
+      "file_type": "code",
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "id": "as606_interface_AS606Interface",
+      "label": "AS606Interface (C++ Class)",
+      "file_type": "code",
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "id": "adafruit_fingerprint",
+      "label": "Adafruit_Fingerprint",
+      "file_type": "code",
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "id": "csv_templates",
+      "label": "templates.csv",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/fingerprints/templates.csv"
+    },
+    {
+      "id": "csv_events",
+      "label": "events.csv",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/fingerprints/events.csv"
+    },
+    {
+      "id": "csv_index",
+      "label": "index.csv",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/fingerprints/index.csv"
+    },
+    {
+      "id": "save_fingerprint_script",
+      "label": "save_fingerprint.py",
+      "file_type": "code",
+      "source_file": "esp32_fingerprint/save_fingerprint.py"
+    },
+    {
+      "id": "get_thumbprint_script",
+      "label": "get_thumbprint.py",
+      "file_type": "code",
+      "source_file": "esp32_fingerprint/get_thumbprint.py"
+    },
+    {
+      "id": "debug_csv_script",
+      "label": "debug_csv.py",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "id": "explore_csv_script",
+      "label": "explore_csv.py",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/explore_csv.py"
+    },
+    {
+      "id": "pandas_load_script",
+      "label": "pandas_load.py",
+      "file_type": "code",
+      "source_file": "data analysis/pythonscripts/pandas_load.py"
+    },
+    {
+      "id": "streaming_stats_script",
+      "label": "streaming_stats.py",
+      "file_type": "code",
+      "source_file": "streaming_stats.py"
+    }
+  ],
+  "edges": [
+    {
+      "source": "uart_loopback_module",
+      "target": "uart_rx_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "source": "uart_loopback_module",
+      "target": "uart_tx_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "uart_loopback.v"
+    },
+    {
+      "source": "randomness_analyzer_RandomnessAnalyzer",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "source": "plot_analysis_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "source": "plot_analysis_script",
+      "target": "json_randomness_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+    },
+    {
+      "source": "randomness_analyzer_RandomnessAnalyzer",
+      "target": "json_randomness_results",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_events",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "fingerprint_capture_FingerprintCapture",
+      "target": "csv_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/fingerprint_capture.py"
+    },
+    {
+      "source": "save_fingerprint_script",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/save_fingerprint.py"
+    },
+    {
+      "source": "get_thumbprint_script",
+      "target": "csv_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "esp32_fingerprint/get_thumbprint.py"
+    },
+    {
+      "source": "as606_interface_AS606Interface",
+      "target": "adafruit_fingerprint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "feather_display/src/as606_interface.h"
+    },
+    {
+      "source": "debug_csv_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    },
+    {
+      "source": "explore_csv_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/explore_csv.py"
+    },
+    {
+      "source": "pandas_load_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/pandas_load.py"
+    },
+    {
+      "source": "streaming_stats_script",
+      "target": "csv_random_values_ojas_flsr",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "streaming_stats.py"
+    },
+    {
+      "source": "debug_csv_script",
+      "target": "explore_csv_script",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "data analysis/pythonscripts/debug_csv.py"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "csv_analysis_scripts",
+      "label": "CSV Data Exploration Scripts",
+      "nodes": [
+        "debug_csv_script",
+        "explore_csv_script",
+        "pandas_load_script",
+        "streaming_stats_script"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "fingerprint_data_management",
+      "label": "Fingerprint Data Acquisition and Storage",
+      "nodes": [
+        "fingerprint_capture_FingerprintCapture",
+        "get_thumbprint_script",
+        "save_fingerprint_script",
+        "csv_templates",
+        "csv_events",
+        "csv_index"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "randomness_testing_pipeline",
+      "label": "Statistical Testing and Visualization Pipeline",
+      "nodes": [
+        "randomness_analyzer_RandomnessAnalyzer",
+        "json_randomness_results",
+        "plot_analysis_script",
+        "csv_random_values_ojas_flsr"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

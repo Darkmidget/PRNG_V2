@@ -1,0 +1,69 @@
+{
+  "chi_square": {
+    "statistic": 432.29700428143195,
+    "p_value": 2.6496471683401523e-11,
+    "df": 255,
+    "bins": 256,
+    "pass": false
+  },
+  "frequency": {
+    "n_ones": 2492452.0,
+    "n_zeros": 2492796.0,
+    "ones_ratio": 0.4999654982059067,
+    "z_score": 0.15406892722475055,
+    "p_value": 0.8775553881959972,
+    "pass": true
+  },
+  "entropy": {
+    "entropy": 15.757310885487906,
+    "max_entropy": 15.969094175085324,
+    "normalized_entropy": 0.9867379271939019,
+    "theoretical_max": 16.0,
+    "ratio_to_theoretical": 0.9848319303429941,
+    "n_unique": 64147,
+    "pass": true
+  },
+  "runs_test": {
+    "n_runs": 155140.0,
+    "expected_runs": 155789.8593995725,
+    "z_score": 0,
+    "p_value": 1.0,
+    "pass": true
+  },
+  "ks_test": {
+    "statistic": 0.0013069756921403053,
+    "p_value": 0.6611539757263535,
+    "pass": true
+  },
+  "autocorrelation": {
+    "max_acf": 0.006660339925543835,
+    "significant_lags": 13.0,
+    "expected_significant": 5.0,
+    "confidence_bound": 0.0035113383414012915,
+    "p_value": 0.001464348008034462,
+    "pass": false
+  },
+  "serial_test": {
+    "statistic": 78725.74180296302,
+    "p_value": 1.0,
+    "n_patterns": 250537,
+    "pass": true
+  },
+  "linear_complexity": {
+    "avg_entropy": 1.0,
+    "expected_entropy": 1.0,
+    "p_value": 1.0,
+    "pass": true
+  },
+  "approx_entropy": {
+    "app_entropy": -0.6931596812631101,
+    "expected_entropy": 0.6931471805599453,
+    "p_value": 0.01,
+    "pass": false
+  },
+  "cumsum_test": {
+    "max_cumsum": 163367878312.0,
+    "p_value": 2.0,
+    "pass": true
+  }
+}

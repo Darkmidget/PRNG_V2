@@ -1,0 +1,92 @@
+AS608 FINGERPRINT TEMPLATE VALIDATION REPORT
+======================================================================
+
+Validation Date: Final_project
+Total Templates: 10
+Valid Templates: 5
+Templates with AS608 Header: 9
+Overall Verdict: INVALID
+
+DETAILED RESULTS BY TEMPLATE:
+----------------------------------------------------------------------
+
+Fingerprint ID: 1
+  Total Bytes: 260
+  Header: None
+  Data Bytes: 168
+  Zero Bytes: 88
+  FF Bytes: 4
+  Validity: INVALID - Missing AS608 header (0x0303), Invalid chunk sizes: [4, 32, 32, 32, 32, 32, 32, 32, 32]
+
+Fingerprint ID: 3
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 35
+  Zero Bytes: 92
+  FF Bytes: 1
+  Validity: INVALID - Very little actual data (may be padding)
+
+Fingerprint ID: 4
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 85
+  Zero Bytes: 43
+  FF Bytes: 0
+  Validity: VALID
+
+Fingerprint ID: 5
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 81
+  Zero Bytes: 45
+  FF Bytes: 2
+  Validity: VALID
+
+Fingerprint ID: 7
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 83
+  Zero Bytes: 43
+  FF Bytes: 2
+  Validity: VALID
+
+Fingerprint ID: 8
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 85
+  Zero Bytes: 42
+  FF Bytes: 1
+  Validity: VALID
+
+Fingerprint ID: 9
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 33
+  Zero Bytes: 94
+  FF Bytes: 1
+  Validity: INVALID - Very little actual data (may be padding)
+
+Fingerprint ID: 10
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 33
+  Zero Bytes: 94
+  FF Bytes: 1
+  Validity: INVALID - Very little actual data (may be padding)
+
+Fingerprint ID: 13
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 82
+  Zero Bytes: 44
+  FF Bytes: 2
+  Validity: VALID
+
+Fingerprint ID: 15
+  Total Bytes: 128
+  Header: (3, 3)
+  Data Bytes: 33
+  Zero Bytes: 94
+  FF Bytes: 1
+  Validity: INVALID - Very little actual data (may be padding)
+

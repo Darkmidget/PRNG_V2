@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Apr 22 21:41:55 2026
+# Process ID         : 19880
+# Current directory  : G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template
+# Command line       : vivado.exe -mode batch -source scripts/program.tcl
+# Log file           : G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template/vivado.log
+# Journal file       : G:/My Drive/0 - SUTD/Term 6/DSL/Project/verilog/FPGA-Vivado-Verilog-VS-code-Project-Template\vivado.jou
+# Running On         : DESKTOP-NP0GIO7
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16904 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 19991 MB
+# Available Virtual  : 6182 MB
+#-----------------------------------------------------------
+source scripts/program.tcl

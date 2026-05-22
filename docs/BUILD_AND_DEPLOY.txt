@@ -1,0 +1,105 @@
+# FPGA Build & Deployment Instructions
+# Modified Ring Oscillator - Fast UART Data Collection
+# Target: Collect 100,000 random samples to CSV
+
+## STEP 1: Navigate to Project Directory
+cd "g:\My Drive\0 - SUTD\Term 6\DSL\Project\verilog\FPGA-Vivado-Verilog-VS-code-Project-Template"
+
+## STEP 2: Run Deployment Script
+# This will:
+# - Synthesize the Verilog code
+# - Implement the design
+# - Generate bitstream
+# - Program the FPGA
+# - Takes 3-10 minutes
+
+.\deploy.ps1
+
+## STEP 3: Wait for Completion
+# Watch for messages:
+# ✓ "Successfully programmed device"
+# ✓ "Design complete"
+
+## STEP 4: After Programming Success
+# Your FPGA will automatically run the Ring Oscillator
+# The board status:
+# - LED[1] blinking = board alive (heartbeat)
+# - SW[0] OFF = oscillator disabled
+# - SW[0] ON = oscillator enabled (enable this to start data flow)
+
+## STEP 5: Verify Serial Connection
+# In PowerShell, check that COM4 is still available:
+[System.IO.Ports.SerialPort]::GetPortNames()
+
+## STEP 6: Run Data Collection Script
+cd "g:\My Drive\0 - SUTD\Term 6\DSL\Project"
+
+# Run with auto-detected COM port:
+./Collect_FPGA_Data.ps1
+
+# Or specify COM port explicitly:
+./Collect_FPGA_Data.ps1 -ComPort COM4 -SampleCount 100000
+
+## STEP 7: During Collection
+# IMPORTANT: Slide SW[0] to the RIGHT to enable the oscillator
+# The script will show progress:
+# - Sample count
+# - Collection rate (samples/sec)
+# - Estimated time remaining
+
+## STEP 8: After Collection Complete
+# - CSV file created: fpga_random_samples_YYYYMMDD_HHMMSS.csv
+# - With 100,001 rows (header + 100,000 samples)
+# - Columns: Timestamp, Sample_Number, Hex_Value, Raw_Line
+# - Located in: g:\My Drive\0 - SUTD\Term 6\DSL\Project\
+
+## TROUBLESHOOTING
+
+# Issue: "Deploy script not found"
+# Solution: Check that deploy.ps1 exists in:
+# g:\My Drive\0 - SUTD\Term 6\DSL\Project\verilog\FPGA-Vivado-Verilog-VS-code-Project-Template\
+
+# Issue: "Vivado not found"
+# Solution: Make sure Vivado is installed and accessible
+# Check: vivado -version
+
+# Issue: "Port COM4 already in use"
+# Solution: Close other terminal programs (PuTTY, serial monitor, etc.)
+
+# Issue: "No data received after enabling SW[0]"
+# Solution:
+# - Verify LED[1] (heartbeat) is blinking
+# - Try pressing SW[0] button multiple times
+# - Check USB cable connection
+# - Verify COM4 with: [System.IO.Ports.SerialPort]::GetPortNames()
+
+## Modified Verilog Changes (ring_osc.v)
+
+# KEY MODIFICATION:
+# Original: Sends 1 sample/sec (update_tick = 1 Hz)
+# New: Sends continuously as soon as previous transmission completes
+#
+# Location: Line ~250 in ring_osc.v
+#
+# Changed from: if (update_tick && !tx_busy) begin
+# Changed to:   if (!tx_busy) begin
+#
+# Effect: LFSR value sampled every ~52 microseconds at 115200 baud
+# Result: ~115,000 samples possible per second
+#         100,000 samples in ~0.87 seconds
+
+## Next Steps After Collection
+
+# 1. Analyze the CSV:
+#    - Plot histogram of values to verify randomness
+#    - Run NIST randomness tests
+#    - Check entropy
+
+# 2. Example Python analysis:
+#    import pandas as pd
+#    df = pd.read_csv('fpga_random_samples_*.csv')
+#    # Plot histogram
+#    # Statistical tests
+#    # etc.
+
+# 3. Store results in project folder for documentation

@@ -1,0 +1,71 @@
+======================================================================
+RANDOMNESS ANALYSIS REPORT
+======================================================================
+
+DATA SUMMARY
+----------------------------------------------------------------------
+Total samples analyzed: 311,578
+Data range: 0 - 65535 (16-bit)
+Data type: Unsigned integer (uint16)
+Min value: 0
+Max value: 65535
+Mean: 32744.00
+Median: 32742.00
+Std Dev: 18918.90
+
+TEST RESULTS
+----------------------------------------------------------------------
+Chi Square..............................     [FAIL]
+  | Statistic: 432.297004
+  | P-value: 0.000000
+  | Bins: 256
+
+Frequency...............................     [PASS]
+  | P-value: 0.877555
+  | Ones ratio: 0.5000 (expect 0.5)
+
+Entropy.................................     [PASS]
+  | Entropy: 15.7573 / 16.0
+  | Uniqueness: 64,147 distinct values
+
+Runs Test...............................     [PASS]
+  | P-value: 1.000000
+
+Ks Test.................................     [PASS]
+  | Statistic: 0.001307
+  | P-value: 0.661154
+
+Autocorrelation.........................     [FAIL]
+  | P-value: 0.001464
+  | Significant lags: 13
+
+Serial Test.............................     [PASS]
+  | Statistic: 78725.741803
+  | P-value: 1.000000
+  | Patterns: 250537
+
+Linear Complexity.......................     [PASS]
+  | P-value: 1.000000
+
+Approx Entropy..........................     [FAIL]
+  | P-value: 0.010000
+
+Cumsum Test.............................     [PASS]
+  | P-value: 2.000000
+
+OVERALL ASSESSMENT
+----------------------------------------------------------------------
+Tests passed: 7 / 10
+Pass rate: 70.0%
+
+Randomness Score: 70.0/100
+Rating: FAIR - Some randomness issues detected
+
+NOTES
+----------------------------------------------------------------------
+* Significance level (alpha) = 0.05
+* PASS: p-value > 0.05 (cannot reject null hypothesis of randomness)
+* FAIL: p-value <= 0.05 (evidence against randomness)
+* Based on NIST SP 800-22 and statistical randomness literature
+
+======================================================================

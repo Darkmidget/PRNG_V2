@@ -1,0 +1,196 @@
+/***************************************************
+  FEATHER M4 - A1/A4 SERIAL RX/TX CONNECTION TEST
+  
+  Purpose: Test UART communication on pins A1 and A4
+  - Tests bidirectional serial communication
+  - Sends test messages
+  - Monitors reception at different baud rates
+  - Reports connection status
+  
+  Pins:
+  - A1 (PA04) → RX (receive from external device)
+  - A4 (PA07) → TX (transmit to external device)
+  
+  Baud Rate: 115200 (default) - adjustable
+  
+  This is a diagnostic-only sketch. Original code in:
+  feather_display/src/main.cpp (Game of Life + Fingerprint)
+ ****************************************************/
+
+#include <Arduino.h>
+#include <wiring_private.h>  // pinPeripheral() function
+
+// ========================================
+// PIN DEFINITIONS
+// ========================================
+#define TEST_RX_PIN A1   // A1 (PA04)
+#define TEST_TX_PIN A4   // A4 (PA07)
+#define BAUD_RATE   115200
+
+// ========================================
+// GLOBAL VARIABLES
+// ========================================
+Uart Serial_A1_A4(&sercom1, TEST_RX_PIN, TEST_TX_PIN, SERCOM_RX_PAD_0, UART_TX_PAD_2);
+unsigned long messageCount = 0;
+unsigned long lastMessageTime = 0;
+const unsigned long MESSAGE_INTERVAL = 1000;  // Send every 1 second
+
+// Forward declaration
+void processCommand(String cmd);
+
+// ========================================
+// SETUP
+// ========================================
+void setup() {
+  // Primary Serial (USB @ 115200) - Debug console
+  Serial.begin(115200);
+  delay(500);
+  
+  Serial.println("\n\n");
+  Serial.println("================================================");
+  Serial.println("  FEATHER M4 - A1/A4 SERIAL CONNECTION TEST");
+  Serial.println("================================================");
+  Serial.println();
+  
+  // Configure A1/A4 Serial connection
+  Serial.println("[SETUP] Configuring Serial on A1 (RX) / A4 (TX)...");
+  
+  pinPeripheral(TEST_RX_PIN, PIO_SERCOM);
+  pinPeripheral(TEST_TX_PIN, PIO_SERCOM);
+  
+  Serial_A1_A4.begin(BAUD_RATE);
+  
+  Serial.print("[SETUP] A1/A4 Serial initialized at ");
+  Serial.print(BAUD_RATE);
+  Serial.println(" baud");
+  
+  // Test pins are in place
+  Serial.println("[SETUP] Waiting 2 seconds before starting test...");
+  delay(2000);
+  
+  Serial.println();
+  Serial.println("[TEST] Starting message transmission...");
+  Serial.println("  - Sending TEST messages to A4 (TX)");
+  Serial.println("  - Monitoring A1 (RX) for incoming data");
+  Serial.println("  - Check loop monitor to view data");
+  Serial.println();
+  lastMessageTime = millis();
+}
+
+// ========================================
+// LOOP
+// ========================================
+void loop() {
+  unsigned long currentTime = millis();
+  
+  // ==== SEND TEST MESSAGES ====
+  if (currentTime - lastMessageTime >= MESSAGE_INTERVAL) {
+    messageCount++;
+    
+    // Build test message
+    String testMessage = "TEST_MSG_" + String(messageCount) + "_BAUD_" + String(BAUD_RATE);
+    
+    // Send via A4 (TX)
+    Serial_A1_A4.print(testMessage);
+    Serial_A1_A4.println();  // Add newline
+    
+    // Log to USB serial
+    Serial.print("[TX] Message #");
+    Serial.print(messageCount);
+    Serial.print(": ");
+    Serial.println(testMessage);
+    
+    lastMessageTime = currentTime;
+  }
+  
+  // ==== RECEIVE DATA ====
+  if (Serial_A1_A4.available()) {
+    char incomingChar = Serial_A1_A4.read();
+    
+    // Log to USB serial
+    Serial.print("[RX] Received byte: 0x");
+    Serial.print(incomingChar, HEX);
+    Serial.print(" (");
+    
+    if (incomingChar >= 32 && incomingChar <= 126) {
+      Serial.print("'");
+      Serial.print(incomingChar);
+      Serial.print("'");
+    } else {
+      Serial.print("non-printable");
+    }
+    Serial.println(")");
+  }
+  
+  // ==== USB SERIAL MONITOR COMMANDS ====
+  if (Serial.available()) {
+    String command = Serial.readStringUntil('\n');
+    command.trim();
+    processCommand(command);
+  }
+  
+  delay(10);  // Small delay to prevent overwhelming serial buffer
+}
+
+// ========================================
+// COMMAND PROCESSOR
+// ========================================
+void processCommand(String cmd) {
+  if (cmd == "status") {
+    Serial.println();
+    Serial.println("========== CONNECTION STATUS ==========");
+    Serial.print("  RX Pin (A1):        PA04");
+    Serial.println(" ✓");
+    Serial.print("  TX Pin (A4):        PA07");
+    Serial.println(" ✓");
+    Serial.print("  Baud Rate:          ");
+    Serial.println(BAUD_RATE);
+    Serial.print("  Messages Sent:      ");
+    Serial.println(messageCount);
+    Serial.println("=========================================");
+    Serial.println();
+  }
+  else if (cmd == "send") {
+    String customMsg = "CUSTOM_MSG_FROM_HOST_" + String(millis());
+    Serial_A1_A4.println(customMsg);
+    Serial.print("[MANUAL TX] ");
+    Serial.println(customMsg);
+  }
+  else if (cmd == "test") {
+    Serial.println();
+    Serial.println("[TEST] Sending rapid test sequence...");
+    for (int i = 1; i <= 5; i++) {
+      String rapidMsg = "RAPID_TEST_" + String(i);
+      Serial_A1_A4.println(rapidMsg);
+      Serial.print("[RAPID TX #");
+      Serial.print(i);
+      Serial.print("] ");
+      Serial.println(rapidMsg);
+      delay(100);
+    }
+    Serial.println("[TEST] Sequence complete.");
+    Serial.println();
+  }
+  else if (cmd == "help") {
+    Serial.println();
+    Serial.println("========== AVAILABLE COMMANDS ==========");
+    Serial.println("  status    - Show connection status");
+    Serial.println("  send      - Send custom message");
+    Serial.println("  test      - Send rapid test sequence");
+    Serial.println("  help      - Show this help menu");
+    Serial.println("=========================================");
+    Serial.println();
+  }
+  else if (cmd.length() > 0) {
+    Serial.println("Unknown command. Type 'help' for options.");
+  }
+}
+
+// ========================================
+// ADDITIONAL FUNCTIONS
+// ========================================
+
+// Interrupt handler for Serial (optional, for advanced debugging)
+void SERCOM1_Handler() {
+  Serial_A1_A4.IrqHandler();
+}
