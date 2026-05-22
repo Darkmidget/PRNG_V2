@@ -6,7 +6,8 @@ module ring_osc(
     output        DP,
     output [6:0]  SEG,
     output [1:0]  led,
-    output        tx
+    output        tx,
+    output wire [15:0] prng_out
 );
 
     wire rstn   = 1'b1;           // Always out of reset
@@ -59,6 +60,8 @@ module ring_osc(
         if (!rstn) lfsr <= lfsr ^ 16'hACE1;
         else       lfsr <= {lfsr[14:0], lfsr_feedback};
     end
+    
+    assign prng_out = lfsr;
 
     function [15:0] xor_mix;
         input [15:0] x;

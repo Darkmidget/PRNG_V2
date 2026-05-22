@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module lfsr_nl_seed_uart(
     input  wire       sysclk,
     input  wire       uart_rx,
@@ -31,7 +32,7 @@ module lfsr_nl_seed_uart(
     wire [7:0] rx_data;
     wire       rx_valid;
 
-    uart_rx #(
+    lfsr_uart_rx #(
         .CLKS_PER_BIT(CLKS_PER_BIT)
     ) rx_inst (
         .clk       (sysclk),
@@ -46,7 +47,7 @@ module lfsr_nl_seed_uart(
     reg        tx_start;
     wire       tx_busy;
 
-    uart_tx #(
+    lfsr_uart_tx #(
         .CLKS_PER_BIT(CLKS_PER_BIT)
     ) tx_inst (
         .clk    (sysclk),
@@ -263,7 +264,7 @@ module lfsr_nl_seed_uart(
 endmodule
 
 
-module uart_rx #(
+module lfsr_uart_rx #(
     parameter CLKS_PER_BIT = 104
 ) (
     input  wire       clk,
@@ -363,7 +364,7 @@ module uart_rx #(
 endmodule
 
 
-module uart_tx #(
+module lfsr_uart_tx #(
     parameter CLKS_PER_BIT = 104
 ) (
     input  wire       clk,

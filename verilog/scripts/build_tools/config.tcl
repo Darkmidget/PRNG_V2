@@ -9,7 +9,7 @@
 set PROJECT_NAME "cmod_a7_project"
 
 # Top module name (the main Verilog module to synthesize)
-set TOP_MODULE "lfsr_nl_seed_uart"
+set TOP_MODULE "fpga_main"
 
 # FPGA part number
 # Default: xc7a35tcpg236-1 (CMOD A7)
@@ -18,20 +18,20 @@ set PART_NAME "xc7a35tcpg236-1"
 
 # Source files configuration
 # Option 1: Specific file (recommended for single-file projects)
-set SOURCE_FILES [list "lfsr_nl_seed_uart.v"]
+# set SOURCE_FILES [list "lfsr_nl_seed_uart.v"]
 
 # Option 2: Multiple specific files (uncomment and edit as needed)
 # set SOURCE_FILES [list "top_module.v" "submodule1.v" "submodule2.v"]
 
 # Option 3: All .v files in src/ (uncomment to use all Verilog files)
-# set SOURCE_FILES "*.v"
+set SOURCE_FILES "*.v"
 
 # Constraint files configuration
 # Option 1: Use all XDC files in constraints/ directory (default)
 # set CONSTRAINT_FILES "*.xdc"
 
 # Option 2: Specific constraint file (uncomment and edit as needed)
-set CONSTRAINT_FILES [list "lfsr_nl_seed.xdc"]
+set CONSTRAINT_FILES [list "CMODA7_Constrain.xdc"]
 
 # ===================================================================
 # Advanced Settings (usually don't need to change)

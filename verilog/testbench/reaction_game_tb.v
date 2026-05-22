@@ -75,12 +75,12 @@ module reaction_game_tb;
         
         // Test 5: Wait for random delay and LED pattern
         $display("\n--- Test 5: LED Pattern Generation ---");
-        #3000000000;  // Wait 3 seconds (max random delay is 2s + countdown)
+        repeat(3) #1000000000;  // Wait 3 seconds (max random delay is 2s + countdown)
         $display("Time=%0t: Game should be active now", $time);
         $display("Time=%0t: LED Pattern = %b (decimal %d)", $time, led, led);
         
         // Count number of LEDs lit
-        if (led != 10'b0) begin
+        if (led != 10'b0) begin : count_leds
             integer led_count;
             led_count = 0;
             if (led[0]) led_count = led_count + 1;
@@ -152,7 +152,7 @@ module reaction_game_tb;
     
     // Timeout watchdog
     initial begin
-        #10000000000;  // 10 seconds simulation timeout
+        repeat(10) #1000000000;  // 10 seconds simulation timeout
         $display("\n!!! TIMEOUT - Simulation exceeded 10 seconds !!!");
         $finish;
     end

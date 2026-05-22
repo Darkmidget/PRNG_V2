@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module game_of_life (
     input wire clk,
     input wire rst_n,

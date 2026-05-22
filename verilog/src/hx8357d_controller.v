@@ -3,6 +3,7 @@
 module hx8357d_controller (
     input wire clk,          // 12 MHz system clock
     input wire rst_n,        // Active low system reset
+    input wire [15:0] prng_seed, // Dynamic PRNG seed
     
     // SPI physical interface
     output wire tft_sck,
@@ -145,7 +146,7 @@ module hx8357d_controller (
         .clk(clk),
         .rst_n(rst_n),
         .start_init(gol_start_init),
-        .seed(16'h1337), // Hardcoded PRNG seed for now, can be wired to ring_osc
+        .seed(prng_seed), // Wired to the output of the ring_osc PRNG
         .start_gen(gol_start_gen),
         .gen_done(gol_gen_done),
         .buf_sel(gol_buf_sel),

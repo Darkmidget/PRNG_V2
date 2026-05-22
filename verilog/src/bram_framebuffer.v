@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module bram_framebuffer (
     input wire clk,
     input wire we,
