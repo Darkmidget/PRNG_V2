@@ -1,299 +1,472 @@
 {
   "nodes": [
     {
-      "id": "uart_loopback_module",
-      "label": "uart_loopback (Verilog Module)",
+      "id": "Adafruit_HX8357",
+      "label": "Adafruit HX8357",
       "file_type": "code",
-      "source_file": "uart_loopback.v"
+      "source_file": "Adafruit_HX8357.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Limor Fried/Ladyada",
+      "contributor": null
     },
     {
-      "id": "uart_rx_module",
-      "label": "uart_rx (Verilog Module)",
+      "id": "filter_detect",
+      "label": "Filter Detect Script",
       "file_type": "code",
-      "source_file": "uart_loopback.v"
+      "source_file": "filter_detect.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "uart_tx_module",
-      "label": "uart_tx (Verilog Module)",
+      "id": "get_stats",
+      "label": "Get Stats Script",
       "file_type": "code",
-      "source_file": "uart_loopback.v"
+      "source_file": "get_stats.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "randomness_analyzer_RandomnessAnalyzer",
-      "label": "RandomnessAnalyzer (Python Class)",
+      "id": "convert_init",
+      "label": "Convert Init Script",
       "file_type": "code",
-      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
+      "source_file": "scripts/convert_init.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "plot_analysis_script",
-      "label": "plot_analysis (Python Script)",
+      "id": "write_init",
+      "label": "Write Init Script",
       "file_type": "code",
-      "source_file": "data analysis/pythonscripts/plot_analysis.py"
+      "source_file": "scripts/write_init.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "csv_random_values_ojas_flsr",
-      "label": "random_values_ojas_flsr.csv",
+      "id": "bram_framebuffer",
+      "label": "BRAM Framebuffer",
+      "file_type": "code",
+      "source_file": "verilog/src/bram_framebuffer.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "game_of_life",
+      "label": "Game Of Life Hardware",
+      "file_type": "code",
+      "source_file": "verilog/src/game_of_life.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hx8357d_controller",
+      "label": "HX8357D Controller",
+      "file_type": "code",
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hx8357d_init",
+      "label": "HX8357D Init",
+      "file_type": "code",
+      "source_file": "verilog/src/hx8357d_init.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tb_game_of_life",
+      "label": "Testbench Game Of Life",
+      "file_type": "code",
+      "source_file": "verilog/testbench/tb_game_of_life.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tb_hx8357d_controller",
+      "label": "Testbench HX8357D Controller",
+      "file_type": "code",
+      "source_file": "verilog/testbench/tb_hx8357d_controller.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uart_loopback",
+      "label": "UART Loopback",
+      "file_type": "code",
+      "source_file": "_archive/uart_loopback.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "diagnostic_test",
+      "label": "Diagnostic Test",
+      "file_type": "code",
+      "source_file": "_archive_disabled/diagnostic_test.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "graphify_skill",
+      "label": "Graphify Skill",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fingerprint_data_collection_guide",
+      "label": "Fingerprint Data Collection Guide",
       "file_type": "document",
-      "source_file": "data analysis/random_values_ojas_flsr.csv"
+      "source_file": "esp32_fingerprint/FINGERPRINT_DATA_COLLECTION_GUIDE.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "json_randomness_results",
-      "label": "randomness_results.json",
+      "id": "fingerprint_data_analysis",
+      "label": "Fingerprint Data Analysis",
       "file_type": "document",
-      "source_file": "data analysis/pythonscripts/randomness_results.json"
+      "source_file": "fingerprints/fingerprint_data_analysis.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "fingerprint_capture_FingerprintCapture",
-      "label": "FingerprintCapture (Python Class)",
-      "file_type": "code",
-      "source_file": "esp32_fingerprint/fingerprint_capture.py"
-    },
-    {
-      "id": "as606_interface_AS606Interface",
-      "label": "AS606Interface (C++ Class)",
-      "file_type": "code",
-      "source_file": "feather_display/src/as606_interface.h"
-    },
-    {
-      "id": "adafruit_fingerprint",
-      "label": "Adafruit_Fingerprint",
-      "file_type": "code",
-      "source_file": "feather_display/src/as606_interface.h"
-    },
-    {
-      "id": "csv_templates",
-      "label": "templates.csv",
+      "id": "validation_report",
+      "label": "Validation Report",
       "file_type": "document",
-      "source_file": "esp32_fingerprint/fingerprints/templates.csv"
+      "source_file": "fingerprints/validation_report.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "csv_events",
-      "label": "events.csv",
+      "id": "converted_utf8_txt",
+      "label": "Converted Initialization Values",
       "file_type": "document",
-      "source_file": "esp32_fingerprint/fingerprints/events.csv"
+      "source_file": "scripts/converted_utf8.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "csv_index",
-      "label": "index.csv",
+      "id": "quick_start_guide",
+      "label": "Quick Start Guide",
       "file_type": "document",
-      "source_file": "esp32_fingerprint/fingerprints/index.csv"
+      "source_file": "verilog/QUICK_START.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "save_fingerprint_script",
-      "label": "save_fingerprint.py",
-      "file_type": "code",
-      "source_file": "esp32_fingerprint/save_fingerprint.py"
+      "id": "usage_guide",
+      "label": "Usage Guide",
+      "file_type": "document",
+      "source_file": "verilog/USAGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "get_thumbprint_script",
-      "label": "get_thumbprint.py",
-      "file_type": "code",
-      "source_file": "esp32_fingerprint/get_thumbprint.py"
+      "id": "testbench_readme",
+      "label": "Testbench README",
+      "file_type": "document",
+      "source_file": "verilog/testbench/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "debug_csv_script",
-      "label": "debug_csv.py",
+      "id": "Adafruit_SPITFT",
+      "label": "Adafruit SPITFT",
       "file_type": "code",
-      "source_file": "data analysis/pythonscripts/debug_csv.py"
+      "source_file": "Adafruit_HX8357.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     },
     {
-      "id": "explore_csv_script",
-      "label": "explore_csv.py",
+      "id": "spi_master",
+      "label": "SPI Master",
       "file_type": "code",
-      "source_file": "data analysis/pythonscripts/explore_csv.py"
-    },
-    {
-      "id": "pandas_load_script",
-      "label": "pandas_load.py",
-      "file_type": "code",
-      "source_file": "data analysis/pythonscripts/pandas_load.py"
-    },
-    {
-      "id": "streaming_stats_script",
-      "label": "streaming_stats.py",
-      "file_type": "code",
-      "source_file": "streaming_stats.py"
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
     }
   ],
   "edges": [
     {
-      "source": "uart_loopback_module",
-      "target": "uart_rx_module",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "uart_loopback.v"
-    },
-    {
-      "source": "uart_loopback_module",
-      "target": "uart_tx_module",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "uart_loopback.v"
-    },
-    {
-      "source": "randomness_analyzer_RandomnessAnalyzer",
-      "target": "csv_random_values_ojas_flsr",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
-    },
-    {
-      "source": "plot_analysis_script",
-      "target": "csv_random_values_ojas_flsr",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/plot_analysis.py"
-    },
-    {
-      "source": "plot_analysis_script",
-      "target": "json_randomness_results",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/plot_analysis.py"
-    },
-    {
-      "source": "randomness_analyzer_RandomnessAnalyzer",
-      "target": "json_randomness_results",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/randomness_analyzer.py"
-    },
-    {
-      "source": "fingerprint_capture_FingerprintCapture",
-      "target": "csv_templates",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "esp32_fingerprint/fingerprint_capture.py"
-    },
-    {
-      "source": "fingerprint_capture_FingerprintCapture",
-      "target": "csv_events",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "esp32_fingerprint/fingerprint_capture.py"
-    },
-    {
-      "source": "fingerprint_capture_FingerprintCapture",
-      "target": "csv_index",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "esp32_fingerprint/fingerprint_capture.py"
-    },
-    {
-      "source": "save_fingerprint_script",
-      "target": "csv_templates",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "esp32_fingerprint/save_fingerprint.py"
-    },
-    {
-      "source": "get_thumbprint_script",
-      "target": "csv_templates",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "esp32_fingerprint/get_thumbprint.py"
-    },
-    {
-      "source": "as606_interface_AS606Interface",
-      "target": "adafruit_fingerprint",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "feather_display/src/as606_interface.h"
-    },
-    {
-      "source": "debug_csv_script",
-      "target": "csv_random_values_ojas_flsr",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/debug_csv.py"
-    },
-    {
-      "source": "explore_csv_script",
-      "target": "csv_random_values_ojas_flsr",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/explore_csv.py"
-    },
-    {
-      "source": "pandas_load_script",
-      "target": "csv_random_values_ojas_flsr",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "data analysis/pythonscripts/pandas_load.py"
-    },
-    {
-      "source": "streaming_stats_script",
-      "target": "csv_random_values_ojas_flsr",
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "streaming_stats.py"
-    },
-    {
-      "source": "debug_csv_script",
-      "target": "explore_csv_script",
-      "relation": "semantically_similar_to",
+      "source": "convert_init",
+      "target": "write_init",
+      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
-      "source_file": "data analysis/pythonscripts/debug_csv.py"
+      "source_file": "scripts/convert_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "write_init",
+      "target": "hx8357d_init",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/write_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "convert_init",
+      "target": "Adafruit_HX8357",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/convert_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "game_of_life",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "bram_framebuffer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "spi_master",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "hx8357d_init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tb_game_of_life",
+      "target": "game_of_life",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/testbench/tb_game_of_life.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tb_game_of_life",
+      "target": "bram_framebuffer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/testbench/tb_game_of_life.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tb_hx8357d_controller",
+      "target": "hx8357d_controller",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/testbench/tb_hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "game_of_life",
+      "target": "bram_framebuffer",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/src/game_of_life.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "diagnostic_test",
+      "target": "game_of_life",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "_archive_disabled/diagnostic_test.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "Adafruit_HX8357",
+      "target": "Adafruit_SPITFT",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Adafruit_HX8357.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fingerprint_data_collection_guide",
+      "target": "fingerprint_data_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "esp32_fingerprint/FINGERPRINT_DATA_COLLECTION_GUIDE.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fingerprint_data_analysis",
+      "target": "validation_report",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "fingerprints/fingerprint_data_analysis.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "quick_start_guide",
+      "target": "usage_guide",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/QUICK_START.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "write_init",
+      "target": "converted_utf8_txt",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/write_init.py",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [
     {
-      "id": "csv_analysis_scripts",
-      "label": "CSV Data Exploration Scripts",
+      "id": "hx8357d_init_group",
+      "label": "HX8357D Initialization Translation",
       "nodes": [
-        "debug_csv_script",
-        "explore_csv_script",
-        "pandas_load_script",
-        "streaming_stats_script"
+        "Adafruit_HX8357",
+        "convert_init",
+        "write_init",
+        "hx8357d_init",
+        "converted_utf8_txt"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.95
+      "confidence_score": 0.85,
+      "source_file": "scripts/write_init.py"
     },
     {
-      "id": "fingerprint_data_management",
-      "label": "Fingerprint Data Acquisition and Storage",
+      "id": "game_of_life_hardware",
+      "label": "Game of Life Hardware Implementation",
       "nodes": [
-        "fingerprint_capture_FingerprintCapture",
-        "get_thumbprint_script",
-        "save_fingerprint_script",
-        "csv_templates",
-        "csv_events",
-        "csv_index"
+        "hx8357d_controller",
+        "game_of_life",
+        "bram_framebuffer"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.95
+      "confidence_score": 0.85,
+      "source_file": "verilog/src/hx8357d_controller.v"
     },
     {
-      "id": "randomness_testing_pipeline",
-      "label": "Statistical Testing and Visualization Pipeline",
+      "id": "fingerprint_analysis",
+      "label": "Fingerprint Data Validation",
       "nodes": [
-        "randomness_analyzer_RandomnessAnalyzer",
-        "json_randomness_results",
-        "plot_analysis_script",
-        "csv_random_values_ojas_flsr"
+        "fingerprint_data_collection_guide",
+        "fingerprint_data_analysis",
+        "validation_report"
       ],
-      "relation": "participate_in",
+      "relation": "form",
       "confidence": "INFERRED",
-      "confidence_score": 0.95
+      "confidence_score": 0.85,
+      "source_file": "fingerprints/fingerprint_data_analysis.txt"
     }
   ],
   "input_tokens": 0,

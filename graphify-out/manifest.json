@@ -25,19 +25,19 @@
     "semantic_hash": "6145c7b12a91789439dcf5cb9ef2fad5"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\plot_analysis.py": {
-    "mtime": 1775990721.222,
-    "ast_hash": "5ff126a00363047427ecc96eb059a155",
-    "semantic_hash": "5ff126a00363047427ecc96eb059a155"
+    "mtime": 1779359749.6538403,
+    "ast_hash": "c668b203afa7230e6a9d33db52d69fa0",
+    "semantic_hash": "c668b203afa7230e6a9d33db52d69fa0"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\randomness_analyzer.py": {
-    "mtime": 1775990515.807,
-    "ast_hash": "05639b1e3bdd9c27b6c01063bb8ceaad",
-    "semantic_hash": "05639b1e3bdd9c27b6c01063bb8ceaad"
+    "mtime": 1779359749.6362853,
+    "ast_hash": "20412342ee71c5630d4833628044bb70",
+    "semantic_hash": "20412342ee71c5630d4833628044bb70"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\randomness_results.json": {
-    "mtime": 1775990529.012,
-    "ast_hash": "c5fdfd7e48a62413dcbb5ddb885ad4e7",
-    "semantic_hash": "c5fdfd7e48a62413dcbb5ddb885ad4e7"
+    "mtime": 1779359718.860974,
+    "ast_hash": "42b2bdcfefc267c34b2cf50682d87ea1",
+    "semantic_hash": "42b2bdcfefc267c34b2cf50682d87ea1"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\esp32_fingerprint\\fingerprint_capture.py": {
     "mtime": 1775107080.007,
@@ -115,9 +115,9 @@
     "semantic_hash": "6a3eb3cbba8158e1af80e3b669f8218e"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\src\\fpga_serial.h": {
-    "mtime": 1776921400.171,
-    "ast_hash": "273e5e530d9c489c4330da9969bf68e6",
-    "semantic_hash": "273e5e530d9c489c4330da9969bf68e6"
+    "mtime": 1779358982.9098885,
+    "ast_hash": "c4ca3d908909c8b20b3beb3f36ee5580",
+    "semantic_hash": "c4ca3d908909c8b20b3beb3f36ee5580"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\src\\gameoflife.h": {
     "mtime": 1776176214.572,
@@ -129,150 +129,15 @@
     "ast_hash": "b2e2233e9a96a3341c71ac8727972e8e",
     "semantic_hash": "b2e2233e9a96a3341c71ac8727972e8e"
   },
-  "C:\\Users\\vince\\Projects\\PRNG\\src\\main_backup.cpp": {
-    "mtime": 1777449577.309,
-    "ast_hash": "cf50702a980094ced014767541675220",
-    "semantic_hash": "cf50702a980094ced014767541675220"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\src\\main_complex_backup.cpp": {
-    "mtime": 1777449567.562,
-    "ast_hash": "9f250608053bfe5f3939e669ecd8907b",
-    "semantic_hash": "9f250608053bfe5f3939e669ecd8907b"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\auto_build_and_collect.ps1": {
-    "mtime": 1775312030.117,
-    "ast_hash": "6801ed09ae7af345793ce468b1bc0623",
-    "semantic_hash": "6801ed09ae7af345793ce468b1bc0623"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\check_uart.ps1": {
-    "mtime": 1775314750.046,
-    "ast_hash": "bd9b6932120a7c7a97ff656b0dd02571",
-    "semantic_hash": "bd9b6932120a7c7a97ff656b0dd02571"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\collect_100k_final.ps1": {
-    "mtime": 1775312110.933,
-    "ast_hash": "75da6f691f7ec1c65c676b4c9d75d476",
-    "semantic_hash": "75da6f691f7ec1c65c676b4c9d75d476"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\collect_auto_scan.ps1": {
-    "mtime": 1775310578.882,
-    "ast_hash": "d9c6eefd699f1d1ab0cc20cfee7fe78c",
-    "semantic_hash": "d9c6eefd699f1d1ab0cc20cfee7fe78c"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\collect_com4.ps1": {
-    "mtime": 1775312707.811,
-    "ast_hash": "c87d7a4be8366ab9c2754eb48707be40",
-    "semantic_hash": "c87d7a4be8366ab9c2754eb48707be40"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\collect_random_100k.ps1": {
-    "mtime": 1775308170.197,
-    "ast_hash": "4849bcdb9d2239a4fd3b2525b0ab909e",
-    "semantic_hash": "4849bcdb9d2239a4fd3b2525b0ab909e"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\collect_robust.ps1": {
-    "mtime": 1775312756.805,
-    "ast_hash": "7b8ae136f0b7e6cb7810a53429edbf5d",
-    "semantic_hash": "7b8ae136f0b7e6cb7810a53429edbf5d"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\collect_ultimate.ps1": {
-    "mtime": 1775314816.398,
-    "ast_hash": "32a767fd4d0cd167b97b5f14f0fa45f1",
-    "semantic_hash": "32a767fd4d0cd167b97b5f14f0fa45f1"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\deploy.ps1": {
-    "mtime": 1772604463.513,
-    "ast_hash": "a848a1418d8ec941e116a85cd4c49fc7",
-    "semantic_hash": "a848a1418d8ec941e116a85cd4c49fc7"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\diagnose_uart.ps1": {
-    "mtime": 1775312586.442,
-    "ast_hash": "c4e9b104798f8287ddd48c7ff6c099e2",
-    "semantic_hash": "c4e9b104798f8287ddd48c7ff6c099e2"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\run_program.ps1": {
-    "mtime": 1775312531.982,
-    "ast_hash": "5779c44b0682e49fd084a4a4d8feddb8",
-    "semantic_hash": "5779c44b0682e49fd084a4a4d8feddb8"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\test_final.ps1": {
-    "mtime": 1776865411.961,
-    "ast_hash": "b918f35d76389b3ea64a494afee32bae",
-    "semantic_hash": "b918f35d76389b3ea64a494afee32bae"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\test_serial.ps1": {
-    "mtime": 1776865387.304,
-    "ast_hash": "c2d5db2bbbf9bfe8b14902967e7f9b69",
-    "semantic_hash": "c2d5db2bbbf9bfe8b14902967e7f9b69"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\test_serial_v2.ps1": {
-    "mtime": 1776865393.176,
-    "ast_hash": "eed9fbacf536c90049098025eded6295",
-    "semantic_hash": "eed9fbacf536c90049098025eded6295"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\test_serial_v3.ps1": {
-    "mtime": 1776865401.846,
-    "ast_hash": "c2f98bffc2638cae5a473d2411ff9491",
-    "semantic_hash": "c2f98bffc2638cae5a473d2411ff9491"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\.vscode\\extensions.json": {
-    "mtime": 1771252556.413,
-    "ast_hash": "55d107b6f37342dfb8bfce9d412a0ade",
-    "semantic_hash": "55d107b6f37342dfb8bfce9d412a0ade"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\.vscode\\settings.json": {
-    "mtime": 1771252556.424,
-    "ast_hash": "a610741cef424c4362c3b57b9a77f147",
-    "semantic_hash": "a610741cef424c4362c3b57b9a77f147"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\.vscode\\tasks.json": {
-    "mtime": 1771252556.434,
-    "ast_hash": "9b103a3457e1bee96239aee07d84c7f8",
-    "semantic_hash": "9b103a3457e1bee96239aee07d84c7f8"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\scripts\\build.ps1": {
-    "mtime": 1772600019.561,
-    "ast_hash": "8ad3d5a3975bf642bd0f4b4ceb863df2",
-    "semantic_hash": "8ad3d5a3975bf642bd0f4b4ceb863df2"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\src\\blink.v": {
-    "mtime": 1771252556.6,
-    "ast_hash": "21a6108a9dd355ffbd37ed54a092837d",
-    "semantic_hash": "21a6108a9dd355ffbd37ed54a092837d"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\src\\lfsr_nl_seed_uart.v": {
-    "mtime": 1776867428.362,
-    "ast_hash": "001a3927302711557edd04e2fe599324",
-    "semantic_hash": "001a3927302711557edd04e2fe599324"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\src\\reaction_game.v": {
-    "mtime": 1771252556.613,
-    "ast_hash": "03154267bbc30585cec52ad96abdd7c5",
-    "semantic_hash": "03154267bbc30585cec52ad96abdd7c5"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\src\\ring_osc.v": {
-    "mtime": 1775317394.52,
-    "ast_hash": "3dfd4e64eb069938c41cc5028c57b4da",
-    "semantic_hash": "3dfd4e64eb069938c41cc5028c57b4da"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\src\\switch_display.v": {
-    "mtime": 1771252556.624,
-    "ast_hash": "b92ef0d0d6c0245b16fde79fe9516bba",
-    "semantic_hash": "b92ef0d0d6c0245b16fde79fe9516bba"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\testbench\\reaction_game_tb.v": {
-    "mtime": 1771252556.655,
-    "ast_hash": "4822b96506d7ba6ed1822e4a58283ab0",
-    "semantic_hash": "4822b96506d7ba6ed1822e4a58283ab0"
-  },
   "C:\\Users\\vince\\Projects\\PRNG\\_archive_disabled\\diagnostic_test.cpp": {
     "mtime": 1776585499.282,
     "ast_hash": "38cf107551ce08f88f921dd15a36b694",
     "semantic_hash": "38cf107551ce08f88f921dd15a36b694"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\README.md": {
-    "mtime": 1776775319.702,
-    "ast_hash": "4eb4519fe606f632f9985fc9cc8dbec0",
-    "semantic_hash": "4eb4519fe606f632f9985fc9cc8dbec0"
+    "mtime": 1779360153.1656258,
+    "ast_hash": "3f8983bec9900ab80c53510911a367bd",
+    "semantic_hash": "3f8983bec9900ab80c53510911a367bd"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\.agents\\skills\\graphify\\SKILL.md": {
     "mtime": 1779337587.2686565,
@@ -280,9 +145,9 @@
     "semantic_hash": "9e59689c14f1a006f314436e5eb833b7"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\randomness_report.txt": {
-    "mtime": 1775990529.006,
-    "ast_hash": "1384023485fb61bb0926712d47fcc91c",
-    "semantic_hash": "1384023485fb61bb0926712d47fcc91c"
+    "mtime": 1779359718.8604553,
+    "ast_hash": "fed431753eaf7c9d96917033684c631c",
+    "semantic_hash": "fed431753eaf7c9d96917033684c631c"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\esp32_fingerprint\\FINGERPRINT_DATA_COLLECTION_GUIDE.txt": {
     "mtime": 1775106542.525,
@@ -299,75 +164,30 @@
     "ast_hash": "f9d3dd420d9660487dbb98bb2ab5dce3",
     "semantic_hash": "f9d3dd420d9660487dbb98bb2ab5dce3"
   },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\dfx_runtime.txt": {
-    "mtime": 1775307777.009,
-    "ast_hash": "1c82e7c400574e4177a91c572966819d",
-    "semantic_hash": "1c82e7c400574e4177a91c572966819d"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\dfx_runtime.txt": {
-    "mtime": 1776867216.313,
-    "ast_hash": "1c82e7c400574e4177a91c572966819d",
-    "semantic_hash": "1c82e7c400574e4177a91c572966819d"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\INSTRUCTIONS.md": {
-    "mtime": 1771252556.444,
-    "ast_hash": "36ebb2710fcc3be29cb8c81b51f698ae",
-    "semantic_hash": "36ebb2710fcc3be29cb8c81b51f698ae"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\QUICK_START.md": {
-    "mtime": 1772605231.527,
-    "ast_hash": "80643594241899b1c358b0f8b354b293",
-    "semantic_hash": "80643594241899b1c358b0f8b354b293"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\README.md": {
-    "mtime": 1771252556.471,
-    "ast_hash": "44ae6d9cbdbc59ab2d0ddb6aa5accf5a",
-    "semantic_hash": "44ae6d9cbdbc59ab2d0ddb6aa5accf5a"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\TEMPLATE_GUIDE.md": {
-    "mtime": 1771252556.482,
-    "ast_hash": "7a24388edf80b42b52263852c2fe4241",
-    "semantic_hash": "7a24388edf80b42b52263852c2fe4241"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\USAGE.md": {
-    "mtime": 1772683752.94,
-    "ast_hash": "6d513ff2cd86b4436d08b3fdaf05550c",
-    "semantic_hash": "6d513ff2cd86b4436d08b3fdaf05550c"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\scripts\\dfx_runtime.txt": {
-    "mtime": 1772601830.885,
-    "ast_hash": "1c82e7c400574e4177a91c572966819d",
-    "semantic_hash": "1c82e7c400574e4177a91c572966819d"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\FPGA-Vivado-Verilog-VS-code-Project-Template\\testbench\\README.md": {
-    "mtime": 1771252556.644,
-    "ast_hash": "09f2c2165b03e91b4af6be55667f70eb",
-    "semantic_hash": "09f2c2165b03e91b4af6be55667f70eb"
-  },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\plots\\01_distribution_overview.png": {
-    "mtime": 1775990735.5,
-    "ast_hash": "bc2ec075a5481e370b055b3343523075",
-    "semantic_hash": "bc2ec075a5481e370b055b3343523075"
+    "mtime": 1779359762.8183646,
+    "ast_hash": "f74619ae92a0c2f0981b81f0633c344e",
+    "semantic_hash": "f74619ae92a0c2f0981b81f0633c344e"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\plots\\02_test_results_summary.png": {
-    "mtime": 1775990735.935,
-    "ast_hash": "09d21b6ce29301cbcddc5472551f0385",
-    "semantic_hash": "09d21b6ce29301cbcddc5472551f0385"
+    "mtime": 1779359763.29736,
+    "ast_hash": "3ffc077d5989b530b0c5a957299932fc",
+    "semantic_hash": "3ffc077d5989b530b0c5a957299932fc"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\plots\\03_autocorrelation_analysis.png": {
-    "mtime": 1775990736.549,
-    "ast_hash": "47d5354ca57da3e7dad02887de75039a",
-    "semantic_hash": "47d5354ca57da3e7dad02887de75039a"
+    "mtime": 1779359763.9017823,
+    "ast_hash": "8557bcfe75036ff3f91249620e78784b",
+    "semantic_hash": "8557bcfe75036ff3f91249620e78784b"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\plots\\04_bit_level_analysis.png": {
-    "mtime": 1775990766.139,
-    "ast_hash": "3d2691a6b74adf33d125d647a80db915",
-    "semantic_hash": "3d2691a6b74adf33d125d647a80db915"
+    "mtime": 1779359767.381729,
+    "ast_hash": "4e730df8138fafc1869caf88834b7df3",
+    "semantic_hash": "4e730df8138fafc1869caf88834b7df3"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\data analysis\\pythonscripts\\plots\\05_entropy_analysis.png": {
-    "mtime": 1775990767.19,
-    "ast_hash": "ac23db863f6e1231038779492a6bb6e0",
-    "semantic_hash": "ac23db863f6e1231038779492a6bb6e0"
+    "mtime": 1779359768.3955405,
+    "ast_hash": "c8a40e537e0a9b351de502e3c6a9b8f1",
+    "semantic_hash": "c8a40e537e0a9b351de502e3c6a9b8f1"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\.pio\\libdeps\\feather_m4\\Adafruit BusIO\\Adafruit_BusIO_Register.h": {
     "mtime": 1758572290.0,
@@ -2090,9 +1910,9 @@
     "semantic_hash": "364c059dae73b5c81413bd8fec010bde"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\scripts\\build.ps1": {
-    "mtime": 1775725582.651,
-    "ast_hash": "0f5241b56cc7ab9f7f886c26afded847",
-    "semantic_hash": "0f5241b56cc7ab9f7f886c26afded847"
+    "mtime": 1779358402.216405,
+    "ast_hash": "7d7d91de9998310b749c8c2f6118f5ee",
+    "semantic_hash": "7d7d91de9998310b749c8c2f6118f5ee"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\scripts\\Collect_FPGA_Data.ps1": {
     "mtime": 1775308170.179,
@@ -2115,9 +1935,9 @@
     "semantic_hash": "520bae2598e31c95235dabd6f0952d9a"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\scripts\\run_diagnostic.ps1": {
-    "mtime": 1776228060.544,
-    "ast_hash": "3020d7e862afcb55de6112858ec5e74a",
-    "semantic_hash": "3020d7e862afcb55de6112858ec5e74a"
+    "mtime": 1779358402.232923,
+    "ast_hash": "c4635032f7e4240ae48862955b004b20",
+    "semantic_hash": "c4635032f7e4240ae48862955b004b20"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\scripts\\streaming_stats.py": {
     "mtime": 1775990178.699,
@@ -2128,11 +1948,6 @@
     "mtime": 1776318568.274,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
-  },
-  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\uart_loopback.v": {
-    "mtime": 1776770820.092,
-    "ast_hash": "a256c30a2003f668deaa2598dd28f4cc",
-    "semantic_hash": "a256c30a2003f668deaa2598dd28f4cc"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\.pio\\libdeps\\feather_m4\\Adafruit BusIO\\CMakeLists.txt": {
     "mtime": 1758572290.0,
@@ -2830,8 +2645,288 @@
     "semantic_hash": "149731961ad02e8d0b36eb5a2906f7e8"
   },
   "C:\\Users\\vince\\Projects\\PRNG\\_archive\\dfx_runtime.txt": {
-    "mtime": 1772601945.518,
-    "ast_hash": "917bd43b80a11a4ff6132bc3389efe3e",
-    "semantic_hash": "917bd43b80a11a4ff6132bc3389efe3e"
+    "mtime": 1776867216.313,
+    "ast_hash": "1c82e7c400574e4177a91c572966819d",
+    "semantic_hash": "1c82e7c400574e4177a91c572966819d"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\scripts\\generate_trng_picture_results.py": {
+    "mtime": 1779359784.9322455,
+    "ast_hash": "b77685c82bdd76f62a88cf5f289f0fa8",
+    "semantic_hash": "b77685c82bdd76f62a88cf5f289f0fa8"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\.vscode\\extensions.json": {
+    "mtime": 1771252556.413,
+    "ast_hash": "55d107b6f37342dfb8bfce9d412a0ade",
+    "semantic_hash": "55d107b6f37342dfb8bfce9d412a0ade"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\.vscode\\settings.json": {
+    "mtime": 1771252556.424,
+    "ast_hash": "a610741cef424c4362c3b57b9a77f147",
+    "semantic_hash": "a610741cef424c4362c3b57b9a77f147"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\.vscode\\tasks.json": {
+    "mtime": 1771252556.434,
+    "ast_hash": "9b103a3457e1bee96239aee07d84c7f8",
+    "semantic_hash": "9b103a3457e1bee96239aee07d84c7f8"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\build_tools\\auto_build_and_collect.ps1": {
+    "mtime": 1775312030.117,
+    "ast_hash": "6801ed09ae7af345793ce468b1bc0623",
+    "semantic_hash": "6801ed09ae7af345793ce468b1bc0623"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\build_tools\\build.ps1": {
+    "mtime": 1779358177.0350382,
+    "ast_hash": "e9c4faf8ac416334af6cfbd8a25833f0",
+    "semantic_hash": "e9c4faf8ac416334af6cfbd8a25833f0"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\data_collection\\collect_100k_final.ps1": {
+    "mtime": 1775312110.933,
+    "ast_hash": "75da6f691f7ec1c65c676b4c9d75d476",
+    "semantic_hash": "75da6f691f7ec1c65c676b4c9d75d476"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\data_collection\\collect_auto_scan.ps1": {
+    "mtime": 1775310578.882,
+    "ast_hash": "d9c6eefd699f1d1ab0cc20cfee7fe78c",
+    "semantic_hash": "d9c6eefd699f1d1ab0cc20cfee7fe78c"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\data_collection\\collect_com4.ps1": {
+    "mtime": 1775312707.811,
+    "ast_hash": "c87d7a4be8366ab9c2754eb48707be40",
+    "semantic_hash": "c87d7a4be8366ab9c2754eb48707be40"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\data_collection\\collect_random_100k.ps1": {
+    "mtime": 1775308170.197,
+    "ast_hash": "4849bcdb9d2239a4fd3b2525b0ab909e",
+    "semantic_hash": "4849bcdb9d2239a4fd3b2525b0ab909e"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\data_collection\\collect_robust.ps1": {
+    "mtime": 1775312756.805,
+    "ast_hash": "7b8ae136f0b7e6cb7810a53429edbf5d",
+    "semantic_hash": "7b8ae136f0b7e6cb7810a53429edbf5d"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\data_collection\\collect_ultimate.ps1": {
+    "mtime": 1775314816.398,
+    "ast_hash": "32a767fd4d0cd167b97b5f14f0fa45f1",
+    "semantic_hash": "32a767fd4d0cd167b97b5f14f0fa45f1"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\deployment\\deploy.ps1": {
+    "mtime": 1779358170.0347903,
+    "ast_hash": "bd08bfd7b57e563fb9acbf2b06d554f5",
+    "semantic_hash": "bd08bfd7b57e563fb9acbf2b06d554f5"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\deployment\\run_program.ps1": {
+    "mtime": 1779358379.0089445,
+    "ast_hash": "dbc65017da3c3cf2ca2ab1b7d53dca82",
+    "semantic_hash": "dbc65017da3c3cf2ca2ab1b7d53dca82"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\test\\test_final.ps1": {
+    "mtime": 1776865411.961,
+    "ast_hash": "b918f35d76389b3ea64a494afee32bae",
+    "semantic_hash": "b918f35d76389b3ea64a494afee32bae"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\test\\test_serial.ps1": {
+    "mtime": 1776865387.304,
+    "ast_hash": "c2d5db2bbbf9bfe8b14902967e7f9b69",
+    "semantic_hash": "c2d5db2bbbf9bfe8b14902967e7f9b69"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\test\\test_serial_v2.ps1": {
+    "mtime": 1776865393.176,
+    "ast_hash": "eed9fbacf536c90049098025eded6295",
+    "semantic_hash": "eed9fbacf536c90049098025eded6295"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\test\\test_serial_v3.ps1": {
+    "mtime": 1776865401.846,
+    "ast_hash": "c2f98bffc2638cae5a473d2411ff9491",
+    "semantic_hash": "c2f98bffc2638cae5a473d2411ff9491"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\uart_diag\\check_uart.ps1": {
+    "mtime": 1775314750.046,
+    "ast_hash": "bd9b6932120a7c7a97ff656b0dd02571",
+    "semantic_hash": "bd9b6932120a7c7a97ff656b0dd02571"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\uart_diag\\diagnose_uart.ps1": {
+    "mtime": 1775312586.442,
+    "ast_hash": "c4e9b104798f8287ddd48c7ff6c099e2",
+    "semantic_hash": "c4e9b104798f8287ddd48c7ff6c099e2"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\blink.v": {
+    "mtime": 1771252556.6,
+    "ast_hash": "21a6108a9dd355ffbd37ed54a092837d",
+    "semantic_hash": "21a6108a9dd355ffbd37ed54a092837d"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\lfsr_nl_seed_uart.v": {
+    "mtime": 1776867428.362,
+    "ast_hash": "001a3927302711557edd04e2fe599324",
+    "semantic_hash": "001a3927302711557edd04e2fe599324"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\reaction_game.v": {
+    "mtime": 1771252556.613,
+    "ast_hash": "03154267bbc30585cec52ad96abdd7c5",
+    "semantic_hash": "03154267bbc30585cec52ad96abdd7c5"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\ring_osc.v": {
+    "mtime": 1775317394.52,
+    "ast_hash": "3dfd4e64eb069938c41cc5028c57b4da",
+    "semantic_hash": "3dfd4e64eb069938c41cc5028c57b4da"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\switch_display.v": {
+    "mtime": 1771252556.624,
+    "ast_hash": "b92ef0d0d6c0245b16fde79fe9516bba",
+    "semantic_hash": "b92ef0d0d6c0245b16fde79fe9516bba"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\testbench\\reaction_game_tb.v": {
+    "mtime": 1771252556.655,
+    "ast_hash": "4822b96506d7ba6ed1822e4a58283ab0",
+    "semantic_hash": "4822b96506d7ba6ed1822e4a58283ab0"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\_archive\\extract_chunk21.py": {
+    "mtime": 1779342724.1282308,
+    "ast_hash": "340008a20857cdd86236aecd3e9803f8",
+    "semantic_hash": "340008a20857cdd86236aecd3e9803f8"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\_archive\\main_backup.cpp": {
+    "mtime": 1777449577.309,
+    "ast_hash": "cf50702a980094ced014767541675220",
+    "semantic_hash": "cf50702a980094ced014767541675220"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\_archive\\main_complex_backup.cpp": {
+    "mtime": 1777449567.562,
+    "ast_hash": "9f250608053bfe5f3939e669ecd8907b",
+    "semantic_hash": "9f250608053bfe5f3939e669ecd8907b"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\_archive\\read_chunk4.py": {
+    "mtime": 1779342721.2217436,
+    "ast_hash": "45705d28933324610226ae75f5c03962",
+    "semantic_hash": "45705d28933324610226ae75f5c03962"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\_archive\\uart_loopback.v": {
+    "mtime": 1776770820.092,
+    "ast_hash": "a256c30a2003f668deaa2598dd28f4cc",
+    "semantic_hash": "a256c30a2003f668deaa2598dd28f4cc"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\INSTRUCTIONS.md": {
+    "mtime": 1779358128.5258422,
+    "ast_hash": "12c617c6967c9dae6cc73fa86f108d01",
+    "semantic_hash": "12c617c6967c9dae6cc73fa86f108d01"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\QUICK_START.md": {
+    "mtime": 1779358118.6344814,
+    "ast_hash": "3abe053365db05bb681b838da12b3616",
+    "semantic_hash": "3abe053365db05bb681b838da12b3616"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\README.md": {
+    "mtime": 1779358141.5204313,
+    "ast_hash": "215c1d21f688b4cae0315d2f97b0b3c3",
+    "semantic_hash": "215c1d21f688b4cae0315d2f97b0b3c3"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\TEMPLATE_GUIDE.md": {
+    "mtime": 1779358150.8167648,
+    "ast_hash": "29eb25dfb31f8c5d88049e2f49bb6f89",
+    "semantic_hash": "29eb25dfb31f8c5d88049e2f49bb6f89"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\USAGE.md": {
+    "mtime": 1779358161.9025214,
+    "ast_hash": "1db9bde6c9bf83308095f25c75c5bcb5",
+    "semantic_hash": "1db9bde6c9bf83308095f25c75c5bcb5"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\scripts\\dfx_runtime.txt": {
+    "mtime": 1772601830.885,
+    "ast_hash": "1c82e7c400574e4177a91c572966819d",
+    "semantic_hash": "1c82e7c400574e4177a91c572966819d"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\testbench\\README.md": {
+    "mtime": 1771252556.644,
+    "ast_hash": "09f2c2165b03e91b4af6be55667f70eb",
+    "semantic_hash": "09f2c2165b03e91b4af6be55667f70eb"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\_archive\\chunk20_prompt.txt": {
+    "mtime": 1779342723.529829,
+    "ast_hash": "76445ba0de3bfc5a4bca54f98194897a",
+    "semantic_hash": "76445ba0de3bfc5a4bca54f98194897a"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\as606_controller.v": {
+    "mtime": 1779445901.4762843,
+    "ast_hash": "cc0bf132311378852dc5f8301a8ee2e3",
+    "semantic_hash": "cc0bf132311378852dc5f8301a8ee2e3"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\hx8357d_controller.v": {
+    "mtime": 1779452235.0728664,
+    "ast_hash": "6dbe6e691c8380ae847842f485c5d446",
+    "semantic_hash": "6dbe6e691c8380ae847842f485c5d446"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\hx8357d_init.v": {
+    "mtime": 1779448423.523394,
+    "ast_hash": "2d63160f17c7ceed1bc0b775529de712",
+    "semantic_hash": "2d63160f17c7ceed1bc0b775529de712"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\spi_master.v": {
+    "mtime": 1779446200.2439723,
+    "ast_hash": "06ceb6d5254884cf4cdb786517946b6b",
+    "semantic_hash": "06ceb6d5254884cf4cdb786517946b6b"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\uart.v": {
+    "mtime": 1779445872.4909768,
+    "ast_hash": "139382ba3409b8a6f7a30ad345fd4516",
+    "semantic_hash": "139382ba3409b8a6f7a30ad345fd4516"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\testbench\\tb_hx8357d_controller.v": {
+    "mtime": 1779448432.5140488,
+    "ast_hash": "7516e3db47f9e6b44950b2200510506c",
+    "semantic_hash": "7516e3db47f9e6b44950b2200510506c"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\testbench\\uart_tb.v": {
+    "mtime": 1779445922.2398887,
+    "ast_hash": "560b6e31d78e0ae9e7127da9b94004b8",
+    "semantic_hash": "560b6e31d78e0ae9e7127da9b94004b8"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\Adafruit_HX8357.cpp": {
+    "mtime": 1779448280.0330899,
+    "ast_hash": "e69cf01683aeda2d1f6c97ccc9bbdbd2",
+    "semantic_hash": "e69cf01683aeda2d1f6c97ccc9bbdbd2"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\Adafruit_HX8357.h": {
+    "mtime": 1779448299.8568683,
+    "ast_hash": "81d5351ba921a9cf9383371c07497b6c",
+    "semantic_hash": "81d5351ba921a9cf9383371c07497b6c"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\filter_detect.py": {
+    "mtime": 1779447120.3125136,
+    "ast_hash": "2ea95c1e0dbbd26de0354fcd3d26c4d3",
+    "semantic_hash": "2ea95c1e0dbbd26de0354fcd3d26c4d3"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\get_stats.py": {
+    "mtime": 1779447057.9833112,
+    "ast_hash": "8573a3f0587fb1c51131185b44e9dcb1",
+    "semantic_hash": "8573a3f0587fb1c51131185b44e9dcb1"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\scripts\\convert_init.py": {
+    "mtime": 1779448384.1098921,
+    "ast_hash": "946def568e14f133f518b6dfc2ae79cd",
+    "semantic_hash": "946def568e14f133f518b6dfc2ae79cd"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\scripts\\write_init.py": {
+    "mtime": 1779448419.043222,
+    "ast_hash": "5ceb2fd4f371490a0aee6326656a7d3a",
+    "semantic_hash": "5ceb2fd4f371490a0aee6326656a7d3a"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\bram_framebuffer.v": {
+    "mtime": 1779452142.5402184,
+    "ast_hash": "25a28620b45ca6a4f841c2e12efaf5d9",
+    "semantic_hash": "25a28620b45ca6a4f841c2e12efaf5d9"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\src\\game_of_life.v": {
+    "mtime": 1779452176.71604,
+    "ast_hash": "3f0c33c9946d8a6372307d88df59b383",
+    "semantic_hash": "3f0c33c9946d8a6372307d88df59b383"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\verilog\\testbench\\tb_game_of_life.v": {
+    "mtime": 1779452256.786969,
+    "ast_hash": "32f5f708ccc2f672f3862ba0c85949f3",
+    "semantic_hash": "32f5f708ccc2f672f3862ba0c85949f3"
+  },
+  "C:\\Users\\vince\\Projects\\PRNG\\scripts\\converted.txt": {
+    "mtime": 1779448343.1099484,
+    "ast_hash": "60ecba56dab58f3944152ee3582d21f2",
+    "semantic_hash": "60ecba56dab58f3944152ee3582d21f2"
   }
 }

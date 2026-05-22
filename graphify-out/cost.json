@@ -4,8 +4,25 @@
       "timestamp": "2026-05-21T05:34:06.057068+00:00",
       "input_tokens": 2400,
       "output_tokens": 1100
+    },
+    {
+      "date": "2026-05-22T10:22:16.079969+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 569
+    },
+    {
+      "timestamp": "2026-05-22T10:55:44.871422+00:00",
+      "input_tokens": 5700,
+      "output_tokens": 2300
+    },
+    {
+      "timestamp": "2026-05-22T15:30:53.491968+00:00",
+      "files": 115,
+      "input_tokens": 4200,
+      "output_tokens": 1800
     }
   ],
-  "total_input_tokens": 2400,
-  "total_output_tokens": 1100
+  "total_input_tokens": 12300,
+  "total_output_tokens": 5200
 }

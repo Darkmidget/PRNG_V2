@@ -1,1 +1,83 @@
-{"nodes":[{"id":"03_autocorrelation_analysis_plot","label":"Autocorrelation Analysis Plot","file_type":"image","source_file":"data analysis/pythonscripts/plots/03_autocorrelation_analysis.png","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null},{"id":"autocorrelation_function_acf","label":"Autocorrelation Function (ACF)","file_type":"rationale","source_file":"data analysis/pythonscripts/plots/03_autocorrelation_analysis.png","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null},{"id":"significant_lags_detection","label":"Significant Lags Detection","file_type":"rationale","source_file":"data analysis/pythonscripts/plots/03_autocorrelation_analysis.png","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"03_autocorrelation_analysis_plot","target":"autocorrelation_function_acf","relation":"references","confidence":"INFERRED","confidence_score":0.95,"source_file":"data analysis/pythonscripts/plots/03_autocorrelation_analysis.png","source_location":null,"weight":1.0},{"source":"03_autocorrelation_analysis_plot","target":"significant_lags_detection","relation":"references","confidence":"INFERRED","confidence_score":0.95,"source_file":"data analysis/pythonscripts/plots/03_autocorrelation_analysis.png","source_location":null,"weight":1.0}],"hyperedges":[],"input_tokens":0,"output_tokens":0}
+{
+  "nodes": [
+    {
+      "id": "05_entropy_analysis_png",
+      "label": "05_entropy_analysis.png",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insight_uniform_byte_distribution",
+      "label": "Uniform High vs Low Byte Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insight_consistent_chunk_entropy",
+      "label": "Consistent Entropy per Chunk (~11.6 bits/16 max)",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insight_value_coverage_97_9",
+      "label": "97.9% Value Coverage",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "05_entropy_analysis_png",
+      "target": "insight_uniform_byte_distribution",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis_png",
+      "target": "insight_consistent_chunk_entropy",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis_png",
+      "target": "insight_value_coverage_97_9",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

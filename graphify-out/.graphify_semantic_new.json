@@ -1,0 +1,1633 @@
+{
+  "nodes": [
+    {
+      "id": "Adafruit_HX8357",
+      "label": "Adafruit HX8357",
+      "file_type": "code",
+      "source_file": "Adafruit_HX8357.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Limor Fried/Ladyada",
+      "contributor": null
+    },
+    {
+      "id": "filter_detect",
+      "label": "Filter Detect Script",
+      "file_type": "code",
+      "source_file": "filter_detect.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "get_stats",
+      "label": "Get Stats Script",
+      "file_type": "code",
+      "source_file": "get_stats.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "convert_init",
+      "label": "Convert Init Script",
+      "file_type": "code",
+      "source_file": "scripts/convert_init.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "write_init",
+      "label": "Write Init Script",
+      "file_type": "code",
+      "source_file": "scripts/write_init.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bram_framebuffer",
+      "label": "BRAM Framebuffer",
+      "file_type": "code",
+      "source_file": "verilog/src/bram_framebuffer.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "game_of_life",
+      "label": "Game Of Life Hardware",
+      "file_type": "code",
+      "source_file": "verilog/src/game_of_life.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hx8357d_controller",
+      "label": "HX8357D Controller",
+      "file_type": "code",
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hx8357d_init",
+      "label": "HX8357D Init",
+      "file_type": "code",
+      "source_file": "verilog/src/hx8357d_init.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tb_game_of_life",
+      "label": "Testbench Game Of Life",
+      "file_type": "code",
+      "source_file": "verilog/testbench/tb_game_of_life.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tb_hx8357d_controller",
+      "label": "Testbench HX8357D Controller",
+      "file_type": "code",
+      "source_file": "verilog/testbench/tb_hx8357d_controller.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uart_loopback",
+      "label": "UART Loopback",
+      "file_type": "code",
+      "source_file": "_archive/uart_loopback.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "diagnostic_test",
+      "label": "Diagnostic Test",
+      "file_type": "code",
+      "source_file": "_archive_disabled/diagnostic_test.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "graphify_skill",
+      "label": "Graphify Skill",
+      "file_type": "rationale",
+      "source_file": ".agents/skills/graphify/SKILL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fingerprint_data_collection_guide",
+      "label": "Fingerprint Data Collection Guide",
+      "file_type": "document",
+      "source_file": "esp32_fingerprint/FINGERPRINT_DATA_COLLECTION_GUIDE.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fingerprint_data_analysis",
+      "label": "Fingerprint Data Analysis",
+      "file_type": "document",
+      "source_file": "fingerprints/fingerprint_data_analysis.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "validation_report",
+      "label": "Validation Report",
+      "file_type": "document",
+      "source_file": "fingerprints/validation_report.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "converted_utf8_txt",
+      "label": "Converted Initialization Values",
+      "file_type": "document",
+      "source_file": "scripts/converted_utf8.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "quick_start_guide",
+      "label": "Quick Start Guide",
+      "file_type": "document",
+      "source_file": "verilog/QUICK_START.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "usage_guide",
+      "label": "Usage Guide",
+      "file_type": "document",
+      "source_file": "verilog/USAGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "testbench_readme",
+      "label": "Testbench README",
+      "file_type": "document",
+      "source_file": "verilog/testbench/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "Adafruit_SPITFT",
+      "label": "Adafruit SPITFT",
+      "file_type": "code",
+      "source_file": "Adafruit_HX8357.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "spi_master",
+      "label": "SPI Master",
+      "file_type": "code",
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "verilog_readme",
+      "label": "Verilog README",
+      "file_type": "document",
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "verilog_template_guide",
+      "label": "Template Guide",
+      "file_type": "document",
+      "source_file": "verilog/TEMPLATE_GUIDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cmod_a7_constraints",
+      "label": "CMOD A7 Constraints",
+      "file_type": "code",
+      "source_file": "constraints/cmod_a7.xdc",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "blink_module",
+      "label": "LED Blink Module",
+      "file_type": "code",
+      "source_file": "src/blink.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "build_config",
+      "label": "Build Configuration TCL",
+      "file_type": "code",
+      "source_file": "scripts/build_tools/config.tcl",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "build_script",
+      "label": "Build Script Powershell",
+      "file_type": "code",
+      "source_file": "scripts/build_tools/build.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_project_template",
+      "label": "FPGA Project Template",
+      "file_type": "rationale",
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_distribution_overview_image",
+      "label": "01 Distribution Overview Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "randomness_analysis_distribution",
+      "label": "Randomness Analysis: Uniform Data Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uniform_distribution_metrics",
+      "label": "Uniform Distribution Metrics (Mean: 32744, Skew: -0.0012, Kurtosis: -1.1996)",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "02_test_results_summary_png",
+      "label": "Randomness Test Results Summary Image",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_randomness_testing_results",
+      "label": "Randomness Testing Results",
+      "file_type": "rationale",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "03_autocorrelation_analysis_png",
+      "label": "Autocorrelation Analysis Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png"
+    },
+    {
+      "id": "autocorrelation_metric",
+      "label": "Autocorrelation Function (ACF)",
+      "file_type": "concept"
+    },
+    {
+      "id": "significant_lags_insight",
+      "label": "Observed Significant Lags Exceed Expected (13 vs ~5)",
+      "file_type": "concept"
+    },
+    {
+      "id": "04_bit_level_analysis_png",
+      "label": "04_bit_level_analysis.png",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bit_level_analysis",
+      "label": "Bit-Level Analysis",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_chi_square_test",
+      "label": "Chi-square Test",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bit_pair_correlations",
+      "label": "Bit Pair Correlations",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "05_entropy_analysis_png",
+      "label": "05_entropy_analysis.png",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insight_uniform_byte_distribution",
+      "label": "Uniform High vs Low Byte Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insight_consistent_chunk_entropy",
+      "label": "Consistent Entropy per Chunk (~11.6 bits/16 max)",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insight_value_coverage_97_9",
+      "label": "97.9% Value Coverage",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "04_bit_level_analysis_image",
+      "label": "Bit-Level Analysis Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bit_distribution",
+      "label": "Individual Bit Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_per_bit_chi_square",
+      "label": "Per-Bit Chi-square Test",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_bit_pair_correlations",
+      "label": "Bit Pair Correlations",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "05_entropy_analysis",
+      "label": "Entropy and Information Analysis Plot",
+      "file_type": "image",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "entropy_byte_distribution",
+      "label": "High vs Low Byte Distribution",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "entropy_per_chunk",
+      "label": "Entropy per Chunk",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "frequency_distribution_of_values",
+      "label": "Frequency Distribution of Values",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "value_coverage_analysis",
+      "label": "Value Coverage",
+      "file_type": "rationale",
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "UsbMscDriver_UsbMscDriver",
+      "label": "UsbMscDriver",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/examples/UsbKey/UsbMscDriver.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "BufferedPrint_BufferedPrint",
+      "label": "BufferedPrint",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/BufferedPrint.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "MinimumSerial_MinimumSerial",
+      "label": "MinimumSerial",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/MinimumSerial.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "RingBuf_RingBuf",
+      "label": "RingBuf",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/RingBuf.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "RingBuf_F",
+      "label": "F",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/RingBuf.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdExFat",
+      "label": "SdExFat",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_Fmt",
+      "label": "Fmt",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdFs",
+      "label": "SdFs",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdBase",
+      "label": "SdBase",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdFile",
+      "label": "SdFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_Vol",
+      "label": "Vol",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFat_SdFat32",
+      "label": "SdFat32",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFat.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_constructors",
+      "label": "constructors",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_UsbMscDriver",
+      "label": "UsbMscDriver",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_is",
+      "label": "is",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "SdFatConfig_driver",
+      "label": "driver",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/SdFatConfig.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ArduinoFiles_StreamFile",
+      "label": "StreamFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/ArduinoFiles.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ArduinoFiles_BaseFile",
+      "label": "BaseFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/ArduinoFiles.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ArduinoFiles_PrintFile",
+      "label": "PrintFile",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/ArduinoFiles.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "FsBlockDeviceInterface_FsBlockDeviceInterface",
+      "label": "FsBlockDeviceInterface",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/FsBlockDeviceInterface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "FsCache_FsCache",
+      "label": "FsCache",
+      "file_type": "code",
+      "source_file": ".pio/libdeps/feather_m4/SdFat - Adafruit Fork/src/common/FsCache.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "diagnostic_test_cpp_main",
+      "label": "Diagnostic Test Main",
+      "file_type": "code",
+      "source_file": "src/diagnostic_test.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_diagnostic_cpp_run",
+      "label": "FPGA Diagnostic Run",
+      "file_type": "code",
+      "source_file": "src/fpga_diagnostic.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fpga_interface_h_interface",
+      "label": "FPGA Interface",
+      "file_type": "code",
+      "source_file": "src/fpga_interface.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "monitor_serial_py_monitor",
+      "label": "Serial Monitor",
+      "file_type": "code",
+      "source_file": "scripts/monitor_serial.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uart_loopback_v_module",
+      "label": "UART Loopback Module",
+      "file_type": "code",
+      "source_file": "verilog/uart_loopback.v",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "collect_random_data_ps1_script",
+      "label": "Collect Random Data Script",
+      "file_type": "code",
+      "source_file": "scripts/collect_random_data.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "test_a1_a4_serial_ps1_script",
+      "label": "Test A1 A4 Serial Script",
+      "file_type": "code",
+      "source_file": "scripts/test-a1-a4-serial.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "prng_testing_concept",
+      "label": "PRNG Diagnostics and UART Testing",
+      "file_type": "rationale",
+      "source_file": "scripts/run_diagnostic.ps1",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Scripts and code designed to run diagnostics on the PRNG via UART interface."
+    },
+    {
+      "id": "build_and_deploy_instructions",
+      "label": "FPGA Build & Deployment Instructions",
+      "file_type": "document",
+      "source_file": "docs/BUILD_AND_DEPLOY.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cheatsheet",
+      "label": "Cheatsheet",
+      "file_type": "document",
+      "source_file": "docs/CHEATSHEET.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "collection_instructions",
+      "label": "Collection Instructions",
+      "file_type": "document",
+      "source_file": "docs/COLLECTION_INSTRUCTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "completion_report",
+      "label": "Completion Report",
+      "file_type": "document",
+      "source_file": "docs/COMPLETION_REPORT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fingerprint_sensor",
+      "label": "Fingerprint Sensor README",
+      "file_type": "document",
+      "source_file": "docs/FINGERPRINT_SENSOR_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "implementation",
+      "label": "Implementation Details",
+      "file_type": "document",
+      "source_file": "docs/IMPLEMENTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "quick_start",
+      "label": "Quick Start Guide",
+      "file_type": "document",
+      "source_file": "docs/QUICK_START.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme2",
+      "label": "Readme2",
+      "file_type": "document",
+      "source_file": "docs/Readme2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_simple",
+      "label": "README Simple",
+      "file_type": "document",
+      "source_file": "docs/README_SIMPLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "streamline_summary",
+      "label": "Streamline Summary",
+      "file_type": "document",
+      "source_file": "docs/STREAMLINE_SUMMARY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "test_results",
+      "label": "Test Results",
+      "file_type": "document",
+      "source_file": "docs/TEST_RESULTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "workflow",
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "docs/WORKFLOW.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "convert_init",
+      "target": "write_init",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/convert_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "write_init",
+      "target": "hx8357d_init",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/write_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "convert_init",
+      "target": "Adafruit_HX8357",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/convert_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "game_of_life",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "bram_framebuffer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "spi_master",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "hx8357d_controller",
+      "target": "hx8357d_init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/src/hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tb_game_of_life",
+      "target": "game_of_life",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/testbench/tb_game_of_life.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tb_game_of_life",
+      "target": "bram_framebuffer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/testbench/tb_game_of_life.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tb_hx8357d_controller",
+      "target": "hx8357d_controller",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/testbench/tb_hx8357d_controller.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "game_of_life",
+      "target": "bram_framebuffer",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/src/game_of_life.v",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "diagnostic_test",
+      "target": "game_of_life",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "_archive_disabled/diagnostic_test.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "Adafruit_HX8357",
+      "target": "Adafruit_SPITFT",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Adafruit_HX8357.h",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fingerprint_data_collection_guide",
+      "target": "fingerprint_data_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "esp32_fingerprint/FINGERPRINT_DATA_COLLECTION_GUIDE.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fingerprint_data_analysis",
+      "target": "validation_report",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "fingerprints/fingerprint_data_analysis.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "quick_start_guide",
+      "target": "usage_guide",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "verilog/QUICK_START.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "write_init",
+      "target": "converted_utf8_txt",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/write_init.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "verilog_readme",
+      "target": "fpga_project_template",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "verilog_readme",
+      "target": "verilog_template_guide",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "verilog_readme",
+      "target": "build_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "verilog_readme",
+      "target": "build_script",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "build_script",
+      "target": "build_config",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/build_tools/build.ps1",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "verilog_readme",
+      "target": "cmod_a7_constraints",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "verilog_readme",
+      "target": "blink_module",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "verilog/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_distribution_overview_image",
+      "target": "randomness_analysis_distribution",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_distribution_overview_image",
+      "target": "uniform_distribution_metrics",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/01_distribution_overview.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "02_test_results_summary_png",
+      "target": "concept_randomness_testing_results",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/02_test_results_summary.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "03_autocorrelation_analysis_png",
+      "target": "autocorrelation_metric",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "weight": 1.0
+    },
+    {
+      "source": "03_autocorrelation_analysis_png",
+      "target": "significant_lags_insight",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_png",
+      "target": "concept_bit_level_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_png",
+      "target": "concept_chi_square_test",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_png",
+      "target": "concept_bit_pair_correlations",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis_png",
+      "target": "insight_uniform_byte_distribution",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis_png",
+      "target": "insight_consistent_chunk_entropy",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis_png",
+      "target": "insight_value_coverage_97_9",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_bit_distribution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_per_bit_chi_square",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "04_bit_level_analysis_image",
+      "target": "concept_bit_pair_correlations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "entropy_byte_distribution",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "entropy_per_chunk",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "frequency_distribution_of_values",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "05_entropy_analysis",
+      "target": "value_coverage_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "diagnostic_test_cpp_main",
+      "target": "fpga_diagnostic_cpp_run",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/diagnostic_test.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "fpga_diagnostic_cpp_run",
+      "target": "fpga_interface_h_interface",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/fpga_diagnostic.cpp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "monitor_serial_py_monitor",
+      "target": "uart_loopback_v_module",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/monitor_serial.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "collect_random_data_ps1_script",
+      "target": "prng_testing_concept",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/collect_random_data.ps1",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "test_a1_a4_serial_ps1_script",
+      "target": "prng_testing_concept",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/test-a1-a4-serial.ps1",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "build_and_deploy_instructions",
+      "target": "collection_instructions",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/BUILD_AND_DEPLOY.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "implementation",
+      "target": "test_results",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/IMPLEMENTATION.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hx8357d_init_group",
+      "label": "HX8357D Initialization Translation",
+      "nodes": [
+        "Adafruit_HX8357",
+        "convert_init",
+        "write_init",
+        "hx8357d_init",
+        "converted_utf8_txt"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/write_init.py"
+    },
+    {
+      "id": "game_of_life_hardware",
+      "label": "Game of Life Hardware Implementation",
+      "nodes": [
+        "hx8357d_controller",
+        "game_of_life",
+        "bram_framebuffer"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "verilog/src/hx8357d_controller.v"
+    },
+    {
+      "id": "fingerprint_analysis",
+      "label": "Fingerprint Data Validation",
+      "nodes": [
+        "fingerprint_data_collection_guide",
+        "fingerprint_data_analysis",
+        "validation_report"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "fingerprints/fingerprint_data_analysis.txt"
+    },
+    {
+      "id": "fpga_build_system",
+      "label": "FPGA Build System",
+      "nodes": [
+        "build_config",
+        "build_script",
+        "verilog_readme"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "verilog/README.md"
+    },
+    {
+      "id": "bit_level_metrics",
+      "label": "Bit-Level Metrics",
+      "nodes": [
+        "concept_bit_distribution",
+        "concept_per_bit_chi_square",
+        "concept_bit_pair_correlations"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/04_bit_level_analysis.png"
+    },
+    {
+      "id": "entropy_analysis_subplots",
+      "label": "Entropy Analysis Metrics",
+      "nodes": [
+        "entropy_byte_distribution",
+        "entropy_per_chunk",
+        "frequency_distribution_of_values",
+        "value_coverage_analysis"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "data analysis/pythonscripts/plots/05_entropy_analysis.png"
+    },
+    {
+      "id": "uart_testing_suite",
+      "label": "UART Testing Suite",
+      "nodes": [
+        "monitor_serial_py_monitor",
+        "uart_loopback_v_module",
+        "prng_testing_concept",
+        "test_a1_a4_serial_ps1_script"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/run_diagnostic.ps1"
+    }
+  ],
+  "input_tokens": 4200,
+  "output_tokens": 1800
+}
