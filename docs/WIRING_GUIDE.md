@@ -1,47 +1,49 @@
 # Game of Life Hardware Wiring Guide
 
-This guide details the physical wiring needed to run the integrated Game of Life workflow on the CMOD A7-35T FPGA.
+This guide details the physical wiring needed to run the fully integrated, standalone Game of Life workflow on the Digilent CMOD A7-35T FPGA co-processor.
 
-## Required Hardware
-- CMOD A7-35T FPGA
-- AS606 Thumbprint Sensor (UART interface)
-- Adafruit 3.5" TFT HX8357D Display (SPI interface)
-- 1x Push Button (for triggering the scan)
+---
 
-## Pin Assignments
+## 🛠️ Required Hardware
+1. **Digilent CMOD A7-35T FPGA** (equipped with the Xilinx Artix-7 chip)
+2. **Adafruit 3.5" TFT HX8357D Display** (SPI interface version)
+3. **1x Momentary Push Button** (active-high trigger for seed capturing)
+4. **Jumper Wires & Breadboard**
 
-Based on the unified constraints file (`verilog/constraints/CMODA7_Constrain.xdc`), ensure the following physical connections:
+> [!NOTE]
+> The AS606 fingerprint sensor and the Adafruit Feather M4 Express microcontroller have been bypassed. The simulation, physical random number generation, display initialization, and SPI driving are managed **entirely** inside the FPGA fabric.
 
-### CMOD A7 Board Basics
-| FPGA Component | Pin / Port | Description |
-| --- | --- | --- |
-| `sysclk` | **L17** | 12 MHz Onboard Oscillator |
-| `btn[0]` | **A18** | Push button to trigger fingerprint scan |
-| `led[0]` | **A17** | Status LED: Waiting for button press |
-| `led[1]` | **C16** | Status LED: Game of Life running |
+---
 
-### AS606 Thumbprint Sensor (UART)
-| Sensor Pin | FPGA Port | FPGA Pin Name | Physical DIP Pin | Description |
-| --- | --- | --- | --- | --- |
-| **TX** | `as606_rx` | **V19** | DIP Pin 23 | Sensor Transmit -> FPGA Receive |
-| **RX** | `as606_tx` | **W19** | DIP Pin 22 | Sensor Receive <- FPGA Transmit |
-| **VCC** | N/A | **VU** / **3.3V**| N/A | Ensure voltage compatibility (3.3V recommended) |
-| **GND** | N/A | **GND** | N/A | Common Ground |
+## 🔌 Pin Assignments & Mapping
 
-### HX8357D TFT Display (SPI)
-| Display Pin | FPGA Port | FPGA Pin Name | Physical DIP Pin / Header | Description |
-| --- | --- | --- | --- | --- |
-| **CS** | `tft_cs` | **M3** | pio[01] | SPI Chip Select (Active Low) |
-| **D/C** | `tft_dc` | **L3** | pio[02] | Data / Command Selection |
-| **RST** | `tft_rst` | **A16** | pio[03] | Reset |
-| **SCK** | `tft_sck` | **K3** | pio[04] | SPI Clock |
-| **MOSI** | `tft_mosi`| **C15** | pio[05] | SPI Master Out Slave In |
-| **VCC** | N/A | **3.3V** | N/A | Power (3.3V) |
-| **GND** | N/A | **GND** | N/A | Common Ground |
+Wire your hardware according to the unified constraints file (`CMODA7_Constrain.xdc`) mapped below:
 
-## Workflow Execution Steps
-1. Power on the CMOD A7. LED[0] should light up, indicating the system is waiting.
-2. Press the push button connected to `btn[0]` (A18). 
-3. The AS606 sensor will wait for a finger. Place your finger on the scanner.
-4. Once scanned, the FPGA harvests the scan timing/status to generate a dynamic PRNG seed.
-5. The display initializes, LED[1] lights up, and the Game of Life begins with the custom seed!
+### 1. Board Status and Inputs
+| FPGA Pin Name | Physical DIP Pin | Component | Connection Type | Description |
+|---|---|---|---|---|
+| **L17** | Board Oscillator | Master Clock | Onboard | 12 MHz clock source driving all synchronous logic |
+| **A18** | DIP Pin 24 / BTN0 | Push Button | External Input | Connect to one terminal of the push button. Wire the other terminal to **3.3V** with a **10kΩ pull-down resistor** to GND. |
+| **A17** | Onboard LED0 | LED indicator | Onboard | Status Indicator: ON when waiting for button press |
+| **C16** | Onboard LED1 | LED indicator | Onboard | Status Indicator: ON when Game of Life is active |
+
+### 2. Adafruit 3.5" TFT HX8357D Display Interface
+Connect the SPI pins of the Adafruit display directly to the CMOD A7 breakout pins:
+
+| FPGA Port | FPGA Pin Name | Physical DIP Pin | Display Pin | Connection Description |
+|---|---|---|---|---|
+| `tft_cs` | **M3** | DIP Pin 1 | **CS** | SPI Chip Select (Active Low) |
+| `tft_dc` | **L3** | DIP Pin 2 | **D/C** | Data / Command Selection |
+| `tft_rst` | **A16** | DIP Pin 3 | **RST** | TFT Physical Hardware Reset |
+| `tft_sck` | **K3** | DIP Pin 4 | **CLK** / **SCK** | SPI Serial Clock |
+| `tft_mosi` | **C15** | DIP Pin 5 | **MOSI** | SPI Master Out Slave In |
+| **3.3V** | **3.3V** | Pin 3.3V | **VCC** | Power (3.3V) |
+| **GND** | **GND** | GND Pin | **GND** | Common ground reference |
+
+---
+
+## 🚀 Execution Workflow
+Once wired and programmed:
+1. **Power up the board** (via USB). **LED[0]** lights up instantly, and the display remains blank/white (held in reset).
+2. **Press the push button** connected to **btn[0]** (A18).
+3. The FPGA immediately harvests high-entropy seed data from the physical Ring Oscillator, launches the SPI ROM initialization sequence (the screen turns black), lights up **LED[1]**, and starts rendering Conway's Game of Life in vibrant **Green** (`16'h07E0`) against a **Black** background.

@@ -1,260 +1,73 @@
-# FPGA Project Template
+# Standalone FPGA Conway's Game of Life & Display Driver
 
-A reusable, configurable template for FPGA development with Verilog, Xilinx Vivado, and VS Code. Designed for CMOD A7 but easily adaptable to other boards.
+This directory contains the Verilog hardware description code, pin constraints, simulation testbenches, and build scripts for the fully integrated Conway's Game of Life simulation and physical SPI TFT display controller.
 
-## ✨ Features
-
-- **🎯 Centralized Configuration**: Single `config.tcl` file to configure all project settings
-- **🤖 Automated Build System**: PowerShell and TCL scripts for synthesis, implementation, and programming
-- **📦 Multi-Board Support**: Easy switching between FPGA boards
-- **🔧 VS Code Integration**: Tasks for one-click builds and programming
-- **📚 Example Projects**: LED blinker, switch display, and reaction game included
-
-## 📁 Project Structure
-
-```
-.
-├── .github/
-│   └── copilot-instructions.md    # GitHub Copilot instructions
-├── .vscode/
-│   ├── extensions.json             # Recommended VS Code extensions
-│   ├── settings.json               # Workspace settings
-│   └── tasks.json                  # Build tasks
-├── src/
-│   └── blink.v                     # Example: LED blink module
-├── constraints/
-│   └── cmod_a7.xdc                 # Pin constraints for CMOD A7
-├── testbench/
-│   └── (simulation testbenches)
-├── scripts/
-│   ├── build_tools/
-│   │   ├── config.tcl              # ⚙️ PROJECT CONFIGURATION (edit this!)
-│   │   ├── build.tcl               # Vivado synthesis & implementation
-│   │   ├── program.tcl             # FPGA programming script
-│   │   └── build.ps1               # PowerShell automation script
-│   └── deployment/
-│       ├── deploy.ps1              # Deployment script
-│       └── deploy.bat              # Deployment batch script
-├── build/                          # Generated artifacts (git-ignored)
-├── .gitignore
-├── TEMPLATE_GUIDE.md               # Template usage guide
-└── README.md
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-1. **Xilinx Vivado ML Edition** (2023.1 or later)
-   - Download from [Xilinx website](https://www.xilinx.com/support/download.html)
-   - Install with CMOD A7 board support
-
-2. **VS Code Extensions** (Auto-recommended)
-   - **mshr-h.veriloghdl** - Verilog HDL/SystemVerilog syntax highlighting
-   - **teros-technology.teroshdl** - Advanced HDL support, linting, and documentation
-
-3. **CMOD A7 Board** (or compatible)
-   - Default: `xc7a35tcpg236-1`
-   - Connect via USB (provides both power and JTAG)
-
-### Installation
-
-1. Clone or download this project
-2. Open the folder in VS Code
-3. Install recommended extensions when prompted
-4. **Configure your project** by editing `scripts/build_tools/config.tcl`:
-   ```tcl
-   set PROJECT_NAME "my_project"
-   set TOP_MODULE "my_top_module"
-   set SOURCE_FILES [list "my_top_module.v"]
-   ```
-5. Update Vivado path in `scripts/build_tools/build.ps1` if needed (default: `C:\Xilinx\Vivado\2023.1\bin\vivado.bat`)
-
-> 📖 See [TEMPLATE_GUIDE.md](TEMPLATE_GUIDE.md) for detailed configuration options
-
-## 🔧 Development Workflow
-
-### Option 1: Using VS Code Tasks (Recommended)
-
-1. **Build the design:**
-   - Press `Ctrl+Shift+B` or run task: `Terminal > Run Build Task`
-   - Builds synthesis, implementation, and generates bitstream
-
-2. **Program the FPGA:**
-   - Press `Ctrl+Shift+P` → `Tasks: Run Task` → `Program FPGA`
-   - Programs the connected CMOD A7 board
-
-3. **Build and Program:**
-   - Run task: `Build and Program FPGA`
-   - Does both in one step
-
-4. **Clean build artifacts:**
-   - Run task: `Clean Build`
-
-### Option 2: Using PowerShell Script
-
-```powershell
-# Build only
-.\scripts\build_tools\build.ps1 -Action build
-
-# Program only (requires existing build)
-.\scripts\build_tools\build.ps1 -Action program
-
-# Build and program
-.\scripts\build_tools\build.ps1 -Action all
-
-# Clean build directory
-.\scripts\build_tools\build.ps1 -Action clean
-
-# Specify custom Vivado path
-.\scripts\build_tools\build.ps1 -Action build -VivadoPath "C:\Xilinx\Vivado\2023.2\bin\vivado.bat"
-```
-
-### Option 3: Direct Vivado Commands
-
-```powershell
-# Run synthesis and implementation
-vivado -mode batch -source scripts/build_tools/build.tcl
-
-# Program FPGA
-vivado -mode batch -source scripts/build_tools/program.tcl
-```
-
-## 📝 Writing Verilog Code
-
-### Coding Guidelines
-
-- Follow **Verilog-2001** standard
-- Use **non-blocking assignments** (`<=`) for sequential logic
-- Use **blocking assignments** (`=`) for combinational logic
-- Add meaningful comments
-- Keep modules focused and reusable
-
-### Example: LED Blink Module
-
-The included [src/blink.v](src/blink.v) demonstrates:
-- Clock divider for 12MHz input clock
-- Simple counter-based state machine
-- Active-low reset handling
-- LED output control
-
-### Starting a New Project
-
-1. **Edit `scripts/build_tools/config.tcl`** (this is the ONLY file you need to edit!):
-   ```tcl
-   set PROJECT_NAME "my_new_project"
-   set TOP_MODULE "my_top_module"
-   set SOURCE_FILES [list "my_top_module.v"]
-   # Or use all .v files: set SOURCE_FILES "*.v"
-   ```
-
-2. Create `.v` files in `src/` directory
-
-3. Add pin constraints in `constraints/` directory
-
-4. Build and program using the workflow below
-
-> 💡 **No need to edit build scripts!** All configuration is centralized in `config.tcl`
-
-## 🔌 CMOD A7 Pin Mapping
-
-Key pins configured in [constraints/cmod_a7.xdc](constraints/cmod_a7.xdc):
-
-| Signal | Pin  | Description           |
-|--------|------|-----------------------|
-| clk    | L17  | 12 MHz system clock   |
-| rst_n  | A18  | Button 0 (reset)      |
-| led    | A17  | RGB LED (blue channel)|
-
-See constraint file for complete pinout including:
-- RGB LED channels (R, G, B)
-- Buttons (BTN0, BTN1)
-- Pmod header JA pins
-
-## 🧪 Simulation & Testing
-
-Create testbenches in `testbench/` directory:
-
-```verilog
-`timescale 1ns / 1ps
-
-module blink_tb;
-    reg clk, rst_n;
-    wire led;
-    
-    blink uut (
-        .clk(clk),
-        .rst_n(rst_n),
-        .led(led)
-    );
-    
-    initial begin
-        clk = 0;
-        forever #41.67 clk = ~clk;  // 12MHz
-    end
-    
-    initial begin
-        rst_n = 0;
-        #100 rst_n = 1;
-        #100000 $finish;
-    end
-endmodule
-```
-
-## 📊 Generated Reports
-
-After building, find reports in `build/`:
-- `timing_summary.rpt` - Timing analysis
-- `utilization.rpt` - Resource utilization
-- `power.rpt` - Power estimation
-
-## 🛠️ Troubleshooting
-
-### Vivado Not Found
-Update the path in `scripts/build_tools/build.ps1`:
-```powershell
-$VivadoPath = "C:\Xilinx\Vivado\YOUR_VERSION\bin\vivado.bat"
-```
-
-### Board Not Detected
-1. Install Xilinx USB Cable drivers
-2. Check Device Manager for "Digilent USB Device"
-3. Try different USB port/cable
-
-### Synthesis Errors
-- Check Verilog syntax
-- Verify module names match between files
-- Review `build/*.log` files
-
-### Timing Violations
-- Check `timing_summary.rpt`
-- Add timing constraints in XDC file
-- Optimize critical paths
-
-## 🎓 Using This Template
-
-See **[TEMPLATE_GUIDE.md](TEMPLATE_GUIDE.md)** for comprehensive documentation on:
-- Configuration options
-- Example project setups
-- Multi-board support
-- Troubleshooting
-
-## 📚 Resources
-
-- [CMOD A7 Reference Manual](https://digilent.com/reference/programmable-logic/cmod-a7/reference-manual)
-- [Vivado Design Suite User Guide](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2023_2/ug893-vivado-ide.pdf)
-- [Verilog Quick Reference](https://web.stanford.edu/class/ee183/handouts_win2003/VerilogQuickRef.pdf)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Free to use for educational and commercial purposes.
-
-## 🤝 Contributing
-
-Feel free to submit issues, fork the repository, and create pull requests for improvements.
+The system runs entirely standalone on a Digilent CMOD A7-35T FPGA board.
 
 ---
 
-**Made for SUTD Engineering Product Development Digital Systems Lab**
+## 📁 Source Modules Overview
+
+All modules are located in the [src/](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src) directory:
+
+1. **[fpga_main.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/fpga_main.v)**
+   - Top-level master controller module.
+   - Houses the central FSM (`S_WAIT`, `S_GOL`) that controls system state.
+   - Debounces physical button inputs and routes startup signals to status LEDs.
+2. **[ring_osc.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/ring_osc.v)**
+   - Hardware entropy harvester and PRNG source.
+   - Implements a physical ring oscillator to feed a non-linear LFSR sequence, providing the 16-bit random seed.
+3. **[hx8357d_controller.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/hx8357d_controller.v)**
+   - Display coordinator and frame rendering controller.
+   - Manages screen startup delays, issues data commands over SPI, and reads cell states from BRAM memory buffers.
+   - Active cells are rendered in vibrant RGB565 **Green** (`16'h07E0`), and inactive cells are drawn in **Black** (`16'h0000`) on the 320x480 resolution screen.
+4. **[hx8357d_init.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/hx8357d_init.v)**
+   - Hardware ROM sequence that compiles display-driver configuration commands, enabling SPI screen startup.
+5. **[game_of_life.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/game_of_life.v)**
+   - Conway's Game of Life processor. 
+   - Reads active cell neighborhoods from the active ping-pong BRAM buffer and writes updated cell generations into the standby BRAM buffer, using wrap-around toroidal limits.
+6. **[bram_framebuffer.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/bram_framebuffer.v)**
+   - Ping-pong FPGA block RAM framebuffers, storing and buffering pixel/cell matrices for display reads.
+7. **[spi_master.v](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/src/spi_master.v)**
+   - Custom hardware SPI transmitter module.
+
+---
+
+## 🛠️ Build and Deployment Instructions
+
+Ensure Xilinx Vivado is installed and the Digilent board files are configured.
+
+### Quick Deployment
+To compile the bitstream, run synthesis/implementation, and flash the CMOD A7 FPGA persistently over JTAG, execute the PowerShell script:
+```powershell
+.\scripts\deployment\deploy.ps1
+```
+Or simply double-click the batch file:
+```cmd
+.\scripts\deployment\deploy.bat
+```
+
+### Manual CLI Execution
+If you prefer running Vivado batch scripts directly:
+```powershell
+# Synthesize and implement design
+vivado -mode batch -source scripts/build_tools/build.tcl
+
+# Program the FPGA SRAM
+vivado -mode batch -source scripts/build_tools/program.tcl
+```
+
+---
+
+## 🧪 Simulation and Verification
+
+The [testbench/](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/verilog/testbench) directory contains verification benches to validate the simulation and graphics controller logic before physical deployment:
+
+- **`tb_game_of_life.v`**: Simulates cellular automaton generations and verifies active-cell survival rules.
+- **`tb_hx8357d_controller.v`**: Simulates the physical SPI signals (`SCK`, `MOSI`, `CS`, `DC`) and verifies SPI transaction timing.
+
+To run tests and compile waveforms, run the test runner script:
+```powershell
+.\run_tests.ps1
+```
+You can inspect the compiled simulation files using **Vivado Simulator (xsim)** or dump signals into waveform viewers.

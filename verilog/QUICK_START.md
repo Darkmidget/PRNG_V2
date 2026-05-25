@@ -1,15 +1,16 @@
-# FPGA Quick Deployment Guide
+# FPGA Game of Life Quick Deployment Guide
 
 ## 🚀 One-Command Deployment
 
-This project now has a streamlined deployment process. Just edit your Verilog file and run one command!
+This project features a fully automated deployment script that compiles the Verilog code, performs physical synthesis, runs placement and routing, and programs the FPGA board persistently.
 
 ### Prerequisites
-- Vivado installed (2022.2 or newer)
-- CMOD A7 FPGA connected via USB
-- Driver installed
+- **Xilinx Vivado** (2022.2 or newer) installed.
+- **Digilent CMOD A7-35T FPGA** connected to the host via USB.
+- USB serial drivers installed.
 
 ### Quick Start
+To program your CMOD A7 with the Game of Life co-processor:
 
 **Method 1: PowerShell (Recommended)**
 ```powershell
@@ -17,181 +18,72 @@ This project now has a streamlined deployment process. Just edit your Verilog fi
 ```
 
 **Method 2: Double-click**
-- Double-click `scripts\deployment\deploy.bat` in Windows Explorer
-
-**Method 3: From VS Code Terminal**
-```powershell
-cd verilog/FPGA-Vivado-Verilog-VS-code-Project-Template
-.\scripts\deployment\deploy.ps1
-```
-
-### What It Does
-The `deploy.ps1` script automatically:
-1. ✓ Finds and configures Vivado (no PATH setup needed!)
-2. ✓ Cleans previous build artifacts
-3. ✓ Synthesizes your design
-4. ✓ Implements and generates bitstream
-5. ✓ Programs your FPGA
-6. ✓ Verifies success
-
-**Total time: 2-5 minutes**
+- Double-click the file `scripts\deployment\deploy.bat` in Windows Explorer.
 
 ---
 
-## 📝 Typical Workflow
+## 📝 FSM Workflow and Testing
 
-### 1. Edit Your Design
-Edit your Verilog file in `src/`:
-```verilog
-// src/switch_display.v
-module switch_display(
-    input wire clk,
-    input wire [9:0] sw,
-    output reg [7:0] seg,
-    output reg [5:0] hex
-);
-    // Your code here
-endmodule
-```
+Once programmed, the co-processor FSM runs through three distinct states:
 
-### 2. Update Configuration (if needed)
-Only needed if changing top module or constraints:
+### 1. Wait/Idle State (`S_WAIT`)
+- **System Action**: Holds the TFT display screen in active hardware reset.
+- **Indicators**:
+  - The Adafruit 3.5" TFT screen is **completely white**.
+  - Onboard **LED[0]** (A17) is **ON**, indicating the system is waiting for user activation.
+
+### 2. Seeding State
+- **Trigger**: Press the push button connected to **btn[0]** (A18).
+- **System Action**: Captures a high-entropy 16-bit random seed from the physical Ring Oscillator on the FPGA.
+- **Status Change**: LED[0] turns **OFF**, and the master FSM transitions to `S_GOL`.
+
+### 3. Conway's Game of Life State (`S_GOL`)
+- **System Action**: Releases display reset, runs SPI register initialization ROM, and starts the simulation.
+- **Rendering**:
+  - Screen background is **Black** (`16'h0000`).
+  - Active Conway cells are drawn in vibrant **Green** (`16'h07E0`).
+- **Indicators**:
+  - Onboard **LED[1]** (C16) turns **ON** once display initialization completes (`disp_ready`), indicating the co-processor simulation is running actively.
+
+---
+
+## 📁 Source & Constraints Configuration
+
+If you modify structural interfaces or add custom constraints:
+
+### Centralized Config File
+Edit the project configuration in `scripts/build_tools/config.tcl`:
 ```tcl
-# scripts/build_tools/config.tcl
-set TOP_MODULE "switch_display"
-set SOURCE_FILES [list "switch_display.v"]
-set CONSTRAINT_FILES [list "DSL_Starter_Kit.xdc"]
+set PROJECT_NAME "cmod_a7_project"
+set TOP_MODULE "fpga_main"
+set SOURCE_FILES [list \
+    "fpga_main.v" \
+    "ring_osc.v" \
+    "hx8357d_controller.v" \
+    "hx8357d_init.v" \
+    "game_of_life.v" \
+    "bram_framebuffer.v" \
+    "spi_master.v" \
+    "as606_controller.v" \
+    "uart.v" \
+]
+set CONSTRAINT_FILES [list "CMODA7_Constrain.xdc"]
 ```
-
-### 3. Deploy!
-```powershell
-.\scripts\deployment\deploy.ps1
-```
-
-That's it! Your FPGA is programmed.
 
 ---
 
-## 🎯 Advanced Options
+## 🔧 Advanced Script Options
 
-### Build Only (Don't Program)
+Run automated deployment with custom parameters:
+
+### Build Only (Skip Flashing)
 ```powershell
 .\scripts\deployment\deploy.ps1 -BuildOnly
 ```
-Useful for checking if your design compiles without programming.
+Useful for checking Verilog compilation and checking synthesis reports without writing to the physical board.
 
-### Program Only (Skip Build)
+### Program Only (Skip Re-Synthesis)
 ```powershell
 .\scripts\deployment\deploy.ps1 -SkipBuild
 ```
-Use this if you just want to reprogram with an existing bitstream.
-
-### Manual Build and Program (Old Way)
-If you prefer manual control:
-```powershell
-# Build
-vivado -mode batch -source scripts/build_tools/build.tcl
-
-# Program
-vivado -mode batch -source scripts/build_tools/program.tcl
-```
-
----
-
-## 🔧 Troubleshooting
-
-### "Vivado not found"
-The script searches common installation paths. If your Vivado is elsewhere, edit `deploy.ps1`:
-```powershell
-$vivadoPaths = @(
-    "C:\YourCustomPath\Vivado\bin",
-    # ... existing paths
-)
-```
-
-### "No FPGA detected"
-- Ensure USB cable is connected
-- Check Device Manager for the FPGA
-- Install Xilinx USB driver if needed
-- Close any other programs using the FPGA
-
-### "Build failed"
-- Check syntax errors in your Verilog file
-- Verify pin constraints match your module ports
-- Review the build output for specific errors
-
-### "Permission denied" when running script
-Run once to allow script execution:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
----
-
-## 📁 Project Structure
-
-```
-FPGA-Vivado-Verilog-VS-code-Project-Template/
-│
-├── QUICK_START.md          ← This file
-│
-├── src/
-│   └── switch_display.v    ← Your Verilog source
-│
-├── constraints/
-│   ├── CMODA7_Constrain.xdc
-│   └── DSL_Starter_Kit.xdc ← Pin mappings for DSL kit
-│
-├── scripts/
-│   ├── build_tools/
-│   │   ├── config.tcl      ← Project configuration
-│   │   ├── build.tcl       ← Build automation
-│   │   └── program.tcl     ← Programming automation
-│   └── deployment/
-│       ├── deploy.ps1      ← ONE-COMMAND DEPLOYMENT SCRIPT
-│       └── deploy.bat      ← Double-click version
-│
-└── build/
-    └── cmod_a7_project.runs/
-        └── impl_1/
-            └── switch_display.bit  ← Generated bitstream
-```
-
----
-
-## 💡 Tips
-
-1. **Faster iterations**: Use `-BuildOnly` to check compilation without waiting for programming
-2. **Multiple designs**: Copy entire project folder, change `TOP_MODULE` in config.tcl
-3. **Debug timing**: Check `build/timing_summary.rpt` for timing violations
-4. **Resource usage**: See `build/utilization.rpt` for FPGA resource usage
-
----
-
-## 🎓 Current Design: Switch Display
-
-The current project displays switch values on 7-segment displays:
-- **Input**: 10 switches (sw[9:0]) = values 0-1023
-- **Output**: 4-digit 7-segment display showing decimal value
-- **Clock**: 12 MHz from CMOD A7
-
-Test it:
-1. Program FPGA: `.\deploy.ps1`
-2. Flip switches on your board
-3. See decimal value on displays!
-
----
-
-## 📚 Next Steps
-
-Want to create your own design?
-1. Copy an existing .v file in `src/` as a template
-2. Update `config.tcl` with your module name
-3. Update pin constraints if using different I/O
-4. Run `.\scripts\deployment\deploy.ps1`
-5. Done!
-
----
-
-**Last Updated**: March 2026
-**For**: SUTD DSL Course - Term 6
+Use this to reprogram the JTAG chip instantly using an already generated `.bit` bitstream.
