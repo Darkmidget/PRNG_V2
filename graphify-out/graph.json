@@ -204,7 +204,7 @@
       "file_type": "code",
       "source_file": "filter_detect.py",
       "source_location": "L1",
-      "community": 80,
+      "community": 81,
       "norm_label": "filter_detect.py",
       "id": "filter_detect_py"
     },
@@ -213,7 +213,7 @@
       "file_type": "code",
       "source_file": "get_stats.py",
       "source_location": "L1",
-      "community": 81,
+      "community": 82,
       "norm_label": "get_stats.py",
       "id": "get_stats_py"
     },
@@ -222,7 +222,7 @@
       "file_type": "code",
       "source_file": "query.py",
       "source_location": "L1",
-      "community": 82,
+      "community": 83,
       "norm_label": "query.py",
       "id": "query_py"
     },
@@ -231,7 +231,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/debug_csv.py",
       "source_location": "L1",
-      "community": 83,
+      "community": 84,
       "norm_label": "debug_csv.py",
       "id": "c_users_vince_projects_prng_data_analysis_pythonscripts_debug_csv_py"
     },
@@ -240,7 +240,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/debug_load.py",
       "source_location": "L1",
-      "community": 51,
+      "community": 56,
       "norm_label": "debug_load.py",
       "id": "c_users_vince_projects_prng_data_analysis_pythonscripts_debug_load_py"
     },
@@ -249,7 +249,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/debug_load.py",
       "source_location": "L7",
-      "community": 51,
+      "community": 56,
       "norm_label": "load_random_values_debug()",
       "id": "pythonscripts_debug_load_load_random_values_debug"
     },
@@ -258,7 +258,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/debug_load.py",
       "source_location": "L8",
-      "community": 51,
+      "community": 56,
       "norm_label": "load decimal values with debug output.",
       "id": "pythonscripts_debug_load_rationale_8"
     },
@@ -267,7 +267,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/explore_csv.py",
       "source_location": "L1",
-      "community": 84,
+      "community": 85,
       "norm_label": "explore_csv.py",
       "id": "c_users_vince_projects_prng_data_analysis_pythonscripts_explore_csv_py"
     },
@@ -276,7 +276,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/explore_csv2.py",
       "source_location": "L1",
-      "community": 85,
+      "community": 86,
       "norm_label": "explore_csv2.py",
       "id": "c_users_vince_projects_prng_data_analysis_pythonscripts_explore_csv2_py"
     },
@@ -285,7 +285,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/pandas_load.py",
       "source_location": "L1",
-      "community": 54,
+      "community": 52,
       "norm_label": "pandas_load.py",
       "id": "c_users_vince_projects_prng_data_analysis_pythonscripts_pandas_load_py"
     },
@@ -294,7 +294,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/pandas_load.py",
       "source_location": "L8",
-      "community": 54,
+      "community": 52,
       "norm_label": "load_with_pandas()",
       "id": "pythonscripts_pandas_load_load_with_pandas"
     },
@@ -303,7 +303,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/pandas_load.py",
       "source_location": "L9",
-      "community": 54,
+      "community": 52,
       "norm_label": "try loading with pandas using various encoding options.",
       "id": "pythonscripts_pandas_load_rationale_9"
     },
@@ -726,7 +726,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L1",
-      "community": 46,
+      "community": 47,
       "norm_label": "randomness_results.json",
       "id": "c_users_vince_projects_prng_data_analysis_pythonscripts_randomness_results_json"
     },
@@ -789,7 +789,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L9",
-      "community": 38,
+      "community": 37,
       "norm_label": "frequency",
       "id": "pythonscripts_randomness_results_frequency"
     },
@@ -798,7 +798,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L10",
-      "community": 38,
+      "community": 37,
       "norm_label": "n_ones",
       "id": "pythonscripts_randomness_results_frequency_n_ones"
     },
@@ -807,7 +807,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L11",
-      "community": 38,
+      "community": 37,
       "norm_label": "n_zeros",
       "id": "pythonscripts_randomness_results_frequency_n_zeros"
     },
@@ -816,7 +816,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L12",
-      "community": 38,
+      "community": 37,
       "norm_label": "ones_ratio",
       "id": "pythonscripts_randomness_results_frequency_ones_ratio"
     },
@@ -825,7 +825,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L13",
-      "community": 38,
+      "community": 37,
       "norm_label": "z_score",
       "id": "pythonscripts_randomness_results_frequency_z_score"
     },
@@ -834,7 +834,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L14",
-      "community": 38,
+      "community": 37,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_frequency_p_value"
     },
@@ -843,7 +843,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L15",
-      "community": 38,
+      "community": 37,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_frequency_pass"
     },
@@ -852,7 +852,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L17",
-      "community": 34,
+      "community": 33,
       "norm_label": "entropy",
       "id": "pythonscripts_randomness_results_entropy"
     },
@@ -861,7 +861,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L18",
-      "community": 34,
+      "community": 33,
       "norm_label": "entropy",
       "id": "pythonscripts_randomness_results_entropy_entropy"
     },
@@ -870,7 +870,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L19",
-      "community": 34,
+      "community": 33,
       "norm_label": "max_entropy",
       "id": "pythonscripts_randomness_results_entropy_max_entropy"
     },
@@ -879,7 +879,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L20",
-      "community": 34,
+      "community": 33,
       "norm_label": "normalized_entropy",
       "id": "pythonscripts_randomness_results_entropy_normalized_entropy"
     },
@@ -888,7 +888,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L21",
-      "community": 34,
+      "community": 33,
       "norm_label": "theoretical_max",
       "id": "pythonscripts_randomness_results_entropy_theoretical_max"
     },
@@ -897,7 +897,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L22",
-      "community": 34,
+      "community": 33,
       "norm_label": "ratio_to_theoretical",
       "id": "pythonscripts_randomness_results_entropy_ratio_to_theoretical"
     },
@@ -906,7 +906,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L23",
-      "community": 34,
+      "community": 33,
       "norm_label": "n_unique",
       "id": "pythonscripts_randomness_results_entropy_n_unique"
     },
@@ -915,7 +915,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L24",
-      "community": 34,
+      "community": 33,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_entropy_pass"
     },
@@ -978,7 +978,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L33",
-      "community": 46,
+      "community": 47,
       "norm_label": "ks_test",
       "id": "pythonscripts_randomness_results_ks_test"
     },
@@ -987,7 +987,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L34",
-      "community": 46,
+      "community": 47,
       "norm_label": "statistic",
       "id": "pythonscripts_randomness_results_ks_test_statistic"
     },
@@ -996,7 +996,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L35",
-      "community": 46,
+      "community": 47,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_ks_test_p_value"
     },
@@ -1005,7 +1005,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L36",
-      "community": 46,
+      "community": 47,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_ks_test_pass"
     },
@@ -1014,7 +1014,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L38",
-      "community": 37,
+      "community": 36,
       "norm_label": "autocorrelation",
       "id": "pythonscripts_randomness_results_autocorrelation"
     },
@@ -1023,7 +1023,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L39",
-      "community": 37,
+      "community": 36,
       "norm_label": "max_acf",
       "id": "pythonscripts_randomness_results_autocorrelation_max_acf"
     },
@@ -1032,7 +1032,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L40",
-      "community": 37,
+      "community": 36,
       "norm_label": "significant_lags",
       "id": "pythonscripts_randomness_results_autocorrelation_significant_lags"
     },
@@ -1041,7 +1041,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L41",
-      "community": 37,
+      "community": 36,
       "norm_label": "expected_significant",
       "id": "pythonscripts_randomness_results_autocorrelation_expected_significant"
     },
@@ -1050,7 +1050,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L42",
-      "community": 37,
+      "community": 36,
       "norm_label": "confidence_bound",
       "id": "pythonscripts_randomness_results_autocorrelation_confidence_bound"
     },
@@ -1059,7 +1059,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L43",
-      "community": 37,
+      "community": 36,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_autocorrelation_p_value"
     },
@@ -1068,7 +1068,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L44",
-      "community": 37,
+      "community": 36,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_autocorrelation_pass"
     },
@@ -1077,7 +1077,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L46",
-      "community": 48,
+      "community": 49,
       "norm_label": "serial_test",
       "id": "pythonscripts_randomness_results_serial_test"
     },
@@ -1086,7 +1086,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L47",
-      "community": 48,
+      "community": 49,
       "norm_label": "statistic",
       "id": "pythonscripts_randomness_results_serial_test_statistic"
     },
@@ -1095,7 +1095,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L48",
-      "community": 48,
+      "community": 49,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_serial_test_p_value"
     },
@@ -1104,7 +1104,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L49",
-      "community": 48,
+      "community": 49,
       "norm_label": "n_patterns",
       "id": "pythonscripts_randomness_results_serial_test_n_patterns"
     },
@@ -1113,7 +1113,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L50",
-      "community": 48,
+      "community": 49,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_serial_test_pass"
     },
@@ -1122,7 +1122,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L52",
-      "community": 47,
+      "community": 48,
       "norm_label": "linear_complexity",
       "id": "pythonscripts_randomness_results_linear_complexity"
     },
@@ -1131,7 +1131,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L53",
-      "community": 47,
+      "community": 48,
       "norm_label": "avg_entropy",
       "id": "pythonscripts_randomness_results_linear_complexity_avg_entropy"
     },
@@ -1140,7 +1140,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L54",
-      "community": 47,
+      "community": 48,
       "norm_label": "expected_entropy",
       "id": "pythonscripts_randomness_results_linear_complexity_expected_entropy"
     },
@@ -1149,7 +1149,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L55",
-      "community": 47,
+      "community": 48,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_linear_complexity_p_value"
     },
@@ -1158,7 +1158,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L56",
-      "community": 47,
+      "community": 48,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_linear_complexity_pass"
     },
@@ -1167,7 +1167,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L58",
-      "community": 44,
+      "community": 45,
       "norm_label": "approx_entropy",
       "id": "pythonscripts_randomness_results_approx_entropy"
     },
@@ -1176,7 +1176,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L59",
-      "community": 44,
+      "community": 45,
       "norm_label": "app_entropy",
       "id": "pythonscripts_randomness_results_approx_entropy_app_entropy"
     },
@@ -1185,7 +1185,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L60",
-      "community": 44,
+      "community": 45,
       "norm_label": "expected_entropy",
       "id": "pythonscripts_randomness_results_approx_entropy_expected_entropy"
     },
@@ -1194,7 +1194,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L61",
-      "community": 44,
+      "community": 45,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_approx_entropy_p_value"
     },
@@ -1203,7 +1203,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L62",
-      "community": 44,
+      "community": 45,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_approx_entropy_pass"
     },
@@ -1212,7 +1212,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L64",
-      "community": 45,
+      "community": 46,
       "norm_label": "cumsum_test",
       "id": "pythonscripts_randomness_results_cumsum_test"
     },
@@ -1221,7 +1221,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L65",
-      "community": 45,
+      "community": 46,
       "norm_label": "max_cumsum",
       "id": "pythonscripts_randomness_results_cumsum_test_max_cumsum"
     },
@@ -1230,7 +1230,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L66",
-      "community": 45,
+      "community": 46,
       "norm_label": "p_value",
       "id": "pythonscripts_randomness_results_cumsum_test_p_value"
     },
@@ -1239,7 +1239,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/data analysis/pythonscripts/randomness_results.json",
       "source_location": "L67",
-      "community": 45,
+      "community": 46,
       "norm_label": "pass",
       "id": "pythonscripts_randomness_results_cumsum_test_pass"
     },
@@ -1482,7 +1482,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/esp32_fingerprint/get_thumbprint.py",
       "source_location": "L1",
-      "community": 53,
+      "community": 55,
       "norm_label": "get_thumbprint.py",
       "id": "c_users_vince_projects_prng_esp32_fingerprint_get_thumbprint_py"
     },
@@ -1491,7 +1491,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/esp32_fingerprint/get_thumbprint.py",
       "source_location": "L16",
-      "community": 53,
+      "community": 55,
       "norm_label": "get_fingerprint()",
       "id": "esp32_fingerprint_get_thumbprint_get_fingerprint"
     },
@@ -1500,7 +1500,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/vince/Projects/PRNG/esp32_fingerprint/get_thumbprint.py",
       "source_location": "L17",
-      "community": 53,
+      "community": 55,
       "norm_label": "connect and capture all fingerprints",
       "id": "esp32_fingerprint_get_thumbprint_rationale_17"
     },
@@ -1509,7 +1509,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/esp32_fingerprint/hardware_probe.py",
       "source_location": "L1",
-      "community": 58,
+      "community": 60,
       "norm_label": "hardware_probe.py",
       "id": "c_users_vince_projects_prng_esp32_fingerprint_hardware_probe_py"
     },
@@ -1518,7 +1518,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/esp32_fingerprint/hardware_probe.py",
       "source_location": "L10",
-      "community": 58,
+      "community": 60,
       "norm_label": "main()",
       "id": "esp32_fingerprint_hardware_probe_main"
     },
@@ -1654,7 +1654,7 @@
       "source_file": "featherwing_m4_alt_rxtx/uart_loopback.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 86,
+      "community": 87,
       "norm_label": "uart_loopback.v",
       "id": "featherwing_m4_alt_rxtx_uart_loopback_v"
     },
@@ -1960,7 +1960,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/build.ps1",
       "source_location": "L1",
-      "community": 87,
+      "community": 88,
       "norm_label": "build.ps1",
       "id": "c_users_vince_projects_prng_scripts_build_ps1"
     },
@@ -2005,7 +2005,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/collect_random_data.ps1",
       "source_location": "L1",
-      "community": 88,
+      "community": 89,
       "norm_label": "collect_random_data.ps1",
       "id": "c_users_vince_projects_prng_scripts_collect_random_data_ps1"
     },
@@ -2014,7 +2014,7 @@
       "file_type": "code",
       "source_file": "scripts/convert_init.py",
       "source_location": "L1",
-      "community": 89,
+      "community": 90,
       "norm_label": "convert_init.py",
       "id": "scripts_convert_init_py"
     },
@@ -2023,7 +2023,7 @@
       "file_type": "code",
       "source_file": "scripts/generate_trng_picture_results.py",
       "source_location": "L1",
-      "community": 76,
+      "community": 78,
       "norm_label": "generate_trng_picture_results.py",
       "id": "scripts_generate_trng_picture_results_py"
     },
@@ -2032,7 +2032,7 @@
       "file_type": "code",
       "source_file": "scripts/generate_trng_picture_results.py",
       "source_location": "L3",
-      "community": 76,
+      "community": 78,
       "norm_label": "main()",
       "id": "scripts_generate_trng_picture_results_main"
     },
@@ -2041,7 +2041,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/monitor_serial.py",
       "source_location": "L1",
-      "community": 90,
+      "community": 91,
       "norm_label": "monitor_serial.py",
       "id": "c_users_vince_projects_prng_scripts_monitor_serial_py"
     },
@@ -2050,7 +2050,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/reset_board.py",
       "source_location": "L1",
-      "community": 91,
+      "community": 92,
       "norm_label": "reset_board.py",
       "id": "c_users_vince_projects_prng_scripts_reset_board_py"
     },
@@ -2059,7 +2059,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/run_diagnostic.ps1",
       "source_location": "L1",
-      "community": 92,
+      "community": 93,
       "norm_label": "run_diagnostic.ps1",
       "id": "c_users_vince_projects_prng_scripts_run_diagnostic_ps1"
     },
@@ -2068,7 +2068,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/streaming_stats.py",
       "source_location": "L1",
-      "community": 93,
+      "community": 94,
       "norm_label": "streaming_stats.py",
       "id": "c_users_vince_projects_prng_scripts_streaming_stats_py"
     },
@@ -2077,7 +2077,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/scripts/test-a1-a4-serial.ps1",
       "source_location": "L1",
-      "community": 94,
+      "community": 95,
       "norm_label": "test-a1-a4-serial.ps1",
       "id": "c_users_vince_projects_prng_scripts_test_a1_a4_serial_ps1"
     },
@@ -2086,7 +2086,7 @@
       "file_type": "code",
       "source_file": "scripts/write_init.py",
       "source_location": "L1",
-      "community": 95,
+      "community": 96,
       "norm_label": "write_init.py",
       "id": "scripts_write_init_py"
     },
@@ -2149,7 +2149,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/diagnostic_test.cpp",
       "source_location": "L1",
-      "community": 55,
+      "community": 53,
       "norm_label": "diagnostic_test.cpp",
       "id": "c_users_vince_projects_prng_src_diagnostic_test_cpp"
     },
@@ -2158,7 +2158,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/diagnostic_test.cpp",
       "source_location": "L3",
-      "community": 55,
+      "community": 53,
       "norm_label": "setup()",
       "id": "src_diagnostic_test_setup"
     },
@@ -2167,7 +2167,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/diagnostic_test.cpp",
       "source_location": "L14",
-      "community": 55,
+      "community": 53,
       "norm_label": "loop()",
       "id": "src_diagnostic_test_loop"
     },
@@ -2239,7 +2239,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L1",
-      "community": 32,
+      "community": 34,
       "norm_label": "fpga_diagnostic.cpp",
       "id": "c_users_vince_projects_prng_src_fpga_diagnostic_cpp"
     },
@@ -2248,7 +2248,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L26",
-      "community": 32,
+      "community": 34,
       "norm_label": "sercom0_0_handler()",
       "id": "src_fpga_diagnostic_sercom0_0_handler"
     },
@@ -2257,7 +2257,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L27",
-      "community": 32,
+      "community": 34,
       "norm_label": "sercom0_1_handler()",
       "id": "src_fpga_diagnostic_sercom0_1_handler"
     },
@@ -2266,7 +2266,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L28",
-      "community": 32,
+      "community": 34,
       "norm_label": "sercom0_2_handler()",
       "id": "src_fpga_diagnostic_sercom0_2_handler"
     },
@@ -2275,7 +2275,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L29",
-      "community": 32,
+      "community": 34,
       "norm_label": "sercom0_3_handler()",
       "id": "src_fpga_diagnostic_sercom0_3_handler"
     },
@@ -2284,7 +2284,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L31",
-      "community": 32,
+      "community": 34,
       "norm_label": "setup()",
       "id": "src_fpga_diagnostic_setup"
     },
@@ -2293,7 +2293,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_diagnostic.cpp",
       "source_location": "L187",
-      "community": 32,
+      "community": 34,
       "norm_label": "loop()",
       "id": "src_fpga_diagnostic_loop"
     },
@@ -2347,7 +2347,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_serial.h",
       "source_location": "L1",
-      "community": 36,
+      "community": 38,
       "norm_label": "fpga_serial.h",
       "id": "c_users_vince_projects_prng_src_fpga_serial_h"
     },
@@ -2356,7 +2356,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_serial.h",
       "source_location": "L40",
-      "community": 36,
+      "community": 38,
       "norm_label": "sercom1_0_handler()",
       "id": "src_fpga_serial_sercom1_0_handler"
     },
@@ -2365,7 +2365,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_serial.h",
       "source_location": "L41",
-      "community": 36,
+      "community": 38,
       "norm_label": "sercom1_1_handler()",
       "id": "src_fpga_serial_sercom1_1_handler"
     },
@@ -2374,7 +2374,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_serial.h",
       "source_location": "L42",
-      "community": 36,
+      "community": 38,
       "norm_label": "sercom1_2_handler()",
       "id": "src_fpga_serial_sercom1_2_handler"
     },
@@ -2383,7 +2383,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_serial.h",
       "source_location": "L43",
-      "community": 36,
+      "community": 38,
       "norm_label": "sercom1_3_handler()",
       "id": "src_fpga_serial_sercom1_3_handler"
     },
@@ -2392,7 +2392,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/src/fpga_serial.h",
       "source_location": "L45",
-      "community": 36,
+      "community": 38,
       "norm_label": "fpgaserial()",
       "id": "src_fpga_serial_fpgaserial"
     },
@@ -2419,7 +2419,7 @@
       "file_type": "code",
       "source_file": "src/main.cpp",
       "source_location": "L1",
-      "community": 96,
+      "community": 97,
       "norm_label": "main.cpp",
       "id": "src_main_cpp"
     },
@@ -2428,7 +2428,7 @@
       "file_type": "code",
       "source_file": "verilog/run_tests.ps1",
       "source_location": "L1",
-      "community": 79,
+      "community": 80,
       "norm_label": "run_tests.ps1",
       "id": "verilog_run_tests_ps1"
     },
@@ -2437,7 +2437,7 @@
       "file_type": "code",
       "source_file": "verilog/run_tests.ps1",
       "source_location": "L18",
-      "community": 79,
+      "community": 80,
       "norm_label": "run-test()",
       "id": "verilog_run_tests_run_test"
     },
@@ -2446,7 +2446,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/.vscode/extensions.json",
       "source_location": "L1",
-      "community": 59,
+      "community": 61,
       "norm_label": "extensions.json",
       "id": "c_users_vince_projects_prng_verilog_vscode_extensions_json"
     },
@@ -2455,7 +2455,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/.vscode/extensions.json",
       "source_location": "L2",
-      "community": 59,
+      "community": 61,
       "norm_label": "recommendations",
       "id": "vscode_extensions_recommendations"
     },
@@ -2572,7 +2572,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/.vscode/tasks.json",
       "source_location": "L1",
-      "community": 56,
+      "community": 57,
       "norm_label": "tasks.json",
       "id": "c_users_vince_projects_prng_verilog_vscode_tasks_json"
     },
@@ -2581,7 +2581,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/.vscode/tasks.json",
       "source_location": "L2",
-      "community": 56,
+      "community": 57,
       "norm_label": "version",
       "id": "vscode_tasks_version"
     },
@@ -2590,7 +2590,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/.vscode/tasks.json",
       "source_location": "L3",
-      "community": 56,
+      "community": 57,
       "norm_label": "tasks",
       "id": "vscode_tasks_tasks"
     },
@@ -2599,7 +2599,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/build_tools/auto_build_and_collect.ps1",
       "source_location": "L1",
-      "community": 97,
+      "community": 98,
       "norm_label": "auto_build_and_collect.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_build_tools_auto_build_and_collect_ps1"
     },
@@ -2653,7 +2653,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/data_collection/collect_100k_final.ps1",
       "source_location": "L1",
-      "community": 98,
+      "community": 99,
       "norm_label": "collect_100k_final.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_data_collection_collect_100k_final_ps1"
     },
@@ -2662,7 +2662,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/data_collection/collect_auto_scan.ps1",
       "source_location": "L1",
-      "community": 99,
+      "community": 100,
       "norm_label": "collect_auto_scan.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_data_collection_collect_auto_scan_ps1"
     },
@@ -2671,7 +2671,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/data_collection/collect_com4.ps1",
       "source_location": "L1",
-      "community": 100,
+      "community": 101,
       "norm_label": "collect_com4.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_data_collection_collect_com4_ps1"
     },
@@ -2680,7 +2680,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/data_collection/collect_random_100k.ps1",
       "source_location": "L1",
-      "community": 101,
+      "community": 102,
       "norm_label": "collect_random_100k.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_data_collection_collect_random_100k_ps1"
     },
@@ -2689,7 +2689,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/data_collection/collect_robust.ps1",
       "source_location": "L1",
-      "community": 102,
+      "community": 103,
       "norm_label": "collect_robust.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_data_collection_collect_robust_ps1"
     },
@@ -2698,7 +2698,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/data_collection/collect_ultimate.ps1",
       "source_location": "L1",
-      "community": 103,
+      "community": 104,
       "norm_label": "collect_ultimate.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_data_collection_collect_ultimate_ps1"
     },
@@ -2707,7 +2707,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/deployment/deploy.ps1",
       "source_location": "L1",
-      "community": 104,
+      "community": 105,
       "norm_label": "deploy.ps1",
       "id": "verilog_scripts_deployment_deploy_ps1"
     },
@@ -2716,7 +2716,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/deployment/run_program.ps1",
       "source_location": "L1",
-      "community": 105,
+      "community": 106,
       "norm_label": "run_program.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_deployment_run_program_ps1"
     },
@@ -2725,7 +2725,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/test/test_final.ps1",
       "source_location": "L1",
-      "community": 106,
+      "community": 107,
       "norm_label": "test_final.ps1",
       "id": "verilog_scripts_test_test_final_ps1"
     },
@@ -2734,7 +2734,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/test/test_serial.ps1",
       "source_location": "L1",
-      "community": 107,
+      "community": 108,
       "norm_label": "test_serial.ps1",
       "id": "verilog_scripts_test_test_serial_ps1"
     },
@@ -2743,7 +2743,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/test/test_serial_v2.ps1",
       "source_location": "L1",
-      "community": 108,
+      "community": 109,
       "norm_label": "test_serial_v2.ps1",
       "id": "verilog_scripts_test_test_serial_v2_ps1"
     },
@@ -2752,7 +2752,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/test/test_serial_v3.ps1",
       "source_location": "L1",
-      "community": 109,
+      "community": 110,
       "norm_label": "test_serial_v3.ps1",
       "id": "verilog_scripts_test_test_serial_v3_ps1"
     },
@@ -2761,7 +2761,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/uart_diag/check_uart.ps1",
       "source_location": "L1",
-      "community": 110,
+      "community": 111,
       "norm_label": "check_uart.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_uart_diag_check_uart_ps1"
     },
@@ -2770,7 +2770,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/scripts/uart_diag/diagnose_uart.ps1",
       "source_location": "L1",
-      "community": 111,
+      "community": 112,
       "norm_label": "diagnose_uart.ps1",
       "id": "c_users_vince_projects_prng_verilog_scripts_uart_diag_diagnose_uart_ps1"
     },
@@ -2780,7 +2780,7 @@
       "source_file": "verilog/src/as606_controller.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 112,
+      "community": 113,
       "norm_label": "as606_controller.v",
       "id": "verilog_src_as606_controller_v"
     },
@@ -2790,7 +2790,7 @@
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/src/blink.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 113,
+      "community": 114,
       "norm_label": "blink.v",
       "id": "c_users_vince_projects_prng_verilog_src_blink_v"
     },
@@ -2800,7 +2800,7 @@
       "source_file": "verilog/src/bram_framebuffer.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 114,
+      "community": 115,
       "norm_label": "bram_framebuffer.v",
       "id": "verilog_src_bram_framebuffer_v"
     },
@@ -2810,7 +2810,7 @@
       "source_file": "verilog/src/fpga_main.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 115,
+      "community": 116,
       "norm_label": "fpga_main.v",
       "id": "verilog_src_fpga_main_v"
     },
@@ -2820,7 +2820,7 @@
       "source_file": "verilog/src/game_of_life.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 116,
+      "community": 117,
       "norm_label": "game_of_life.v",
       "id": "verilog_src_game_of_life_v"
     },
@@ -2830,7 +2830,7 @@
       "source_file": "verilog/src/hx8357d_controller.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 117,
+      "community": 118,
       "norm_label": "hx8357d_controller.v",
       "id": "verilog_src_hx8357d_controller_v"
     },
@@ -2840,7 +2840,7 @@
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/src/hx8357d_init.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 118,
+      "community": 119,
       "norm_label": "hx8357d_init.v",
       "id": "c_users_vince_projects_prng_verilog_src_hx8357d_init_v"
     },
@@ -2850,7 +2850,7 @@
       "source_file": "verilog/src/lfsr_nl_seed_uart.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 119,
+      "community": 120,
       "norm_label": "lfsr_nl_seed_uart.v",
       "id": "verilog_src_lfsr_nl_seed_uart_v"
     },
@@ -2860,7 +2860,7 @@
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/src/reaction_game.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 120,
+      "community": 121,
       "norm_label": "reaction_game.v",
       "id": "c_users_vince_projects_prng_verilog_src_reaction_game_v"
     },
@@ -2870,7 +2870,7 @@
       "source_file": "verilog/src/ring_osc.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 121,
+      "community": 122,
       "norm_label": "ring_osc.v",
       "id": "verilog_src_ring_osc_v"
     },
@@ -2880,7 +2880,7 @@
       "source_file": "verilog/src/spi_master.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 122,
+      "community": 123,
       "norm_label": "spi_master.v",
       "id": "verilog_src_spi_master_v"
     },
@@ -2890,7 +2890,7 @@
       "source_file": "C:/Users/vince/Projects/PRNG/verilog/src/switch_display.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 123,
+      "community": 124,
       "norm_label": "switch_display.v",
       "id": "c_users_vince_projects_prng_verilog_src_switch_display_v"
     },
@@ -2900,7 +2900,7 @@
       "source_file": "verilog/src/uart.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 124,
+      "community": 125,
       "norm_label": "uart.v",
       "id": "verilog_src_uart_v"
     },
@@ -2910,7 +2910,7 @@
       "source_file": "verilog/testbench/reaction_game_tb.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 125,
+      "community": 126,
       "norm_label": "reaction_game_tb.v",
       "id": "verilog_testbench_reaction_game_tb_v"
     },
@@ -2920,7 +2920,7 @@
       "source_file": "verilog/testbench/tb_game_of_life.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 126,
+      "community": 127,
       "norm_label": "tb_game_of_life.v",
       "id": "verilog_testbench_tb_game_of_life_v"
     },
@@ -2930,7 +2930,7 @@
       "source_file": "verilog/testbench/tb_hx8357d_controller.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 127,
+      "community": 128,
       "norm_label": "tb_hx8357d_controller.v",
       "id": "verilog_testbench_tb_hx8357d_controller_v"
     },
@@ -2940,7 +2940,7 @@
       "source_file": "verilog/testbench/tb_lfsr_nl_seed_uart.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 128,
+      "community": 129,
       "norm_label": "tb_lfsr_nl_seed_uart.v",
       "id": "verilog_testbench_tb_lfsr_nl_seed_uart_v"
     },
@@ -2950,7 +2950,7 @@
       "source_file": "verilog/testbench/uart_tb.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 129,
+      "community": 130,
       "norm_label": "uart_tb.v",
       "id": "verilog_testbench_uart_tb_v"
     },
@@ -2959,7 +2959,7 @@
       "file_type": "code",
       "source_file": "_archive/extract_chunk21.py",
       "source_location": "L1",
-      "community": 130,
+      "community": 131,
       "norm_label": "extract_chunk21.py",
       "id": "archive_extract_chunk21_py"
     },
@@ -2968,7 +2968,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/_archive/main_backup.cpp",
       "source_location": "L1",
-      "community": 50,
+      "community": 51,
       "norm_label": "main_backup.cpp",
       "id": "c_users_vince_projects_prng_archive_main_backup_cpp"
     },
@@ -2977,7 +2977,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/_archive/main_backup.cpp",
       "source_location": "L3",
-      "community": 50,
+      "community": 51,
       "norm_label": "setup()",
       "id": "archive_main_backup_setup"
     },
@@ -2986,7 +2986,7 @@
       "file_type": "code",
       "source_file": "C:/Users/vince/Projects/PRNG/_archive/main_backup.cpp",
       "source_location": "L17",
-      "community": 50,
+      "community": 51,
       "norm_label": "loop()",
       "id": "archive_main_backup_loop"
     },
@@ -3130,7 +3130,7 @@
       "file_type": "code",
       "source_file": "_archive/read_chunk4.py",
       "source_location": "L1",
-      "community": 131,
+      "community": 132,
       "norm_label": "read_chunk4.py",
       "id": "archive_read_chunk4_py"
     },
@@ -3140,7 +3140,7 @@
       "source_file": "_archive/uart_loopback.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 132,
+      "community": 133,
       "norm_label": "uart_loopback.v",
       "id": "archive_uart_loopback_v"
     },
@@ -5237,7 +5237,7 @@
       "file_type": "document",
       "source_file": "docs/Readme2.md",
       "source_location": "L1",
-      "community": 61,
+      "community": 63,
       "norm_label": "readme2.md",
       "id": "docs_readme2_md"
     },
@@ -5246,7 +5246,7 @@
       "file_type": "document",
       "source_file": "docs/Readme2.md",
       "source_location": "L1",
-      "community": 61,
+      "community": 63,
       "norm_label": "welcome to dsl course fpga lab",
       "id": "docs_readme2_welcome_to_dsl_course_fpga_lab"
     },
@@ -5255,7 +5255,7 @@
       "file_type": "document",
       "source_file": "docs/Readme2.md",
       "source_location": "L5",
-      "community": 61,
+      "community": 63,
       "norm_label": "project description",
       "id": "docs_readme2_project_description"
     },
@@ -5867,7 +5867,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "wiring_guide.md",
       "id": "docs_wiring_guide_md"
     },
@@ -5876,7 +5876,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L1",
-      "community": 33,
+      "community": 32,
       "norm_label": "game of life hardware wiring guide",
       "id": "docs_wiring_guide_game_of_life_hardware_wiring_guide"
     },
@@ -5885,7 +5885,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L5",
-      "community": 33,
+      "community": 32,
       "norm_label": "required hardware",
       "id": "docs_wiring_guide_required_hardware"
     },
@@ -5894,7 +5894,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L11",
-      "community": 33,
+      "community": 32,
       "norm_label": "pin assignments",
       "id": "docs_wiring_guide_pin_assignments"
     },
@@ -5903,7 +5903,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L15",
-      "community": 33,
+      "community": 32,
       "norm_label": "cmod a7 board basics",
       "id": "docs_wiring_guide_cmod_a7_board_basics"
     },
@@ -5912,7 +5912,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L23",
-      "community": 33,
+      "community": 32,
       "norm_label": "as606 thumbprint sensor (uart)",
       "id": "docs_wiring_guide_as606_thumbprint_sensor_uart"
     },
@@ -5921,7 +5921,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L31",
-      "community": 33,
+      "community": 32,
       "norm_label": "hx8357d tft display (spi)",
       "id": "docs_wiring_guide_hx8357d_tft_display_spi"
     },
@@ -5930,7 +5930,7 @@
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
       "source_location": "L42",
-      "community": 33,
+      "community": 32,
       "norm_label": "workflow execution steps",
       "id": "docs_wiring_guide_workflow_execution_steps"
     },
@@ -6569,7 +6569,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L1",
-      "community": 7,
+      "community": 6,
       "norm_label": "fpga quick deployment guide",
       "id": "verilog_quick_start_fpga_quick_deployment_guide"
     },
@@ -6578,7 +6578,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L3",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83d\ude80 one-command deployment",
       "id": "verilog_quick_start_one_command_deployment"
     },
@@ -6587,7 +6587,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L7",
-      "community": 7,
+      "community": 6,
       "norm_label": "prerequisites",
       "id": "verilog_quick_start_prerequisites"
     },
@@ -6596,7 +6596,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L12",
-      "community": 7,
+      "community": 6,
       "norm_label": "quick start",
       "id": "verilog_quick_start_quick_start"
     },
@@ -6605,7 +6605,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L15",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (.\\scripts\\deployment\\deploy.ps1)",
       "id": "verilog_quick_start_codeblock_1"
     },
@@ -6614,7 +6614,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L23",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (cd verilog/fpga-vivado-verilog-vs-code-project-template)",
       "id": "verilog_quick_start_codeblock_2"
     },
@@ -6623,7 +6623,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L28",
-      "community": 7,
+      "community": 6,
       "norm_label": "what it does",
       "id": "verilog_quick_start_what_it_does"
     },
@@ -6632,7 +6632,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L41",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83d\udcdd typical workflow",
       "id": "verilog_quick_start_typical_workflow"
     },
@@ -6641,7 +6641,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L43",
-      "community": 7,
+      "community": 6,
       "norm_label": "1. edit your design",
       "id": "verilog_quick_start_1_edit_your_design"
     },
@@ -6650,7 +6650,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L45",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:verilog (// src/switch_display.v)",
       "id": "verilog_quick_start_codeblock_3"
     },
@@ -6659,7 +6659,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L57",
-      "community": 7,
+      "community": 6,
       "norm_label": "2. update configuration (if needed)",
       "id": "verilog_quick_start_2_update_configuration_if_needed"
     },
@@ -6668,7 +6668,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L59",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:tcl (# scripts/build_tools/config.tcl)",
       "id": "verilog_quick_start_codeblock_4"
     },
@@ -6677,7 +6677,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L66",
-      "community": 7,
+      "community": 6,
       "norm_label": "3. deploy!",
       "id": "verilog_quick_start_3_deploy"
     },
@@ -6686,7 +6686,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L67",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (.\\scripts\\deployment\\deploy.ps1)",
       "id": "verilog_quick_start_codeblock_5"
     },
@@ -6695,7 +6695,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L75",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83c\udfaf advanced options",
       "id": "verilog_quick_start_advanced_options"
     },
@@ -6704,7 +6704,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L77",
-      "community": 7,
+      "community": 6,
       "norm_label": "build only (don't program)",
       "id": "verilog_quick_start_build_only_don_t_program"
     },
@@ -6713,7 +6713,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L78",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (.\\scripts\\deployment\\deploy.ps1 -buildonly)",
       "id": "verilog_quick_start_codeblock_6"
     },
@@ -6722,7 +6722,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L83",
-      "community": 7,
+      "community": 6,
       "norm_label": "program only (skip build)",
       "id": "verilog_quick_start_program_only_skip_build"
     },
@@ -6731,7 +6731,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L84",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (.\\scripts\\deployment\\deploy.ps1 -skipbuild)",
       "id": "verilog_quick_start_codeblock_7"
     },
@@ -6740,7 +6740,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L89",
-      "community": 7,
+      "community": 6,
       "norm_label": "manual build and program (old way)",
       "id": "verilog_quick_start_manual_build_and_program_old_way"
     },
@@ -6749,7 +6749,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L91",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (# build)",
       "id": "verilog_quick_start_codeblock_8"
     },
@@ -6758,7 +6758,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L101",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83d\udd27 troubleshooting",
       "id": "verilog_quick_start_troubleshooting"
     },
@@ -6767,7 +6767,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L103",
-      "community": 7,
+      "community": 6,
       "norm_label": "\"vivado not found\"",
       "id": "verilog_quick_start_vivado_not_found"
     },
@@ -6776,7 +6776,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L105",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell ($vivadopaths = @()",
       "id": "verilog_quick_start_codeblock_9"
     },
@@ -6785,7 +6785,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L112",
-      "community": 7,
+      "community": 6,
       "norm_label": "\"no fpga detected\"",
       "id": "verilog_quick_start_no_fpga_detected"
     },
@@ -6794,7 +6794,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L118",
-      "community": 7,
+      "community": 6,
       "norm_label": "\"build failed\"",
       "id": "verilog_quick_start_build_failed"
     },
@@ -6803,7 +6803,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L123",
-      "community": 7,
+      "community": 6,
       "norm_label": "\"permission denied\" when running script",
       "id": "verilog_quick_start_permission_denied_when_running_script"
     },
@@ -6812,7 +6812,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L125",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:powershell (set-executionpolicy -executionpolicy remotesigned -scope cur)",
       "id": "verilog_quick_start_codeblock_10"
     },
@@ -6821,7 +6821,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L131",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83d\udcc1 project structure",
       "id": "verilog_quick_start_project_structure"
     },
@@ -6830,7 +6830,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L133",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:block11 (fpga-vivado-verilog-vs-code-project-template/)",
       "id": "verilog_quick_start_codeblock_11"
     },
@@ -6839,7 +6839,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L162",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83d\udca1 tips",
       "id": "verilog_quick_start_tips"
     },
@@ -6848,7 +6848,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L171",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83c\udf93 current design: switch display",
       "id": "verilog_quick_start_current_design_switch_display"
     },
@@ -6857,7 +6857,7 @@
       "file_type": "document",
       "source_file": "verilog/QUICK_START.md",
       "source_location": "L185",
-      "community": 7,
+      "community": 6,
       "norm_label": "\ud83d\udcda next steps",
       "id": "verilog_quick_start_next_steps"
     },
@@ -6875,7 +6875,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L1",
-      "community": 6,
+      "community": 7,
       "norm_label": "fpga project template",
       "id": "verilog_readme_fpga_project_template"
     },
@@ -6884,7 +6884,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L5",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u2728 features",
       "id": "verilog_readme_features"
     },
@@ -6893,7 +6893,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L13",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udcc1 project structure",
       "id": "verilog_readme_project_structure"
     },
@@ -6902,7 +6902,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L15",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:block1 (.)",
       "id": "verilog_readme_codeblock_1"
     },
@@ -6911,7 +6911,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L44",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\ude80 quick start",
       "id": "verilog_readme_quick_start"
     },
@@ -6920,7 +6920,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L46",
-      "community": 6,
+      "community": 7,
       "norm_label": "prerequisites",
       "id": "verilog_readme_prerequisites"
     },
@@ -6929,7 +6929,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L60",
-      "community": 6,
+      "community": 7,
       "norm_label": "installation",
       "id": "verilog_readme_installation"
     },
@@ -6938,7 +6938,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L66",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:tcl (set project_name \"my_project\")",
       "id": "verilog_readme_codeblock_2"
     },
@@ -6947,7 +6947,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L75",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udd27 development workflow",
       "id": "verilog_readme_development_workflow"
     },
@@ -6956,7 +6956,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L77",
-      "community": 6,
+      "community": 7,
       "norm_label": "option 1: using vs code tasks (recommended)",
       "id": "verilog_readme_option_1_using_vs_code_tasks_recommended"
     },
@@ -6965,7 +6965,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L94",
-      "community": 6,
+      "community": 7,
       "norm_label": "option 2: using powershell script",
       "id": "verilog_readme_option_2_using_powershell_script"
     },
@@ -6974,7 +6974,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L96",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:powershell (# build only)",
       "id": "verilog_readme_codeblock_3"
     },
@@ -6983,7 +6983,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L113",
-      "community": 6,
+      "community": 7,
       "norm_label": "option 3: direct vivado commands",
       "id": "verilog_readme_option_3_direct_vivado_commands"
     },
@@ -6992,7 +6992,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L115",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:powershell (# run synthesis and implementation)",
       "id": "verilog_readme_codeblock_4"
     },
@@ -7001,7 +7001,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L123",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udcdd writing verilog code",
       "id": "verilog_readme_writing_verilog_code"
     },
@@ -7010,7 +7010,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L125",
-      "community": 6,
+      "community": 7,
       "norm_label": "coding guidelines",
       "id": "verilog_readme_coding_guidelines"
     },
@@ -7019,7 +7019,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L133",
-      "community": 6,
+      "community": 7,
       "norm_label": "example: led blink module",
       "id": "verilog_readme_example_led_blink_module"
     },
@@ -7028,7 +7028,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L141",
-      "community": 6,
+      "community": 7,
       "norm_label": "starting a new project",
       "id": "verilog_readme_starting_a_new_project"
     },
@@ -7037,7 +7037,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L144",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:tcl (set project_name \"my_new_project\")",
       "id": "verilog_readme_codeblock_5"
     },
@@ -7046,7 +7046,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L159",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udd0c cmod a7 pin mapping",
       "id": "verilog_readme_cmod_a7_pin_mapping"
     },
@@ -7055,7 +7055,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L174",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83e\uddea simulation & testing",
       "id": "verilog_readme_simulation_testing"
     },
@@ -7064,7 +7064,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L178",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:verilog (`timescale 1ns / 1ps)",
       "id": "verilog_readme_codeblock_6"
     },
@@ -7073,7 +7073,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L204",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udcca generated reports",
       "id": "verilog_readme_generated_reports"
     },
@@ -7082,7 +7082,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L211",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udee0\ufe0f troubleshooting",
       "id": "verilog_readme_troubleshooting"
     },
@@ -7091,7 +7091,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L213",
-      "community": 6,
+      "community": 7,
       "norm_label": "vivado not found",
       "id": "verilog_readme_vivado_not_found"
     },
@@ -7100,7 +7100,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L215",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:powershell ($vivadopath = \"c:\\xilinx\\vivado\\your_version\\bin\\vivado.bat\")",
       "id": "verilog_readme_codeblock_7"
     },
@@ -7109,7 +7109,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L219",
-      "community": 6,
+      "community": 7,
       "norm_label": "board not detected",
       "id": "verilog_readme_board_not_detected"
     },
@@ -7118,7 +7118,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L224",
-      "community": 6,
+      "community": 7,
       "norm_label": "synthesis errors",
       "id": "verilog_readme_synthesis_errors"
     },
@@ -7127,7 +7127,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L229",
-      "community": 6,
+      "community": 7,
       "norm_label": "timing violations",
       "id": "verilog_readme_timing_violations"
     },
@@ -7136,7 +7136,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L234",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83c\udf93 using this template",
       "id": "verilog_readme_using_this_template"
     },
@@ -7145,7 +7145,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L242",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udcda resources",
       "id": "verilog_readme_resources"
     },
@@ -7154,7 +7154,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L248",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83d\udcc4 license",
       "id": "verilog_readme_license"
     },
@@ -7163,7 +7163,7 @@
       "file_type": "document",
       "source_file": "verilog/README.md",
       "source_location": "L254",
-      "community": 6,
+      "community": 7,
       "norm_label": "\ud83e\udd1d contributing",
       "id": "verilog_readme_contributing"
     },
@@ -8099,7 +8099,7 @@
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/debug_csv.py",
       "source_location": "L1",
-      "community": 133,
+      "community": 134,
       "norm_label": "debug_csv.py",
       "id": "data_analysis_pythonscripts_debug_csv_py"
     },
@@ -8108,7 +8108,7 @@
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/debug_load.py",
       "source_location": "L1",
-      "community": 51,
+      "community": 56,
       "norm_label": "debug_load.py",
       "id": "data_analysis_pythonscripts_debug_load_py"
     },
@@ -8117,7 +8117,7 @@
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/explore_csv.py",
       "source_location": "L1",
-      "community": 134,
+      "community": 135,
       "norm_label": "explore_csv.py",
       "id": "data_analysis_pythonscripts_explore_csv_py"
     },
@@ -8126,7 +8126,7 @@
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/explore_csv2.py",
       "source_location": "L1",
-      "community": 135,
+      "community": 136,
       "norm_label": "explore_csv2.py",
       "id": "data_analysis_pythonscripts_explore_csv2_py"
     },
@@ -8135,7 +8135,7 @@
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/pandas_load.py",
       "source_location": "L1",
-      "community": 54,
+      "community": 52,
       "norm_label": "pandas_load.py",
       "id": "data_analysis_pythonscripts_pandas_load_py"
     },
@@ -8162,7 +8162,7 @@
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/randomness_results.json",
       "source_location": "L1",
-      "community": 45,
+      "community": 46,
       "norm_label": "randomness_results.json",
       "id": "data_analysis_pythonscripts_randomness_results_json"
     },
@@ -8180,7 +8180,7 @@
       "file_type": "code",
       "source_file": "esp32_fingerprint/get_thumbprint.py",
       "source_location": "L1",
-      "community": 53,
+      "community": 55,
       "norm_label": "get_thumbprint.py",
       "id": "esp32_fingerprint_get_thumbprint_py"
     },
@@ -8189,7 +8189,7 @@
       "file_type": "code",
       "source_file": "esp32_fingerprint/hardware_probe.py",
       "source_location": "L1",
-      "community": 58,
+      "community": 60,
       "norm_label": "hardware_probe.py",
       "id": "esp32_fingerprint_hardware_probe_py"
     },
@@ -8369,7 +8369,7 @@
       "file_type": "code",
       "source_file": "scripts/build.ps1",
       "source_location": "L1",
-      "community": 136,
+      "community": 137,
       "norm_label": "build.ps1",
       "id": "scripts_build_ps1"
     },
@@ -8387,7 +8387,7 @@
       "file_type": "code",
       "source_file": "scripts/collect_random_data.ps1",
       "source_location": "L1",
-      "community": 137,
+      "community": 138,
       "norm_label": "collect_random_data.ps1",
       "id": "scripts_collect_random_data_ps1"
     },
@@ -8396,7 +8396,7 @@
       "file_type": "code",
       "source_file": "scripts/monitor_serial.py",
       "source_location": "L1",
-      "community": 138,
+      "community": 139,
       "norm_label": "monitor_serial.py",
       "id": "scripts_monitor_serial_py"
     },
@@ -8405,7 +8405,7 @@
       "file_type": "code",
       "source_file": "scripts/reset_board.py",
       "source_location": "L1",
-      "community": 139,
+      "community": 140,
       "norm_label": "reset_board.py",
       "id": "scripts_reset_board_py"
     },
@@ -8414,7 +8414,7 @@
       "file_type": "code",
       "source_file": "scripts/run_diagnostic.ps1",
       "source_location": "L1",
-      "community": 140,
+      "community": 141,
       "norm_label": "run_diagnostic.ps1",
       "id": "scripts_run_diagnostic_ps1"
     },
@@ -8423,7 +8423,7 @@
       "file_type": "code",
       "source_file": "scripts/streaming_stats.py",
       "source_location": "L1",
-      "community": 141,
+      "community": 142,
       "norm_label": "streaming_stats.py",
       "id": "scripts_streaming_stats_py"
     },
@@ -8432,7 +8432,7 @@
       "file_type": "code",
       "source_file": "scripts/test-a1-a4-serial.ps1",
       "source_location": "L1",
-      "community": 142,
+      "community": 143,
       "norm_label": "test-a1-a4-serial.ps1",
       "id": "scripts_test_a1_a4_serial_ps1"
     },
@@ -8450,7 +8450,7 @@
       "file_type": "code",
       "source_file": "src/diagnostic_test.cpp",
       "source_location": "L1",
-      "community": 55,
+      "community": 53,
       "norm_label": "diagnostic_test.cpp",
       "id": "src_diagnostic_test_cpp"
     },
@@ -8468,7 +8468,7 @@
       "file_type": "code",
       "source_file": "src/fpga_diagnostic.cpp",
       "source_location": "L1",
-      "community": 32,
+      "community": 34,
       "norm_label": "fpga_diagnostic.cpp",
       "id": "src_fpga_diagnostic_cpp"
     },
@@ -8486,7 +8486,7 @@
       "file_type": "code",
       "source_file": "src/fpga_serial.h",
       "source_location": "L1",
-      "community": 36,
+      "community": 38,
       "norm_label": "fpga_serial.h",
       "id": "src_fpga_serial_h"
     },
@@ -8504,7 +8504,7 @@
       "file_type": "code",
       "source_file": "verilog/.vscode/extensions.json",
       "source_location": "L1",
-      "community": 59,
+      "community": 61,
       "norm_label": "extensions.json",
       "id": "verilog_vscode_extensions_json"
     },
@@ -8522,7 +8522,7 @@
       "file_type": "code",
       "source_file": "verilog/.vscode/tasks.json",
       "source_location": "L1",
-      "community": 56,
+      "community": 57,
       "norm_label": "tasks.json",
       "id": "verilog_vscode_tasks_json"
     },
@@ -8531,7 +8531,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/build_tools/auto_build_and_collect.ps1",
       "source_location": "L1",
-      "community": 143,
+      "community": 144,
       "norm_label": "auto_build_and_collect.ps1",
       "id": "verilog_scripts_build_tools_auto_build_and_collect_ps1"
     },
@@ -8549,7 +8549,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/data_collection/collect_100k_final.ps1",
       "source_location": "L1",
-      "community": 144,
+      "community": 145,
       "norm_label": "collect_100k_final.ps1",
       "id": "verilog_scripts_data_collection_collect_100k_final_ps1"
     },
@@ -8558,7 +8558,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/data_collection/collect_auto_scan.ps1",
       "source_location": "L1",
-      "community": 145,
+      "community": 146,
       "norm_label": "collect_auto_scan.ps1",
       "id": "verilog_scripts_data_collection_collect_auto_scan_ps1"
     },
@@ -8567,7 +8567,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/data_collection/collect_com4.ps1",
       "source_location": "L1",
-      "community": 146,
+      "community": 147,
       "norm_label": "collect_com4.ps1",
       "id": "verilog_scripts_data_collection_collect_com4_ps1"
     },
@@ -8576,7 +8576,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/data_collection/collect_random_100k.ps1",
       "source_location": "L1",
-      "community": 147,
+      "community": 148,
       "norm_label": "collect_random_100k.ps1",
       "id": "verilog_scripts_data_collection_collect_random_100k_ps1"
     },
@@ -8585,7 +8585,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/data_collection/collect_robust.ps1",
       "source_location": "L1",
-      "community": 148,
+      "community": 149,
       "norm_label": "collect_robust.ps1",
       "id": "verilog_scripts_data_collection_collect_robust_ps1"
     },
@@ -8594,7 +8594,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/data_collection/collect_ultimate.ps1",
       "source_location": "L1",
-      "community": 149,
+      "community": 150,
       "norm_label": "collect_ultimate.ps1",
       "id": "verilog_scripts_data_collection_collect_ultimate_ps1"
     },
@@ -8603,7 +8603,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/deployment/run_program.ps1",
       "source_location": "L1",
-      "community": 150,
+      "community": 151,
       "norm_label": "run_program.ps1",
       "id": "verilog_scripts_deployment_run_program_ps1"
     },
@@ -8612,7 +8612,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/uart_diag/check_uart.ps1",
       "source_location": "L1",
-      "community": 151,
+      "community": 152,
       "norm_label": "check_uart.ps1",
       "id": "verilog_scripts_uart_diag_check_uart_ps1"
     },
@@ -8621,7 +8621,7 @@
       "file_type": "code",
       "source_file": "verilog/scripts/uart_diag/diagnose_uart.ps1",
       "source_location": "L1",
-      "community": 152,
+      "community": 153,
       "norm_label": "diagnose_uart.ps1",
       "id": "verilog_scripts_uart_diag_diagnose_uart_ps1"
     },
@@ -8631,7 +8631,7 @@
       "source_file": "verilog/src/blink.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 153,
+      "community": 154,
       "norm_label": "blink.v",
       "id": "verilog_src_blink_v"
     },
@@ -8641,7 +8641,7 @@
       "source_file": "verilog/src/hx8357d_init.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 154,
+      "community": 155,
       "norm_label": "hx8357d_init.v",
       "id": "verilog_src_hx8357d_init_v"
     },
@@ -8651,7 +8651,7 @@
       "source_file": "verilog/src/reaction_game.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 155,
+      "community": 156,
       "norm_label": "reaction_game.v",
       "id": "verilog_src_reaction_game_v"
     },
@@ -8661,7 +8661,7 @@
       "source_file": "verilog/src/switch_display.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "community": 156,
+      "community": 157,
       "norm_label": "switch_display.v",
       "id": "verilog_src_switch_display_v"
     },
@@ -8670,7 +8670,7 @@
       "file_type": "code",
       "source_file": "_archive/main_backup.cpp",
       "source_location": "L1",
-      "community": 50,
+      "community": 51,
       "norm_label": "main_backup.cpp",
       "id": "archive_main_backup_cpp"
     },
@@ -8696,7 +8696,7 @@
       "label": "debug_csv.py",
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/debug_csv.py",
-      "community": 71,
+      "community": 72,
       "norm_label": "debug_csv.py",
       "id": "debug_csv_script"
     },
@@ -8709,7 +8709,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 71,
       "norm_label": "debug load script",
       "id": "debug_load"
     },
@@ -8717,7 +8717,7 @@
       "label": "explore_csv.py",
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/explore_csv.py",
-      "community": 71,
+      "community": 72,
       "norm_label": "explore_csv.py",
       "id": "explore_csv_script"
     },
@@ -8730,7 +8730,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 71,
       "norm_label": "explore csv script",
       "id": "explore_csv2"
     },
@@ -8738,7 +8738,7 @@
       "label": "pandas_load.py",
       "file_type": "code",
       "source_file": "data analysis/pythonscripts/pandas_load.py",
-      "community": 157,
+      "community": 158,
       "norm_label": "pandas_load.py",
       "id": "pandas_load_script"
     },
@@ -8785,7 +8785,7 @@
       "label": "FingerprintCapture (Python Class)",
       "file_type": "code",
       "source_file": "esp32_fingerprint/fingerprint_capture.py",
-      "community": 158,
+      "community": 159,
       "norm_label": "fingerprintcapture (python class)",
       "id": "fingerprint_capture_FingerprintCapture"
     },
@@ -8793,7 +8793,7 @@
       "label": "get_thumbprint.py",
       "file_type": "code",
       "source_file": "esp32_fingerprint/get_thumbprint.py",
-      "community": 159,
+      "community": 160,
       "norm_label": "get_thumbprint.py",
       "id": "get_thumbprint_script"
     },
@@ -8806,7 +8806,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 160,
+      "community": 161,
       "norm_label": "hardware probe",
       "id": "hardware_probe"
     },
@@ -8814,7 +8814,7 @@
       "label": "save_fingerprint.py",
       "file_type": "code",
       "source_file": "esp32_fingerprint/save_fingerprint.py",
-      "community": 161,
+      "community": 162,
       "norm_label": "save_fingerprint.py",
       "id": "save_fingerprint_script"
     },
@@ -8827,7 +8827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 162,
+      "community": 163,
       "norm_label": "uart loopback",
       "id": "uart_loopback"
     },
@@ -8856,7 +8856,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 64,
       "norm_label": "display renderer interface",
       "id": "display_renderer_h"
     },
@@ -8869,7 +8869,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 64,
       "norm_label": "fpga interface",
       "id": "fpga_interface_h"
     },
@@ -8882,7 +8882,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 163,
+      "community": 164,
       "norm_label": "game of life",
       "id": "gameoflife_h"
     },
@@ -8895,7 +8895,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 64,
       "norm_label": "feather display main",
       "id": "feather_main_cpp"
     },
@@ -8908,7 +8908,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 164,
+      "community": 165,
       "norm_label": "build.ps1",
       "id": "build_scripts"
     },
@@ -8921,7 +8921,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 165,
+      "community": 166,
       "norm_label": "collect fpga data",
       "id": "collect_fpga_data"
     },
@@ -8934,7 +8934,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 65,
       "norm_label": "collect random data script",
       "id": "collect_random_data_ps1_script"
     },
@@ -8947,7 +8947,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 166,
+      "community": 167,
       "norm_label": "generate_trng_picture_results.py",
       "id": "generate_trng_picture_results"
     },
@@ -8960,7 +8960,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 74,
+      "community": 75,
       "norm_label": "serial monitor",
       "id": "monitor_serial_py_monitor"
     },
@@ -8973,7 +8973,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 167,
+      "community": 168,
       "norm_label": "reset board",
       "id": "reset_board"
     },
@@ -8987,7 +8987,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Scripts and code designed to run diagnostics on the PRNG via UART interface.",
-      "community": 64,
+      "community": 65,
       "norm_label": "prng diagnostics and uart testing",
       "id": "prng_testing_concept"
     },
@@ -9000,7 +9000,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 168,
+      "community": 169,
       "norm_label": "streaming stats",
       "id": "streaming_stats"
     },
@@ -9013,7 +9013,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 65,
       "norm_label": "test a1 a4 serial script",
       "id": "test_a1_a4_serial_ps1_script"
     },
@@ -9026,7 +9026,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 76,
       "norm_label": "as606 interface",
       "id": "as606_interface_h"
     },
@@ -9039,7 +9039,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 62,
       "norm_label": "diagnostic test main",
       "id": "diagnostic_test_cpp_main"
     },
@@ -9065,7 +9065,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 62,
       "norm_label": "fpga diagnostic run",
       "id": "fpga_diagnostic_cpp_run"
     },
@@ -9078,7 +9078,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 62,
       "norm_label": "fpga interface",
       "id": "fpga_interface_h_interface"
     },
@@ -9117,7 +9117,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 76,
       "norm_label": "prng main",
       "id": "prng_main_cpp"
     },
@@ -9130,7 +9130,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 169,
+      "community": 170,
       "norm_label": "extensions.json",
       "id": "extensions_json"
     },
@@ -9143,7 +9143,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 170,
+      "community": 171,
       "norm_label": "settings.json",
       "id": "settings_json"
     },
@@ -9156,7 +9156,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 171,
+      "community": 172,
       "norm_label": "tasks.json",
       "id": "tasks_json"
     },
@@ -9208,7 +9208,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 172,
+      "community": 173,
       "norm_label": "collect_auto_scan.ps1",
       "id": "collect_auto_scan"
     },
@@ -9221,7 +9221,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 173,
+      "community": 174,
       "norm_label": "collect_com4.ps1",
       "id": "collect_com4"
     },
@@ -9234,7 +9234,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 174,
+      "community": 175,
       "norm_label": "collect_random_100k.ps1",
       "id": "collect_random_100k"
     },
@@ -9247,7 +9247,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 175,
+      "community": 176,
       "norm_label": "collect_robust.ps1",
       "id": "collect_robust"
     },
@@ -9260,7 +9260,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 176,
+      "community": 177,
       "norm_label": "collect_ultimate.ps1",
       "id": "collect_ultimate"
     },
@@ -9273,7 +9273,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 177,
+      "community": 178,
       "norm_label": "deploy.ps1",
       "id": "deploy_ps1"
     },
@@ -9286,7 +9286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 178,
+      "community": 179,
       "norm_label": "run_program.ps1",
       "id": "run_program_ps1"
     },
@@ -9312,7 +9312,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 179,
+      "community": 180,
       "norm_label": "test_serial.ps1",
       "id": "test_serial_ps1"
     },
@@ -9325,7 +9325,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 180,
+      "community": 181,
       "norm_label": "test_serial_v2.ps1",
       "id": "test_serial_v2_ps1"
     },
@@ -9338,7 +9338,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 181,
+      "community": 182,
       "norm_label": "test_serial_v3.ps1",
       "id": "test_serial_v3_ps1"
     },
@@ -9351,7 +9351,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "check_uart.ps1",
       "id": "check_uart"
     },
@@ -9364,7 +9364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "diagnose_uart.ps1",
       "id": "diagnose_uart"
     },
@@ -9390,7 +9390,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 182,
+      "community": 183,
       "norm_label": "blink",
       "id": "module_blink"
     },
@@ -9403,7 +9403,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "lfsr_nl_seed_uart",
       "id": "module_lfsr_nl_seed_uart"
     },
@@ -9416,7 +9416,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "uart_rx",
       "id": "module_uart_rx"
     },
@@ -9429,7 +9429,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 43,
+      "community": 44,
       "norm_label": "uart_tx",
       "id": "module_uart_tx"
     },
@@ -9442,7 +9442,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 73,
+      "community": 74,
       "norm_label": "reaction_game",
       "id": "module_reaction_game"
     },
@@ -9455,7 +9455,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 183,
+      "community": 184,
       "norm_label": "ring_osc",
       "id": "module_ring_osc"
     },
@@ -9481,7 +9481,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 72,
+      "community": 73,
       "norm_label": "switch_display",
       "id": "module_switch_display"
     },
@@ -9494,7 +9494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 72,
+      "community": 73,
       "norm_label": "binary_to_bcd",
       "id": "module_binary_to_bcd"
     },
@@ -9520,7 +9520,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 73,
+      "community": 74,
       "norm_label": "reaction_game_tb",
       "id": "module_reaction_game_tb"
     },
@@ -9546,7 +9546,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 184,
+      "community": 185,
       "norm_label": "extract chunk 21",
       "id": "extract_chunk21"
     },
@@ -9559,7 +9559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 185,
+      "community": 186,
       "norm_label": "main backup",
       "id": "main_backup"
     },
@@ -9585,7 +9585,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 186,
+      "community": 187,
       "norm_label": "read chunk 4",
       "id": "read_chunk4"
     },
@@ -9598,7 +9598,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 54,
       "norm_label": "prng readme",
       "id": "doc_readme"
     },
@@ -9611,7 +9611,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 54,
       "norm_label": "prng system architecture",
       "id": "concept_prng_system"
     },
@@ -9624,7 +9624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 54,
       "norm_label": "conway's game of life",
       "id": "concept_conways_game"
     },
@@ -9637,7 +9637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 54,
       "norm_label": "randomness_report.txt",
       "id": "doc_randomness_report"
     },
@@ -9650,7 +9650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 69,
       "norm_label": "fpga build & deployment instructions",
       "id": "build_and_deploy_instructions"
     },
@@ -9663,7 +9663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 187,
+      "community": 188,
       "norm_label": "cheatsheet",
       "id": "cheatsheet"
     },
@@ -9676,7 +9676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 69,
       "norm_label": "collection instructions",
       "id": "collection_instructions"
     },
@@ -9689,7 +9689,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 188,
+      "community": 189,
       "norm_label": "completion report",
       "id": "completion_report"
     },
@@ -9702,7 +9702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 189,
+      "community": 190,
       "norm_label": "fingerprint sensor readme",
       "id": "fingerprint_sensor"
     },
@@ -9715,7 +9715,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 77,
+      "community": 79,
       "norm_label": "implementation details",
       "id": "implementation"
     },
@@ -9728,7 +9728,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 190,
+      "community": 191,
       "norm_label": "quick start guide",
       "id": "quick_start"
     },
@@ -9741,7 +9741,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 191,
+      "community": 192,
       "norm_label": "readme2",
       "id": "readme2"
     },
@@ -9754,7 +9754,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 192,
+      "community": 193,
       "norm_label": "readme simple",
       "id": "readme_simple"
     },
@@ -9767,7 +9767,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 193,
+      "community": 194,
       "norm_label": "streamline summary",
       "id": "streamline_summary"
     },
@@ -9780,7 +9780,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 77,
+      "community": 79,
       "norm_label": "test results",
       "id": "test_results"
     },
@@ -9793,7 +9793,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 194,
+      "community": 195,
       "norm_label": "workflow",
       "id": "workflow"
     },
@@ -9806,7 +9806,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 195,
+      "community": 196,
       "norm_label": "instructions.md",
       "id": "doc_instructions"
     },
@@ -9858,7 +9858,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 58,
       "norm_label": "01 distribution overview plot",
       "id": "01_distribution_overview_image"
     },
@@ -9871,7 +9871,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 58,
       "norm_label": "randomness analysis: uniform data distribution",
       "id": "randomness_analysis_distribution"
     },
@@ -9884,7 +9884,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 58,
       "norm_label": "uniform distribution metrics (mean: 32744, skew: -0.0012, kurtosis: -1.1996)",
       "id": "uniform_distribution_metrics"
     },
@@ -9897,7 +9897,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 69,
+      "community": 70,
       "norm_label": "randomness test results summary image",
       "id": "02_test_results_summary_png"
     },
@@ -9905,7 +9905,7 @@
       "label": "Autocorrelation Analysis Plot",
       "file_type": "image",
       "source_file": "data analysis/pythonscripts/plots/03_autocorrelation_analysis.png",
-      "community": 57,
+      "community": 59,
       "norm_label": "autocorrelation analysis plot",
       "id": "03_autocorrelation_analysis_png"
     },
@@ -9983,7 +9983,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "05_entropy_analysis.png",
       "id": "05_entropy_analysis_png"
     },
@@ -9996,7 +9996,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "uniform high vs low byte distribution",
       "id": "insight_uniform_byte_distribution"
     },
@@ -10009,7 +10009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "consistent entropy per chunk (~11.6 bits/16 max)",
       "id": "insight_consistent_chunk_entropy"
     },
@@ -10022,7 +10022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 49,
+      "community": 50,
       "norm_label": "97.9% value coverage",
       "id": "insight_value_coverage_97_9"
     },
@@ -10035,7 +10035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "entropy and information analysis plot",
       "id": "05_entropy_analysis"
     },
@@ -10048,7 +10048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "high vs low byte distribution",
       "id": "entropy_byte_distribution"
     },
@@ -10061,7 +10061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "entropy per chunk",
       "id": "entropy_per_chunk"
     },
@@ -10074,7 +10074,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "frequency distribution of values",
       "id": "frequency_distribution_of_values"
     },
@@ -10087,7 +10087,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 43,
       "norm_label": "value coverage",
       "id": "value_coverage_analysis"
     },
@@ -10113,7 +10113,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 196,
+      "community": 197,
       "norm_label": "filter detect script",
       "id": "filter_detect"
     },
@@ -10126,7 +10126,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 197,
+      "community": 198,
       "norm_label": "get stats script",
       "id": "get_stats"
     },
@@ -10256,7 +10256,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 198,
+      "community": 199,
       "norm_label": "graphify skill",
       "id": "graphify_skill"
     },
@@ -10269,7 +10269,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 68,
       "norm_label": "fingerprint data collection guide",
       "id": "fingerprint_data_collection_guide"
     },
@@ -10282,7 +10282,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 68,
       "norm_label": "fingerprint data analysis",
       "id": "fingerprint_data_analysis"
     },
@@ -10295,7 +10295,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 68,
       "norm_label": "validation report",
       "id": "validation_report"
     },
@@ -10321,7 +10321,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 78,
+      "community": 77,
       "norm_label": "quick start guide",
       "id": "quick_start_guide"
     },
@@ -10334,7 +10334,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 78,
+      "community": 77,
       "norm_label": "usage guide",
       "id": "usage_guide"
     },
@@ -10347,7 +10347,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 199,
+      "community": 200,
       "norm_label": "testbench readme",
       "id": "testbench_readme"
     },
@@ -10425,21 +10425,21 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 69,
+      "community": 70,
       "norm_label": "randomness testing results",
       "id": "concept_randomness_testing_results"
     },
     {
       "label": "Autocorrelation Function (ACF)",
       "file_type": "concept",
-      "community": 57,
+      "community": 59,
       "norm_label": "autocorrelation function (acf)",
       "id": "autocorrelation_metric"
     },
     {
       "label": "Observed Significant Lags Exceed Expected (13 vs ~5)",
       "file_type": "concept",
-      "community": 57,
+      "community": 59,
       "norm_label": "observed significant lags exceed expected (13 vs ~5)",
       "id": "significant_lags_insight"
     },
@@ -10478,7 +10478,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 200,
+      "community": 201,
       "norm_label": "usbmscdriver",
       "id": "UsbMscDriver_UsbMscDriver"
     },
@@ -10491,7 +10491,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 201,
+      "community": 202,
       "norm_label": "bufferedprint",
       "id": "BufferedPrint_BufferedPrint"
     },
@@ -10504,7 +10504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 202,
+      "community": 203,
       "norm_label": "minimumserial",
       "id": "MinimumSerial_MinimumSerial"
     },
@@ -10517,7 +10517,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 203,
+      "community": 204,
       "norm_label": "ringbuf",
       "id": "RingBuf_RingBuf"
     },
@@ -10530,7 +10530,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 204,
+      "community": 205,
       "norm_label": "f",
       "id": "RingBuf_F"
     },
@@ -10543,7 +10543,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 205,
+      "community": 206,
       "norm_label": "sdexfat",
       "id": "SdFat_SdExFat"
     },
@@ -10556,7 +10556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 206,
+      "community": 207,
       "norm_label": "fmt",
       "id": "SdFat_Fmt"
     },
@@ -10569,7 +10569,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 207,
+      "community": 208,
       "norm_label": "sdfs",
       "id": "SdFat_SdFs"
     },
@@ -10582,7 +10582,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 208,
+      "community": 209,
       "norm_label": "sdbase",
       "id": "SdFat_SdBase"
     },
@@ -10595,7 +10595,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 209,
+      "community": 210,
       "norm_label": "sdfile",
       "id": "SdFat_SdFile"
     },
@@ -10608,7 +10608,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 210,
+      "community": 211,
       "norm_label": "vol",
       "id": "SdFat_Vol"
     },
@@ -10621,7 +10621,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 211,
+      "community": 212,
       "norm_label": "sdfat32",
       "id": "SdFat_SdFat32"
     },
@@ -10634,7 +10634,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 212,
+      "community": 213,
       "norm_label": "constructors",
       "id": "SdFatConfig_constructors"
     },
@@ -10647,7 +10647,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 213,
+      "community": 214,
       "norm_label": "usbmscdriver",
       "id": "SdFatConfig_UsbMscDriver"
     },
@@ -10660,7 +10660,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 214,
+      "community": 215,
       "norm_label": "is",
       "id": "SdFatConfig_is"
     },
@@ -10673,7 +10673,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 215,
+      "community": 216,
       "norm_label": "driver",
       "id": "SdFatConfig_driver"
     },
@@ -10686,7 +10686,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 216,
+      "community": 217,
       "norm_label": "streamfile",
       "id": "ArduinoFiles_StreamFile"
     },
@@ -10699,7 +10699,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 217,
+      "community": 218,
       "norm_label": "basefile",
       "id": "ArduinoFiles_BaseFile"
     },
@@ -10712,7 +10712,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 218,
+      "community": 219,
       "norm_label": "printfile",
       "id": "ArduinoFiles_PrintFile"
     },
@@ -10725,7 +10725,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 219,
+      "community": 220,
       "norm_label": "fsblockdeviceinterface",
       "id": "FsBlockDeviceInterface_FsBlockDeviceInterface"
     },
@@ -10738,7 +10738,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 220,
+      "community": 221,
       "norm_label": "fscache",
       "id": "FsCache_FsCache"
     },
@@ -10751,7 +10751,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 74,
+      "community": 75,
       "norm_label": "uart loopback module",
       "id": "uart_loopback_v_module"
     },
@@ -10761,9 +10761,9 @@
       "source_file": "fpga_main.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "id": "fpga_main_v",
-      "community": 221,
-      "norm_label": "fpga_main.v"
+      "community": 222,
+      "norm_label": "fpga_main.v",
+      "id": "fpga_main_v"
     },
     {
       "label": "hx8357d_controller.v",
@@ -10771,9 +10771,9 @@
       "source_file": "hx8357d_controller.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "id": "hx8357d_controller_v",
-      "community": 222,
-      "norm_label": "hx8357d_controller.v"
+      "community": 223,
+      "norm_label": "hx8357d_controller.v",
+      "id": "hx8357d_controller_v"
     },
     {
       "label": "hx8357d_init.v",
@@ -10781,57 +10781,121 @@
       "source_file": "hx8357d_init.v",
       "source_location": "L1",
       "confidence_score": 1.0,
-      "id": "hx8357d_init_v",
-      "community": 223,
-      "norm_label": "hx8357d_init.v"
+      "community": 224,
+      "norm_label": "hx8357d_init.v",
+      "id": "hx8357d_init_v"
     },
     {
       "label": "fpga_main.v",
       "file_type": "code",
       "source_file": "verilog/src/fpga_main.v",
-      "id": "fpga_main",
       "community": 21,
-      "norm_label": "fpga_main.v"
+      "norm_label": "fpga_main.v",
+      "id": "fpga_main"
     },
     {
       "label": "ring_osc.v",
       "file_type": "code",
       "source_file": "verilog/src/ring_osc.v",
-      "id": "ring_osc",
       "community": 21,
-      "norm_label": "ring_osc.v"
+      "norm_label": "ring_osc.v",
+      "id": "ring_osc"
     },
     {
       "label": "docs/WIRING_GUIDE.md",
       "file_type": "document",
       "source_file": "docs/WIRING_GUIDE.md",
-      "id": "wiring_guide_md",
       "community": 13,
-      "norm_label": "docs/wiring_guide.md"
+      "norm_label": "docs/wiring_guide.md",
+      "id": "wiring_guide_md"
     },
     {
       "label": "Entropy Seed Generation",
       "file_type": "rationale",
       "source_file": "README.md",
-      "id": "entropy_seed",
       "community": 21,
-      "norm_label": "entropy seed generation"
+      "norm_label": "entropy seed generation",
+      "id": "entropy_seed"
     },
     {
       "label": "Co-processor FSM States",
       "file_type": "rationale",
       "source_file": "verilog/QUICK_START.md",
-      "id": "fsm_states",
       "community": 21,
-      "norm_label": "co-processor fsm states"
+      "norm_label": "co-processor fsm states",
+      "id": "fsm_states"
     },
     {
       "label": "Toroidal Neighborhood Rules",
       "file_type": "rationale",
       "source_file": "verilog/README.md",
-      "id": "toroidal_rules",
       "community": 21,
-      "norm_label": "toroidal neighborhood rules"
+      "norm_label": "toroidal neighborhood rules",
+      "id": "toroidal_rules"
+    },
+    {
+      "label": "as608_interface.h",
+      "file_type": "code",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L1",
+      "community": 42,
+      "norm_label": "as608_interface.h",
+      "id": "src_as608_interface_h"
+    },
+    {
+      "label": "AS608Interface()",
+      "file_type": "code",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L24",
+      "community": 42,
+      "norm_label": "as608interface()",
+      "id": "src_as608_interface_as608interface"
+    },
+    {
+      "label": "deriveSeedBytesFromTemplate()",
+      "file_type": "code",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L193",
+      "community": 42,
+      "norm_label": "deriveseedbytesfromtemplate()",
+      "id": "src_as608_interface_deriveseedbytesfromtemplate"
+    },
+    {
+      "label": "fingerSearch()",
+      "file_type": "code",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L327",
+      "community": 42,
+      "norm_label": "fingersearch()",
+      "id": "src_as608_interface_fingersearch"
+    },
+    {
+      "label": "getTemplateCount()",
+      "file_type": "code",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L373",
+      "community": 42,
+      "norm_label": "gettemplatecount()",
+      "id": "src_as608_interface_gettemplatecount"
+    },
+    {
+      "label": "printLastResponseCode()",
+      "file_type": "code",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L390",
+      "community": 42,
+      "norm_label": "printlastresponsecode()",
+      "id": "src_as608_interface_printlastresponsecode"
+    },
+    {
+      "label": "as608_controller.v",
+      "file_type": "code",
+      "source_file": "verilog/src/as608_controller.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "community": 225,
+      "norm_label": "as608_controller.v",
+      "id": "verilog_src_as608_controller_v"
     }
   ],
   "links": [
@@ -19569,8 +19633,8 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "verilog/README.md",
-      "source": "verilog_readme_md",
-      "target": "verilog_quick_start_md"
+      "source": "verilog_quick_start_md",
+      "target": "verilog_readme_md"
     },
     {
       "relation": "contains",
@@ -21861,8 +21925,8 @@
       "source_file": "verilog/src/hx8357d_controller.v",
       "source_location": null,
       "weight": 1.0,
-      "source": "hx8357d_controller",
-      "target": "spi_master"
+      "source": "spi_master",
+      "target": "hx8357d_controller"
     },
     {
       "relation": "calls",
@@ -22229,8 +22293,8 @@
       "source_file": "verilog/src/hx8357d_controller.v",
       "source_location": null,
       "weight": 1.0,
-      "source": "hx8357d_controller",
-      "target": "bram_framebuffer"
+      "source": "bram_framebuffer",
+      "target": "hx8357d_controller"
     },
     {
       "relation": "calls",
@@ -22249,8 +22313,8 @@
       "source_file": "verilog/src/game_of_life.v",
       "source_location": null,
       "weight": 1.0,
-      "source": "game_of_life",
-      "target": "bram_framebuffer"
+      "source": "bram_framebuffer",
+      "target": "game_of_life"
     },
     {
       "relation": "references",
@@ -22259,8 +22323,8 @@
       "source_file": "verilog/src/hx8357d_controller.v",
       "source_location": null,
       "weight": 1.0,
-      "source": "hx8357d_controller",
-      "target": "game_of_life"
+      "source": "game_of_life",
+      "target": "hx8357d_controller"
     },
     {
       "relation": "calls",
@@ -22315,8 +22379,8 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "verilog/src/fpga_main.v",
-      "source": "fpga_main",
-      "target": "hx8357d_controller"
+      "source": "hx8357d_controller",
+      "target": "fpga_main"
     },
     {
       "relation": "conceptually_related_to",
@@ -22381,6 +22445,56 @@
       "source_file": "verilog/src/fpga_main.v",
       "source": "fpga_main",
       "target": "fsm_states"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_as608_interface_h",
+      "target": "src_as608_interface_as608interface"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L193",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_as608_interface_h",
+      "target": "src_as608_interface_deriveseedbytesfromtemplate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L327",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_as608_interface_h",
+      "target": "src_as608_interface_fingersearch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L373",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_as608_interface_h",
+      "target": "src_as608_interface_gettemplatecount"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/as608_interface.h",
+      "source_location": "L390",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_as608_interface_h",
+      "target": "src_as608_interface_printlastresponsecode"
     }
   ],
   "hyperedges": [
@@ -22506,5 +22620,5 @@
       "source_file": "scripts/run_diagnostic.ps1"
     }
   ],
-  "built_at_commit": "9a463ca42f3bf80f9a5fcb7270ce5fc8d9e82f73"
+  "built_at_commit": "e41c2705e417e8eb2dffcb206d3e8e491349712f"
 }

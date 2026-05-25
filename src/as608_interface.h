@@ -1,27 +1,27 @@
-#ifndef AS606_INTERFACE_H
-#define AS606_INTERFACE_H
+#ifndef AS608_INTERFACE_H
+#define AS608_INTERFACE_H
 
 #include <Adafruit_Fingerprint.h>
 
-// Use Serial1 for AS606 on Feather M4
+// Use Serial1 for AS608 on Feather M4
 // Serial1 on Feather M4 maps to D0 (RX) and D1 (TX)
 // User connection: Sensor TX -> D0 (MCU RX), Sensor RX -> D1 (MCU TX)
-#define FINGERPRINT_BAUD    57600  // AS606 default baud rate
+#define FINGERPRINT_BAUD    57600  // AS608 default baud rate
 
 /**
- * AS606 Fingerprint Sensor Interface
+ * AS608 Fingerprint Sensor Interface
  * 
- * Uses Serial1 hardware UART for communication with the AS606 fingerprint sensor.
+ * Uses Serial1 hardware UART for communication with the AS608 fingerprint sensor.
  * 
  * Usage:
- *   AS606Interface fingerprint;
+ *   AS608Interface fingerprint;
  *   fingerprint.begin();
  *   fingerprint.getImage();
  *   fingerprint.image2Tz();
  *   uint16_t matchID = fingerprint.fingerSearch();
  */
 
-class AS606Interface {
+class AS608Interface {
 private:
   Adafruit_Fingerprint *finger;
   bool initialized;
@@ -82,7 +82,7 @@ private:
   }
 
 public:
-  AS606Interface() : finger(nullptr), initialized(false) {}
+  AS608Interface() : finger(nullptr), initialized(false) {}
 
   /**
    * Initialize the sensor interface
@@ -90,7 +90,7 @@ public:
    * Returns true if sensor responds, false otherwise
    */
   bool begin() {
-    Serial.println(F("[AS606] Initializing fingerprint sensor..."));
+    Serial.println(F("[AS608] Initializing fingerprint sensor..."));
     
     // Initialize Serial1 for sensor communication
     Serial1.begin(FINGERPRINT_BAUD);
@@ -104,28 +104,28 @@ public:
     
     // Verify password (handshake)
     if (!finger->verifyPassword()) {
-      Serial.println(F("[AS606] ERROR: Sensor not found or verification failed!"));
-      Serial.println(F("[AS606] Check connections: D0=RX, D1=TX, Power=3.3V"));
+      Serial.println(F("[AS608] ERROR: Sensor not found or verification failed!"));
+      Serial.println(F("[AS608] Check connections: D0=RX, D1=TX, Power=3.3V"));
       return false;
     }
     
-    Serial.println(F("[AS606] Sensor verified successfully!"));
+    Serial.println(F("[AS608] Sensor verified successfully!"));
     
     // Get sensor parameters
     finger->getParameters();
-    Serial.print(F("[AS606] Status register: 0x"));
+    Serial.print(F("[AS608] Status register: 0x"));
     Serial.println(finger->status_reg, HEX);
-    Serial.print(F("[AS606] System ID: 0x"));
+    Serial.print(F("[AS608] System ID: 0x"));
     Serial.println(finger->system_id, HEX);
-    Serial.print(F("[AS606] Capacity: "));
+    Serial.print(F("[AS608] Capacity: "));
     Serial.println(finger->capacity);
-    Serial.print(F("[AS606] Security level: "));
+    Serial.print(F("[AS608] Security level: "));
     Serial.println(finger->security_level);
-    Serial.print(F("[AS606] Device address: 0x"));
+    Serial.print(F("[AS608] Device address: 0x"));
     Serial.println(finger->device_addr, HEX);
-    Serial.print(F("[AS606] Packet length: "));
+    Serial.print(F("[AS608] Packet length: "));
     Serial.println(finger->packet_len);
-    Serial.print(F("[AS606] Baud rate: "));
+    Serial.print(F("[AS608] Baud rate: "));
     Serial.println(finger->baud_rate);
     
     // Turn on LED during initialization to confirm sensor is responsive
@@ -150,11 +150,11 @@ public:
    */
   uint8_t getImage() {
     if (!initialized) {
-      Serial.println(F("[AS606] ERROR: Sensor not initialized!"));
+      Serial.println(F("[AS608] ERROR: Sensor not initialized!"));
       return FINGERPRINT_NOFINGER;
     }
     
-    Serial.println(F("[AS606] Waiting for fingerprint..."));
+    Serial.println(F("[AS608] Waiting for fingerprint..."));
     finger->LEDcontrol(FINGERPRINT_LED_ON, 0, FINGERPRINT_LED_BLUE);
     
     uint8_t p = finger->getImage();
@@ -171,11 +171,11 @@ public:
    */
   uint8_t image2Tz(uint8_t slot = 1) {
     if (!initialized) {
-      Serial.println(F("[AS606] ERROR: Sensor not initialized!"));
+      Serial.println(F("[AS608] ERROR: Sensor not initialized!"));
       return FINGERPRINT_IMAGEFAIL;
     }
     
-    Serial.print(F("[AS606] Converting image to template (buffer "));
+    Serial.print(F("[AS608] Converting image to template (buffer "));
     Serial.print(slot);
     Serial.println(F(")..."));
     
@@ -192,7 +192,7 @@ public:
    */
   bool deriveSeedBytesFromTemplate(uint8_t &seedByte0, uint8_t &seedByte1) {
     if (!initialized) {
-      Serial.println(F("[AS606] ERROR: Sensor not initialized!"));
+      Serial.println(F("[AS608] ERROR: Sensor not initialized!"));
       return false;
     }
 
@@ -210,17 +210,17 @@ public:
     uint8_t pktType = 0;
     uint16_t pktLen = 0;
     if (!readPacketHeader(pktType, pktLen, 1500)) {
-      Serial.println(F("[AS606] ERROR: ACK header timeout."));
+      Serial.println(F("[AS608] ERROR: ACK header timeout."));
       return false;
     }
     if (pktType != FINGERPRINT_ACKPACKET || pktLen < 3) {
-      Serial.println(F("[AS606] ERROR: invalid ACK packet."));
+      Serial.println(F("[AS608] ERROR: invalid ACK packet."));
       return false;
     }
 
     uint8_t ackCode = 0;
     if (!readByteWithTimeout(ackCode, 500)) {
-      Serial.println(F("[AS606] ERROR: ACK payload timeout."));
+      Serial.println(F("[AS608] ERROR: ACK payload timeout."));
       return false;
     }
 
@@ -228,13 +228,13 @@ public:
     for (uint16_t i = 1; i < pktLen; i++) {
       uint8_t discard = 0;
       if (!readByteWithTimeout(discard, 500)) {
-        Serial.println(F("[AS606] ERROR: ACK tail timeout."));
+        Serial.println(F("[AS608] ERROR: ACK tail timeout."));
         return false;
       }
     }
 
     if (ackCode != FINGERPRINT_OK) {
-      Serial.print(F("[AS606] ERROR: getModel rejected, code=0x"));
+      Serial.print(F("[AS608] ERROR: getModel rejected, code=0x"));
       Serial.println(ackCode, HEX);
       return false;
     }
@@ -244,18 +244,18 @@ public:
 
     while (true) {
       if (!readPacketHeader(pktType, pktLen, 1500)) {
-        Serial.println(F("[AS606] ERROR: template packet header timeout."));
+        Serial.println(F("[AS608] ERROR: template packet header timeout."));
         return false;
       }
 
       if (pktType != FINGERPRINT_DATAPACKET && pktType != FINGERPRINT_ENDDATAPACKET) {
-        Serial.print(F("[AS606] ERROR: unexpected packet type: 0x"));
+        Serial.print(F("[AS608] ERROR: unexpected packet type: 0x"));
         Serial.println(pktType, HEX);
         return false;
       }
 
       if (pktLen < 2) {
-        Serial.println(F("[AS606] ERROR: malformed template packet length."));
+        Serial.println(F("[AS608] ERROR: malformed template packet length."));
         return false;
       }
 
@@ -266,7 +266,7 @@ public:
       for (uint16_t i = 0; i < payloadLen; i++) {
         uint8_t dataByte = 0;
         if (!readByteWithTimeout(dataByte, 500)) {
-          Serial.println(F("[AS606] ERROR: payload timeout."));
+          Serial.println(F("[AS608] ERROR: payload timeout."));
           return false;
         }
         checksumCalc = (uint16_t)(checksumCalc + dataByte);
@@ -277,12 +277,12 @@ public:
       uint8_t csumHi = 0;
       uint8_t csumLo = 0;
       if (!readByteWithTimeout(csumHi, 500) || !readByteWithTimeout(csumLo, 500)) {
-        Serial.println(F("[AS606] ERROR: checksum timeout."));
+        Serial.println(F("[AS608] ERROR: checksum timeout."));
         return false;
       }
       uint16_t checksumRx = (uint16_t)(((uint16_t)csumHi << 8) | csumLo);
       if (checksumRx != checksumCalc) {
-        Serial.println(F("[AS606] ERROR: checksum mismatch in template packet."));
+        Serial.println(F("[AS608] ERROR: checksum mismatch in template packet."));
         return false;
       }
 
@@ -294,7 +294,7 @@ public:
     }
 
     if (totalBytes == 0) {
-      Serial.println(F("[AS606] ERROR: empty template upload."));
+      Serial.println(F("[AS608] ERROR: empty template upload."));
       return false;
     }
 
@@ -302,9 +302,9 @@ public:
     seedByte0 = (uint8_t)(folded >> 8);   // Big-endian seed byte0
     seedByte1 = (uint8_t)(folded & 0xFF); // Big-endian seed byte1
 
-    Serial.print(F("[AS606] Template bytes hashed: "));
+    Serial.print(F("[AS608] Template bytes hashed: "));
     Serial.println(totalBytes);
-    Serial.print(F("[AS606] Derived FPGA seed bytes: 0x"));
+    Serial.print(F("[AS608] Derived FPGA seed bytes: 0x"));
     if (seedByte0 < 0x10) {
       Serial.print('0');
     }
@@ -326,25 +326,25 @@ public:
    */
   uint16_t fingerSearch() {
     if (!initialized) {
-      Serial.println(F("[AS606] ERROR: Sensor not initialized!"));
+      Serial.println(F("[AS608] ERROR: Sensor not initialized!"));
       return 0;
     }
     
-    Serial.println(F("[AS606] Searching database..."));
+    Serial.println(F("[AS608] Searching database..."));
     
     uint8_t p = finger->fingerSearch();
     
     if (p == FINGERPRINT_OK) {
-      Serial.print(F("[AS606] Match found! ID: "));
+      Serial.print(F("[AS608] Match found! ID: "));
       Serial.print(finger->fingerID);
       Serial.print(F(", Confidence: "));
       Serial.println(finger->confidence);
       return finger->fingerID;
     } else if (p == FINGERPRINT_NOTFOUND) {
-      Serial.println(F("[AS606] No match found in database."));
+      Serial.println(F("[AS608] No match found in database."));
       return 0;
     } else {
-      Serial.print(F("[AS606] Search error: 0x"));
+      Serial.print(F("[AS608] Search error: 0x"));
       Serial.println(p, HEX);
       return 0;
     }
@@ -372,13 +372,13 @@ public:
    */
   uint16_t getTemplateCount() {
     if (!initialized) {
-      Serial.println(F("[AS606] ERROR: Sensor not initialized!"));
+      Serial.println(F("[AS608] ERROR: Sensor not initialized!"));
       return 0;
     }
     
     finger->getTemplateCount();
     
-    Serial.print(F("[AS606] Templates in sensor: "));
+    Serial.print(F("[AS608] Templates in sensor: "));
     Serial.println(finger->templateCount);
     
     return finger->templateCount;
@@ -390,15 +390,15 @@ public:
   void printLastResponseCode() {
     // The Adafruit library stores response codes in finger->p internal state
     // For now, we'll just print a generic message
-    Serial.println(F("[AS606] Check serial output above for detailed error information."));
+    Serial.println(F("[AS608] Check serial output above for detailed error information."));
   }
 
   /**
    * Destructor - cleanup
    */
-  ~AS606Interface() {
+  ~AS608Interface() {
     if (finger) delete finger;
   }
 };
 
-#endif  // AS606_INTERFACE_H
+#endif  // AS608_INTERFACE_H

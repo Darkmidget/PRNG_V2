@@ -4,9 +4,9 @@ module fpga_main (
     input wire clk,
     input wire [0:0] btn, // Active high button
     
-    // UART interface to AS606
-    input wire as606_rx,
-    output wire as606_tx,
+    // UART interface to AS608
+    input wire as608_rx,
+    output wire as608_tx,
     
     // SPI physical interface to HX8357D
     output wire tft_sck,
@@ -21,22 +21,31 @@ module fpga_main (
 
     wire rst_sys = 1'b0; // System reset not driven externally, tie off
     
-    // AS606 connections
+    // AS608 connections
     wire scan_done;
     wire [7:0] status_code;
     reg start_scan_reg = 0;
+    wire waiting_for_finger;
+    wire processing_finger;
     
-    as606_controller #(
+    wire [8:0] template_addr = prng_val[8:0]; // Read random addresses from the template
+    wire [7:0] template_data;
+
+    as608_controller #(
         .CLK_FREQ(12_000_000),
         .BAUD_RATE(57600)
     ) thumbprint_scanner (
         .clk(clk),
         .rst(rst_sys),
-        .rx_in(as606_rx),
-        .tx_out(as606_tx),
+        .rx_in(as608_rx),
+        .tx_out(as608_tx),
         .start_scan(start_scan_reg),
         .scan_done(scan_done),
-        .status_code(status_code)
+        .status_code(status_code),
+        .waiting_for_finger(waiting_for_finger),
+        .processing_finger(processing_finger),
+        .template_addr(template_addr),
+        .template_data(template_data)
     );
     
     // Ring oscillator / PRNG connections
@@ -85,15 +94,18 @@ module fpga_main (
             S_WAIT: begin
                 start_scan_reg <= 0;
                 if (btn_pressed) begin
-                    // Capture seed and transition to GOL state
-                    captured_seed <= prng_val;
-                    state <= S_GOL;
+                    state <= S_SCAN;
+                    start_scan_reg <= 1;
                 end
             end
             
             S_SCAN: begin
-                // Unused now, keeping for reference
-                state <= S_GOL;
+                if (scan_done) begin
+                    start_scan_reg <= 0;
+                    // Combine PRNG value with the fingerprint template data to generate the seed
+                    captured_seed <= prng_val ^ {template_data, status_code};
+                    state <= S_GOL;
+                end
             end
             
             S_GOL: begin
@@ -120,7 +132,18 @@ module fpga_main (
     );
 
     // Status LEDs
-    assign led[0] = (state == S_WAIT) ? 1'b1 : 1'b0;
-    assign led[1] = (state == S_GOL) ? disp_ready : 1'b0;
+    reg [23:0] blink_ctr = 0;
+    always @(posedge clk) blink_ctr <= blink_ctr + 1;
+    wire blink = blink_ctr[23]; // Blinks at ~0.7 Hz (12MHz / 2^24)
+
+    assign led[0] = (state == S_WAIT) ? 1'b1 :
+                    (state == S_SCAN && waiting_for_finger) ? blink :
+                    (state == S_SCAN && processing_finger) ? 1'b1 :
+                    (state == S_GOL) ? 1'b1 : 1'b0;
+
+    assign led[1] = (state == S_WAIT) ? 1'b0 :
+                    (state == S_SCAN && waiting_for_finger) ? 1'b0 :
+                    (state == S_SCAN && processing_finger) ? blink :
+                    (state == S_GOL) ? disp_ready : 1'b0;
 
 endmodule

@@ -64,7 +64,7 @@ set SOURCE_FILES [list \
     "game_of_life.v" \
     "bram_framebuffer.v" \
     "spi_master.v" \
-    "as606_controller.v" \
+    "as608_controller.v" \
     "uart.v" \
 ]
 set CONSTRAINT_FILES [list "CMODA7_Constrain.xdc"]

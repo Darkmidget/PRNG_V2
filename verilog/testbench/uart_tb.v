@@ -16,13 +16,13 @@ module uart_tb;
     wire rx_valid;
     wire [7:0] rx_data;
     
-    // AS606 controller signals
+    // AS608 controller signals
     reg start_scan;
     wire scan_done;
     wire [7:0] status_code;
 
-    // Instantiate AS606 controller
-    as606_controller #(
+    // Instantiate AS608 controller
+    as608_controller #(
         .CLK_FREQ(CLK_FREQ),
         .BAUD_RATE(BAUD_RATE)
     ) dut (
@@ -68,7 +68,7 @@ module uart_tb;
         #1000;
         
         // Trigger a scan
-        $display("[%0t] Starting AS606 Scan Command Transmission...", $time);
+        $display("[%0t] Starting AS608 Scan Command Transmission...", $time);
         start_scan = 1;
         
         // Wait for it to clear IDLE state
