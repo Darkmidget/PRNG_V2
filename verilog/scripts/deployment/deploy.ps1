@@ -5,7 +5,8 @@
 
 param(
     [switch]$SkipBuild,
-    [switch]$BuildOnly
+    [switch]$BuildOnly,
+    [switch]$Flash
 )
 
 Set-Location "$PSScriptRoot\..\.."
@@ -75,12 +76,15 @@ if (-not $SkipBuild) {
 
 # Program
 if (-not $BuildOnly) {
-    Write-Host "`n>> Programming FPGA..." -ForegroundColor Yellow
+    $mode = if ($Flash) { "Flash (Permanent)" } else { "SRAM (Volatile)" }
+    Write-Host "`n>> Programming FPGA ($mode)..." -ForegroundColor Yellow
     $start = Get-Date
-    $out = & vivado -mode batch -source scripts/build_tools/program.tcl 2>&1
+    
+    $tclScript = if ($Flash) { "scripts/build_tools/flash.tcl" } else { "scripts/build_tools/program.tcl" }
+    $out = & vivado -mode batch -source $tclScript 2>&1
     $time = (Get-Date) - $start
     
-    if ($LASTEXITCODE -eq 0 -and $out -match "Programming completed successfully") {
+    if ($LASTEXITCODE -eq 0 -and $out -match "Programming completed successfully|Flash programming completed successfully") {
         Write-Host "   + Programmed in $([math]::Round($time.TotalSeconds, 1))s" -ForegroundColor Green
     } else {
         if ($out -match "No hardware target") {

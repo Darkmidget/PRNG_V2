@@ -104,6 +104,7 @@ module game_of_life (
                         if (y == 479) begin
                             state <= ST_IDLE;
                             gen_done <= 1'b1;
+                            buf_sel <= ~buf_sel; // FIX: toggle buffer so the one we just wrote to becomes active!
                         end else begin
                             y <= y + 1;
                         end
@@ -193,7 +194,7 @@ module game_of_life (
             if (state == ST_WRITE) begin
                 if (x == 319) begin
                     if (y != 479) begin
-                        raddr <= calc_addr(319, (y == 0) ? 479 : y); // Next is (0, y+1), so left-up is (319, y)
+                        raddr <= calc_addr(319, y); // Next is (0, y+1), so left-up is (319, y)
                     end
                 end else begin
                     raddr <= calc_addr(x, y_up); // Next is (x+1, y), so left-up is (x, y_up)

@@ -84,21 +84,16 @@ module fpga_main (
         case (state)
             S_WAIT: begin
                 start_scan_reg <= 0;
-                tft_rst_n_reg <= 0; // Hold display in reset
                 if (btn_pressed) begin
-                    state <= S_SCAN;
-                    start_scan_reg <= 1;
+                    // Capture seed and transition to GOL state
+                    captured_seed <= prng_val;
+                    state <= S_GOL;
                 end
             end
             
             S_SCAN: begin
-                if (scan_done) begin
-                    // Scan finished. The time taken to scan provides immense entropy.
-                    // Capture the seed by mixing the PRNG with the AS606 status code
-                    captured_seed <= prng_val ^ {status_code, status_code};
-                    start_scan_reg <= 0;
-                    state <= S_GOL;
-                end
+                // Unused now, keeping for reference
+                state <= S_GOL;
             end
             
             S_GOL: begin

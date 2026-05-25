@@ -17,7 +17,6 @@
 #include "Adafruit_HX8357.h"
 #include "gameoflife.h"
 #include "display_renderer.h"
-#include "as606_interface.h"
 #include "fpga_interface.h"
 
 // Serial3 on SERCOM0 for FPGA UART:
@@ -38,7 +37,6 @@ void SERCOM0_3_Handler() { Serial3.IrqHandler(); }
 // Global objects
 GameOfLife gol;
 DisplayRenderer renderer(TFT_CS, TFT_DC, TFT_RST);
-AS606Interface fingerprint;
 FPGAInterface fpga(Serial3);
 
 // Timing constants
@@ -56,11 +54,10 @@ char gSeedBuffer[6];     // "65535\0"
 uint8_t gSeedBufferPos = 0;
 
 bool gDisplayConnected = false;
-bool gFingerprintConnected = false;
 bool gFPGAConnected = false;
 uint8_t gFPGAPassCount = 0;
 uint8_t gFPGAFailCount = 0;
-bool gWorkflowReady = false;  // True only after successful fingerprint->FPGA seed workflow
+bool gWorkflowReady = true;  // True so simulation runs automatically
 
 // Game state enum for fingerprint capture workflow
 enum GameState {
@@ -73,12 +70,6 @@ enum GameState {
 // Global game state
 GameState gGameState = STATE_RUNNING;
 uint32_t gGamePausedTime = 0;  // When game was paused (for timeout detection)
-const uint32_t FINGERPRINT_TIMEOUT_MS = 30000;  // 30 second timeout for entire fingerprint workflow
-
-// Global fingerprint data
-uint16_t gLastFingerprintID = 0;
-uint16_t gLastFingerprintConfidence = 0;
-bool gFingerprintDataReady = false;
 
 bool runFPGALoopbackDiagnostic() {
   uint8_t patterns[] = {0x00, 0xFF, 0x55, 0xAA, 0x01, 0x80,
@@ -162,9 +153,6 @@ void printSystemStatus() {
   Serial.print(F("Display HX8357D: "));
   Serial.println(gDisplayConnected ? F("OK") : F("FAIL"));
 
-  Serial.print(F("Fingerprint (Serial1 D0/D1): "));
-  Serial.println(gFingerprintConnected ? F("OK") : F("FAIL"));
-
   Serial.print(F("FPGA UART (Serial3 A1/A4): "));
   if (gFPGAConnected) {
     Serial.println(F("OK"));
@@ -225,14 +213,6 @@ void resumeGameOfLife() {
   }
 }
 
-void suspendGameUntilValidFingerprint(const __FlashStringHelper *reason) {
-  Serial.println(reason);
-  Serial.println(F("[GAME] Strict mode: Game of Life display is suspended until valid fingerprint->FPGA seed flow succeeds."));
-  gGameState = STATE_PAUSED_FOR_CAPTURE;
-  gWorkflowReady = false;
-  renderer.clear();
-}
-
 /**
  * Restart Game of Life with a new seed
  * Clears the grid and initializes with new seed
@@ -250,88 +230,6 @@ void restartGameWithNewSeed(uint16_t newSeed) {
   uint16_t aliveCells = gol.countAliveCells();
   Serial.print(F("[GAME] Alive cells: "));
   Serial.println(aliveCells);
-}
-
-// ========================================
-// Fingerprint Capture Workflow
-// ========================================
-
-/**
- * Execute the complete fingerprint capture and seed update workflow
- * This is called when the user triggers a fingerprint scan
- * 
- * Workflow:
- *   1. Pause the Game of Life
- *   2. Attempt to capture fingerprint from sensor
- *   3. Search for match in database
- *   4. Send match data to FPGA
- *   5. Receive new seed from FPGA
- *   6. Update Game of Life with new seed
- *   7. Resume the Game of Life
- */
-bool processFingerprints() {
-  Serial.println(F("\n[FINGERPRINT] ========== FINGERPRINT SCAN INITIATED =========="));
-  
-  // STEP 1: Pause the game
-  pauseGameOfLife();
-  
-  // STEP 2: Capture image from sensor
-  Serial.println(F("[FINGERPRINT] Attempting to capture fingerprint..."));
-  uint8_t p = fingerprint.getImage();
-  
-  if (p != FINGERPRINT_OK) {
-    Serial.print(F("[FINGERPRINT] Image capture failed. Response code: 0x"));
-    Serial.println(p, HEX);
-    fingerprint.printLastResponseCode();
-    
-    Serial.println(F("[FINGERPRINT] Aborting fingerprint scan."));
-    suspendGameUntilValidFingerprint(F("[FINGERPRINT] Invalid/unavailable fingerprint image."));
-    return false;
-  }
-  
-  Serial.println(F("[FINGERPRINT] Image captured successfully."));
-  delay(100);
-  
-  // STEP 3: Convert image to template
-  p = fingerprint.image2Tz(1);
-  if (p != FINGERPRINT_OK) {
-    Serial.print(F("[FINGERPRINT] Template conversion failed. Response code: 0x"));
-    Serial.println(p, HEX);
-    fingerprint.printLastResponseCode();
-    suspendGameUntilValidFingerprint(F("[FINGERPRINT] Template conversion failed."));
-    return false;
-  }
-  
-  Serial.println(F("[FINGERPRINT] Template generated successfully."));
-  delay(100);
-  
-  // STEP 4: Search for match in database
-  Serial.println(F("[FINGERPRINT] Searching for match in database..."));
-  uint16_t matchID = fingerprint.fingerSearch();
-  uint16_t confidence = fingerprint.getLastConfidence();
-
-  if (matchID == 0) {
-    Serial.println(F("[FINGERPRINT] No database match. Proceeding with raw fingerprint template."));
-  } else {
-    Serial.print(F("[FINGERPRINT] Match found! ID: "));
-    Serial.print(matchID);
-    Serial.print(F(", Confidence: "));
-    Serial.println(confidence);
-  }
-
-  // STEP 5: Send match data to FPGA and get new seed
-  Serial.println(F("[FINGERPRINT] Communicating with FPGA..."));
-  uint16_t newSeed = fpga.processFingerprint(matchID, confidence);
-  
-  // STEP 6: Restart game with new seed
-  restartGameWithNewSeed(newSeed);
-  
-  Serial.println(F("[FINGERPRINT] ========== FINGERPRINT SCAN COMPLETE ==========\n"));
-  
-  // STEP 7: Resume the game and mark workflow ready
-  gWorkflowReady = true;
-  resumeGameOfLife();
-  return true;
 }
 
 // ========================================
@@ -370,30 +268,11 @@ void setup() {
   delay(300);
   runFPGALoopbackDiagnostic();
   
-  // Initialize fingerprint sensor. Startup halts if this step fails.
-  Serial.println();
-  Serial.println(F("Initializing AS606 fingerprint sensor..."));
-  if (fingerprint.begin()) {
-    gFingerprintConnected = true;
-    Serial.println(F("Fingerprint sensor initialized successfully!"));
-    Serial.println(F("Type 'F' in Serial Monitor to capture fingerprint."));
-  } else {
-    gFingerprintConnected = false;
-    Serial.println(F("WARNING: Fingerprint sensor initialization failed."));
-    Serial.println(F("         Startup requires a working fingerprint sensor."));
-    Serial.println(F("         Check sensor connection: D0=RX, D1=TX, Power=3.3V"));
-  }
-
   printSystemStatus();
 
-  // No fallback mode: do not start the simulation until full fingerprint->FPGA path succeeds.
-  Serial.println(F("[BOOT] Startup fingerprint check: place your thumb now..."));
-  Serial.println(F("[BOOT] Waiting for successful fingerprint -> FPGA -> Game seed flow."));
-  renderer.clear();
-  while (!processFingerprints()) {
-    Serial.println(F("[BOOT] Retry required. Place thumb and try again."));
-    delay(500);
-  }
+  // Initialize Game of Life with a default seed since there's no fingerprint workflow
+  gCurrentSeed = 12345;
+  gol.initialize(gCurrentSeed);
 
   // Render current state after processFingerprints() seeded the game.
   renderer.requestFullRedraw();
@@ -415,25 +294,8 @@ void loop() {
 
   // Strict mode: never run simulation without completed fingerprint->FPGA seed workflow.
   if (!gWorkflowReady) {
-    if (Serial.available()) {
-      char cmd = Serial.read();
-      if (cmd == 'f' || cmd == 'F') {
-        if (!processFingerprints()) {
-          Serial.println(F("[FINGERPRINT] Workflow failed. Display remains suspended until valid fingerprint flow succeeds."));
-        }
-      }
-    }
     delay(20);
     return;
-  }
-  
-  // Check for fingerprint capture timeout
-  if (gGameState == STATE_PAUSED_FOR_CAPTURE) {
-    if ((now - gGamePausedTime) > FINGERPRINT_TIMEOUT_MS) {
-      Serial.println(F("[GAME] Fingerprint capture timeout! Suspending display."));
-      suspendGameUntilValidFingerprint(F("[GAME] Fingerprint timeout."));
-      return;
-    }
   }
   
   // Only update game if we're in running state
@@ -520,14 +382,7 @@ void loop() {
       
       case 'f':
       case 'F':
-        // Start fingerprint scan
-        if (gGameState == STATE_RUNNING) {
-          if (!processFingerprints()) {
-            Serial.println(F("[FINGERPRINT] Workflow failed. Display remains suspended until valid fingerprint flow succeeds."));
-          }
-        } else if (gGameState == STATE_PAUSED_FOR_CAPTURE) {
-          Serial.println(F("[FINGERPRINT] Already scanning. Please wait..."));
-        }
+        Serial.println(F("[FINGERPRINT] Fingerprint sensor disabled in this build."));
         break;
 
       case 't':

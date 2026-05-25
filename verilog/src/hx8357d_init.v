@@ -144,7 +144,7 @@ module hx8357d_init (
             case (state)
                 STATE_IDLE: begin
                     if (!init_done) begin
-                        tft_cs <= 1'b0; // Assert CS
+                        tft_cs <= 1'b1; // Keep CS high by default
                         state <= STATE_READ;
                     end
                 end
@@ -159,10 +159,12 @@ module hx8357d_init (
                         spi_data <= payload;
                         if (!is_cmd && is_delay) begin
                             // This is a delay-only step, don't trigger SPI!
+                            tft_cs <= 1'b1; // CS high during delay
                             delay_counter <= delay_val;
                             tick_5ms_counter <= 16'd60_000;
                             state <= STATE_DELAY;
                         end else begin
+                            tft_cs <= 1'b0; // Assert CS for transmission
                             spi_start <= 1'b1;
                             state <= STATE_WAIT_SPI;
                         end
@@ -172,6 +174,7 @@ module hx8357d_init (
                 STATE_WAIT_SPI: begin
                     spi_start <= 1'b0;
                     if (spi_ready && !spi_start) begin
+                        tft_cs <= 1'b1; // De-assert CS immediately when byte is sent
                         // Transaction complete
                         if (is_delay) begin
                             delay_counter <= delay_val;
@@ -185,6 +188,7 @@ module hx8357d_init (
                 end
                 
                 STATE_DELAY: begin
+                    tft_cs <= 1'b1; // Ensure CS remains high during delays
                     if (tick_5ms_counter == 0) begin
                         if (delay_counter == 0) begin
                             rom_addr <= rom_addr + 1;

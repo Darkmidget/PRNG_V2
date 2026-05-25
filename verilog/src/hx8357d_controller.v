@@ -101,18 +101,37 @@ module hx8357d_controller (
     wire [17:0] gol_waddr;
     wire gol_wdata;
     reg gol_rdata;
+    // Draw FSM signals & states
+    localparam DRAW_IDLE = 0;
+    localparam DRAW_CMD  = 1;
+    localparam DRAW_WAIT_CMD = 2;
+    localparam DRAW_PIX_H = 3;
+    localparam DRAW_WAIT_H = 4;
+    localparam DRAW_PIX_L = 5;
+    localparam DRAW_WAIT_L = 6;
+    localparam DRAW_GOL_WAIT = 7;
     
+    reg [3:0] draw_state;
+    reg [17:0] draw_count;
+    reg gol_init_done;
+
     // Display read signals
     reg [17:0] disp_raddr;
     wire disp_rdata_a;
     wire disp_rdata_b;
     
     // BRAMs (Ping-Pong buffers)
-    wire we_a = (~gol_buf_sel) ? 1'b0 : gol_we;
-    wire we_b = (~gol_buf_sel) ? gol_we : 1'b0;
+    // buf_sel = 0: Active buffer is A. Display reads A. GOL reads A, writes B.
+    // buf_sel = 1: Active buffer is B. Display reads B. GOL reads B, writes A.
+
+    wire we_a = (gol_buf_sel == 1) ? gol_we : 1'b0;
+    wire we_b = (gol_buf_sel == 0) ? gol_we : 1'b0;
     
-    wire [17:0] raddr_a = (~gol_buf_sel) ? disp_raddr : gol_raddr;
-    wire [17:0] raddr_b = (~gol_buf_sel) ? gol_raddr  : disp_raddr;
+    wire is_drawing = (draw_state != DRAW_IDLE && draw_state != DRAW_GOL_WAIT);
+    wire [17:0] shared_raddr = is_drawing ? disp_raddr : gol_raddr;
+    
+    wire [17:0] raddr_a = (gol_buf_sel == 0) ? shared_raddr : 18'd0;
+    wire [17:0] raddr_b = (gol_buf_sel == 1) ? shared_raddr : 18'd0;
     
     wire [17:0] waddr_a = gol_waddr;
     wire [17:0] waddr_b = gol_waddr;
@@ -136,11 +155,11 @@ module hx8357d_controller (
     );
     
     always @(*) begin
-        if (~gol_buf_sel) gol_rdata = disp_rdata_b;
-        else              gol_rdata = disp_rdata_a;
+        if (gol_buf_sel == 0) gol_rdata = disp_rdata_a;
+        else                  gol_rdata = disp_rdata_b;
     end
     
-    wire cur_disp_pixel = (~gol_buf_sel) ? disp_rdata_a : disp_rdata_b;
+    wire cur_disp_pixel = (gol_buf_sel == 0) ? disp_rdata_a : disp_rdata_b;
     
     game_of_life gol_inst (
         .clk(clk),
@@ -156,20 +175,6 @@ module hx8357d_controller (
         .waddr(gol_waddr),
         .wdata(gol_wdata)
     );
-    
-    // Draw FSM
-    localparam DRAW_IDLE = 0;
-    localparam DRAW_CMD  = 1;
-    localparam DRAW_WAIT_CMD = 2;
-    localparam DRAW_PIX_H = 3;
-    localparam DRAW_WAIT_H = 4;
-    localparam DRAW_PIX_L = 5;
-    localparam DRAW_WAIT_L = 6;
-    localparam DRAW_GOL_WAIT = 7;
-    
-    reg [3:0] draw_state;
-    reg [17:0] draw_count;
-    reg gol_init_done;
     
     always @(posedge clk) begin
         if (!rst_n || !init_done) begin
