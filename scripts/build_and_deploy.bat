@@ -4,7 +4,7 @@ REM Builds Vivado project and programs the FPGA
 
 setlocal enabledelayedexpansion
 
-set PROJECT_DIR=%~dp0..\verilog
+set PROJECT_DIR=%~dp0..
 set BUILD_DIR=%PROJECT_DIR%\build
 set SCRIPTS_DIR=%PROJECT_DIR%\scripts
 

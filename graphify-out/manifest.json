@@ -1,25 +1,25 @@
 {
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\Adafruit_HX8357.cpp": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\_archive/legacy_microcontroller/Adafruit_HX8357.cpp": {
     "mtime": 1779466143.1865115,
     "ast_hash": "5d7d06ddeed1e858cc508348f43bf62c",
     "semantic_hash": "5d7d06ddeed1e858cc508348f43bf62c"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\Adafruit_HX8357.h": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\_archive/legacy_microcontroller/Adafruit_HX8357.h": {
     "mtime": 1779466143.1925244,
     "ast_hash": "c8a80ef1527615ec4383e5f282b0e03c",
     "semantic_hash": "c8a80ef1527615ec4383e5f282b0e03c"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\filter_detect.py": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\graphify-out/filter_detect.py": {
     "mtime": 1779466143.483644,
     "ast_hash": "54d16108772e5ed2a8374dbe8a159289",
     "semantic_hash": "54d16108772e5ed2a8374dbe8a159289"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\get_stats.py": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\graphify-out/get_stats.py": {
     "mtime": 1779466143.486256,
     "ast_hash": "abb56c58f8c38cd878f967820f28708c",
     "semantic_hash": "abb56c58f8c38cd878f967820f28708c"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\query.py": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\graphify-out/query.py": {
     "mtime": 1779468693.8771324,
     "ast_hash": "f680962b4c5e5e24dfdd02bab1134406",
     "semantic_hash": "f680962b4c5e5e24dfdd02bab1134406"
@@ -265,9 +265,9 @@
     "semantic_hash": "32a767fd4d0cd167b97b5f14f0fa45f1"
   },
   "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\scripts\\deployment\\deploy.ps1": {
-    "mtime": 1779685894.769779,
-    "ast_hash": "faa259b6cf98eda86c893bc6afc22c55",
-    "semantic_hash": "faa259b6cf98eda86c893bc6afc22c55"
+    "mtime": 1779766792.4963193,
+    "ast_hash": "5cc1398173ce7539016d0a0ae832894e",
+    "semantic_hash": "5cc1398173ce7539016d0a0ae832894e"
   },
   "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\scripts\\deployment\\run_program.ps1": {
     "mtime": 1779466150.997919,
@@ -315,7 +315,7 @@
     "semantic_hash": "2a17a37e917b2c00e6c5dbf2b05972ed"
   },
   "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\src\\fpga_main.v": {
-    "mtime": 1779718235.0355518,
+    "mtime": 1779722415.312887,
     "ast_hash": "270837bdbdeac06ba00a8f6a7bc7e79c",
     "semantic_hash": "270837bdbdeac06ba00a8f6a7bc7e79c"
   },
@@ -524,8 +524,8 @@
     "ast_hash": "ec927d93649c52d31581c57ce9afced7",
     "semantic_hash": "ec927d93649c52d31581c57ce9afced7"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\dfx_runtime.txt": {
-    "mtime": 1779719032.0298173,
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\_archive/dfx_runtime.txt": {
+    "mtime": 1779768078.4663646,
     "ast_hash": "1c82e7c400574e4177a91c572966819d",
     "semantic_hash": "1c82e7c400574e4177a91c572966819d"
   },
@@ -554,7 +554,7 @@
     "ast_hash": "1db9bde6c9bf83308095f25c75c5bcb5",
     "semantic_hash": "1db9bde6c9bf83308095f25c75c5bcb5"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\scripts\\dfx_runtime.txt": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\scripts\\_archive/dfx_runtime.txt": {
     "mtime": 1779466150.997919,
     "ast_hash": "1c82e7c400574e4177a91c572966819d",
     "semantic_hash": "1c82e7c400574e4177a91c572966819d"
@@ -589,7 +589,7 @@
     "ast_hash": "76445ba0de3bfc5a4bca54f98194897a",
     "semantic_hash": "76445ba0de3bfc5a4bca54f98194897a"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\_archive\\dfx_runtime.txt": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\_archive\\_archive/dfx_runtime.txt": {
     "mtime": 1779466143.295078,
     "ast_hash": "1c82e7c400574e4177a91c572966819d",
     "semantic_hash": "1c82e7c400574e4177a91c572966819d"
@@ -619,17 +619,17 @@
     "ast_hash": "c8a40e537e0a9b351de502e3c6a9b8f1",
     "semantic_hash": "c8a40e537e0a9b351de502e3c6a9b8f1"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\artix7_parts.txt": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\scripts/hardware_info/artix7_scripts/hardware_info/parts.txt": {
     "mtime": 1779686453.0117126,
     "ast_hash": "346413127c4c3fd7f6d0678c64ef6b4d",
     "semantic_hash": "346413127c4c3fd7f6d0678c64ef6b4d"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\dfx_runtime.txt": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\_archive/dfx_runtime.txt": {
     "mtime": 1779686453.2294176,
     "ast_hash": "1c82e7c400574e4177a91c572966819d",
     "semantic_hash": "1c82e7c400574e4177a91c572966819d"
   },
-  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\parts.txt": {
+  "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\scripts/hardware_info/parts.txt": {
     "mtime": 1779686239.5423622,
     "ast_hash": "33e453fb63bca4346f794e145aa96e80",
     "semantic_hash": "33e453fb63bca4346f794e145aa96e80"
@@ -640,8 +640,8 @@
     "semantic_hash": "aad34b0584e292377d1964388b6cbab1"
   },
   "C:\\Users\\DarkMidget\\Desktop\\temp\\PRNG_V2\\verilog\\src\\as608_controller.v": {
-    "mtime": 1779718216.836193,
-    "ast_hash": "149d1b1ac47aef1bb1991065c2dbad6f",
-    "semantic_hash": "149d1b1ac47aef1bb1991065c2dbad6f"
+    "mtime": 1779723652.3331487,
+    "ast_hash": "adb575010804549f0925a8a7edd46ebc",
+    "semantic_hash": "adb575010804549f0925a8a7edd46ebc"
   }
 }
