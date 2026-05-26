@@ -14,22 +14,25 @@ All logic is implemented in **Verilog**, completely bypassing the need for an ex
 ```mermaid
 flowchart TD
     A["1. Power On / Wait State (LED 0 ON, Screen White)"] --> B["2. Physical Button Press (btn[0] / Pin A18)"]
-    B --> C["3. Instant Entropy Seed Capture (16-bit)"]
-    C -->|From Ring Osc + LFSR PRNG| D["4. Display Release Reset & ROM Init Sequence"]
-    D --> E["5. Hardware Conway Simulation Starts (LED 1 ON)"]
-    E --> F["6. Render Active Cells (Vibrant HSL Green: 16'h07E0)"]
-    E --> G["7. Render Inactive Cells (Deep Black: 16'h0000)"]
-    F & G --> H["8. High-Frame-Rate SPI Output to HX8357D TFT"]
+    B --> B2["3. Fingerprint Scan (S_SCAN - AS608 GenImg + Img2Tz + UpChar)"]
+    B2 -->|scan_done| C["4. Entropy Seed Capture (prng_val XOR template_data,status_code)"]
+    C --> D["5. Display Release Reset & ROM Init Sequence"]
+    D --> E["6. Hardware Conway Simulation Starts (LED 1 = disp_ready)"]
+    E --> F["7. Render Active Cells (Vibrant HSL Green: 16'h07E0)"]
+    E --> G["8. Render Inactive Cells (Deep Black: 16'h0000)"]
+    F & G --> H["9. High-Frame-Rate SPI Output to HX8357D TFT"]
     H -->|Ping-Pong Buffer BRAM| E
 
     classDef waiting fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff;
     classDef input fill:#1a365d,stroke:#3182ce,stroke-width:2px,color:#fff;
+    classDef scan fill:#312e81,stroke:#6366f1,stroke-width:2px,color:#fff;
     classDef fpga fill:#5f370e,stroke:#dd6b20,stroke-width:2px,color:#fff;
     classDef output fill:#1c4ed8,stroke:#3b82f6,stroke-width:2px,color:#fff;
 
     class A waiting;
-    class B,C input;
-    class D,E fpga;
+    class B input;
+    class B2 scan;
+    class C,D,E fpga;
     class F,G,H output;
 ```
 
@@ -55,10 +58,10 @@ flowchart TB
         subgraph Entropy ["Entropy & Seed Generation"]
             osc["ring_osc.v - Ring Oscillators + LFSR"]
             scanner["as608_controller.v - AS608 UART Driver"]
-            mixer["XOR Mixer - prng_val XOR template_data"]
+            mixer["XOR Mixer - prng_val XOR {template_data, status_code}"]
             
-            osc -->|16-bit chaotic val| mixer
-            scanner -->|fingerprint template| mixer
+            osc -->|16-bit prng_val| mixer
+            scanner -->|template_data + status_code| mixer
             mixer -->|captured_seed| S_GOL
         end
     end
@@ -98,10 +101,15 @@ flowchart TB
         init_rom -->|init_done| RenderEngine
         draw_sm -->|trigger next gen| gol
         gol -->|gen_done| draw_sm
-    end
 
-    subgraph Transmit ["Physical Transmitter"]
-        spi["spi_master.v - High-speed SPI Master"]
+        subgraph SPIBlock ["SPI Transmitter (inside hx8357d_controller.v)"]
+            spi["spi_master.v - High-speed SPI Master"]
+        end
+
+        spi_mux["SPI Data Mux (init_done selects source)"]
+        init_rom -->|spi_data / spi_start / tft_dc / tft_cs| spi_mux
+        draw_sm -->|spi_data / spi_start / tft_dc / tft_cs| spi_mux
+        spi_mux -->|muxed data + start| spi
     end
 
     %% External Interface Wiring
@@ -109,11 +117,9 @@ flowchart TB
     ext_as608["AS608 Scanner"]
     scanner -->|UART TX H1| ext_as608
     ext_as608 -->|UART RX A15| scanner
-    init_rom -->|SPI data/start| spi
-    draw_sm -->|SPI data/cmd/start| spi
     
     spi -->|tft_sck / tft_mosi| ext_tft["Adafruit 3.5 TFT Screen"]
-    draw_sm -->|tft_cs / tft_dc| ext_tft
+    spi_mux -->|tft_cs / tft_dc| ext_tft
     DisplayReset -->|tft_rst| ext_tft
     
     classDef main fill:#1e1e2e,stroke:#cdd6f4,stroke-width:2px,color:#cdd6f4;
@@ -121,12 +127,14 @@ flowchart TB
     classDef hardware fill:#313244,stroke:#f5c2e7,stroke-width:2px,color:#f5c2e7;
     classDef state fill:#45475a,stroke:#89b4fa,stroke-width:2px,color:#89b4fa;
     classDef ext fill:#181825,stroke:#a6e3a1,stroke-width:2px,color:#a6e3a1;
+    classDef mux fill:#1e1e2e,stroke:#fab387,stroke-width:2px,color:#fab387;
 
-    class Master,GraphicSub,Transmit main;
-    class FSM,DisplayReset,RenderEngine,Entropy sub;
+    class Master,GraphicSub main;
+    class FSM,DisplayReset,RenderEngine,Entropy,SPIBlock sub;
     class osc,scanner,gol,draw_sm,init_rom,bram_a,bram_b,spi hardware;
     class S_WAIT,S_SCAN,S_GOL,R_IDLE,R_LOW,R_WAIT,R_DONE state;
     class ext_as608,ext_tft ext;
+    class spi_mux,buf_sel_mux mux;
 ```
 
 ### Expected Startup Sequence
