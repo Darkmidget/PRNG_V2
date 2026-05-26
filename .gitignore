@@ -56,6 +56,17 @@ __pycache__/
 *$py.class
 *.egg-info/
 .pytest_cache/
+venv/
+.venv/
+env/
+.env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Agent and Tooling artifacts
+.agents/
+graphify-out/
 
 # Backup and temporary files
 *~
