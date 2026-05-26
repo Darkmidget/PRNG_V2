@@ -15,8 +15,14 @@ source $config_file
 # Set paths based on configuration
 set project_dir [file normalize "$script_dir/../../$BUILD_DIR"]
 set project_name $PROJECT_NAME
-set bitstream_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.bit"
-set mcs_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.mcs"
+if {[info exists ::env(CUSTOM_BITSTREAM)] && $::env(CUSTOM_BITSTREAM) != ""} {
+    set bitstream_file [file normalize $::env(CUSTOM_BITSTREAM)]
+    set mcs_file "[file rootname $bitstream_file].mcs"
+    puts "INFO: Using custom bitstream: $bitstream_file"
+} else {
+    set bitstream_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.bit"
+    set mcs_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.mcs"
+}
 
 # Check if bitstream exists
 if {![file exists $bitstream_file]} {
@@ -43,9 +49,16 @@ current_hw_device $device
 
 puts "Configuring hardware for flash programming..."
 # Cmod A7-35T uses either Macronix or ISSI 32Mbit SPI Flash depending on the board revision.
-# If Macronix (mx25l3233f/mx25l3273f) fails, we try the ISSI part (is25lp032d-spi-x1_x2_x4).
-set flash_part "mx25l3273f-spi-x1_x2_x4"
-set mem_device [lindex [get_cfgmem_parts $flash_part] 0]
+if {![info exists FLASH_PART]} {
+    set FLASH_PART "mx25l3233f-spi-x1_x2_x4"
+}
+puts "Targeting Flash Part: $FLASH_PART"
+set mem_device [lindex [get_cfgmem_parts $FLASH_PART] 0]
+if {$mem_device == ""} {
+    puts "ERROR: Flash part '$FLASH_PART' is not supported by your Vivado installation."
+    puts "Please check the part name in config.tcl."
+    exit 1
+}
 
 create_hw_cfgmem -hw_device $device -mem_dev $mem_device
 set cfgmem [get_property PROGRAM.HW_CFGMEM $device]

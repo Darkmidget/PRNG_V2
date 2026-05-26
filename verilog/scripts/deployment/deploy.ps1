@@ -6,8 +6,21 @@
 param(
     [switch]$SkipBuild,
     [switch]$BuildOnly,
-    [switch]$Flash
+    [switch]$Flash,
+    [string]$BitstreamPath
 )
+
+if ($BitstreamPath) {
+    if (-not (Test-Path $BitstreamPath)) {
+        Write-Host "   X Provided custom bitstream not found: $BitstreamPath" -ForegroundColor Red
+        exit 1
+    }
+    $env:CUSTOM_BITSTREAM = (Resolve-Path $BitstreamPath).Path
+    $SkipBuild = $true
+    Write-Host ">> Using custom bitstream: $env:CUSTOM_BITSTREAM (auto-skipping build)" -ForegroundColor Yellow
+} else {
+    $env:CUSTOM_BITSTREAM = ""
+}
 
 Set-Location "$PSScriptRoot\..\.."
 
@@ -68,9 +81,9 @@ if (-not $SkipBuild) {
         $out | Select-Object -Last 50
         exit 1
     }
-    
-    if (Test-Path "build\cmod_a7_project.runs\impl_1\switch_display.bit") {
-        Write-Host "   + Bitstream OK" -ForegroundColor Green
+    $bitFiles = Get-ChildItem "build\cmod_a7_project.runs\impl_1\*.bit" -ErrorAction SilentlyContinue
+    if ($bitFiles) {
+        Write-Host "   + Bitstream OK ($($bitFiles[0].Name))" -ForegroundColor Green
     }
 }
 

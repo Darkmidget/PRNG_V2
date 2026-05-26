@@ -15,7 +15,12 @@ source $config_file
 # Set paths based on configuration
 set project_dir [file normalize "$script_dir/../../$BUILD_DIR"]
 set project_name $PROJECT_NAME
-set bitstream_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.bit"
+if {[info exists ::env(CUSTOM_BITSTREAM)] && $::env(CUSTOM_BITSTREAM) != ""} {
+    set bitstream_file [file normalize $::env(CUSTOM_BITSTREAM)]
+    puts "INFO: Using custom bitstream: $bitstream_file"
+} else {
+    set bitstream_file "$project_dir/$project_name.runs/impl_1/$TOP_MODULE.bit"
+}
 
 # Check if bitstream exists
 if {![file exists $bitstream_file]} {
