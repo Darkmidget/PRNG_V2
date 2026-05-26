@@ -5,14 +5,14 @@ This project implements a fully hardware-accelerated embedded system on a single
 
 The system utilizes a physical ring oscillator to harvest local on-chip entropy, seeds a hardware-based Pseudo-Random Number Generator (PRNG), and instantly initializes Conway's Game of Life. The cellular automaton simulation and the display-driving graphics engine run **entirely** inside the FPGA fabric—rendering high-frame-rate patterns directly onto an **Adafruit 3.5" TFT HX8357D display** via a custom hardware SPI interface.
 
-All logic is implemented in **Verilog**, completely bypassing the need for an external microcontroller (such as the Adafruit Feather M4 Express) or biometric sensor (AS606) in the active simulation path.
+All logic is implemented in **Verilog**, completely bypassing the need for an external microcontroller (such as the Adafruit Feather M4 Express) or biometric sensor (AS608) in the active simulation path.
 
 ---
 
 ## 🎨 System Design & Workflow
 
 ```mermaid
-graph TD
+flowchart TD
     A["1. Power On / Wait State (LED 0 ON, Screen White)"] --> B["2. Physical Button Press (btn[0] / Pin A18)"]
     B --> C["3. Instant Entropy Seed Capture (16-bit)"]
     C -->|From Ring Osc + LFSR PRNG| D["4. Display Release Reset & ROM Init Sequence"]
@@ -38,7 +38,7 @@ graph TD
 The system runs entirely in the FPGA fabric, orchestrating state machines, entropy harvesting, and high-frame-rate pixel rendering. Below is a detailed flowchart of the **Verilog Module Architecture & Data/Signal Flow** inside the CMOD A7:
 
 ```mermaid
-graph TB
+flowchart TB
     subgraph Master ["Top-Level System: fpga_main.v"]
         clk_in["System Clock (12 MHz)"]
         btn_in["Trigger Button (btn[0])"]
@@ -189,7 +189,7 @@ Ensure the Adafruit 3.5" TFT display and your trigger button are connected direc
 To wire the Adafruit 3.5" TFT display and the AS608 fingerprint scanner to the Digilent CMOD A7 board, follow this physical connection diagram:
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph FPGA_CMOD ["Digilent CMOD A7 FPGA"]
         style FPGA_CMOD fill:#181825,stroke:#cba6f7,stroke-width:3px,color:#cdd6f4
         
@@ -249,14 +249,10 @@ graph LR
     PGND -.->|System Ground| TGND
     PGND -.->|System Ground| FP_GND
 
-    %% Note styling
-    classDef tftLink stroke:#89b4fa,stroke-width:2px;
-    classDef uartLink stroke:#a6e3a1,stroke-width:2px;
-    classDef pwrLink stroke:#f38ba8,stroke-width:2px,stroke-dasharray: 5 5;
-    
-    linkStyle 0,1,2,3,4 class tftLink;
-    linkStyle 5,6 class uartLink;
-    linkStyle 7,8,9,10 class pwrLink;
+    %% Link styling (linkStyle only supports inline CSS, not class references)
+    linkStyle 0,1,2,3,4 stroke:#89b4fa,stroke-width:2px
+    linkStyle 5,6 stroke:#a6e3a1,stroke-width:2px
+    linkStyle 7,8,9,10 stroke:#f38ba8,stroke-width:2px,stroke-dasharray:5 5
 ```
 
 > [!IMPORTANT]
