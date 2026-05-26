@@ -106,7 +106,9 @@ flowchart TB
 
     %% External Interface Wiring
     btn_in -.->|A18 Pin| S_WAIT
-    scanner <-->|UART TX/RX (H1/A15)| ext_as608["AS608 Scanner"]
+    ext_as608["AS608 Scanner"]
+    scanner -->|UART TX H1| ext_as608
+    ext_as608 -->|UART RX A15| scanner
     init_rom -->|SPI data/start| spi
     draw_sm -->|SPI data/cmd/start| spi
     
@@ -239,8 +241,8 @@ flowchart LR
     P5 ===>|SPI MOSI Bus| MOSI
     
     %% AS608 Connections
-    P6 ===>|UART Serial (TX -> RX)| FP_RX
-    P7 ===>|UART Serial (RX <- TX)| FP_TX
+    P6 ===>|UART Serial TX to RX| FP_RX
+    P7 ===>|UART Serial RX from TX| FP_TX
 
     %% Power and Ground Bus
     P3V3 -.->|3.3V VCC Power| VCC

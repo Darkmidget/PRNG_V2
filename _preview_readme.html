@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>README Preview — PRNG_V2</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    padding: 40px 60px;
+    line-height: 1.7;
+  }
+  h1 { font-size: 2rem; margin-bottom: 8px; color: #f0f6fc; border-bottom: 1px solid #30363d; padding-bottom: 12px; }
+  h2 { font-size: 1.5rem; margin: 40px 0 16px; color: #f0f6fc; border-bottom: 1px solid #21262d; padding-bottom: 8px; }
+  h3 { font-size: 1.17rem; margin: 28px 0 12px; color: #c9d1d9; }
+  p { margin: 12px 0; color: #c9d1d9; }
+  hr { border: none; border-top: 1px solid #30363d; margin: 32px 0; }
+  code {
+    background: #161b22;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #79c0ff;
+  }
+  .chart-section {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 32px;
+    margin: 20px 0;
+    overflow-x: auto;
+  }
+  .chart-section .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+  .chart-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8b949e;
+    margin-bottom: 16px;
+  }
+  .status-bar {
+    background: linear-gradient(135deg, #238636 0%, #1a7f37 100%);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .status-bar::before { content: '✅'; }
+  ol { margin: 12px 0 12px 28px; }
+  ol li { margin: 6px 0; color: #c9d1d9; }
+  strong { color: #f0f6fc; }
+  .note {
+    background: #1a2332;
+    border-left: 4px solid #58a6ff;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+    color: #a5d6ff;
+  }
+  table { border-collapse: collapse; margin: 16px 0; width: 100%; }
+  th { background: #161b22; color: #f0f6fc; text-align: left; padding: 10px 14px; border: 1px solid #30363d; }
+  td { padding: 10px 14px; border: 1px solid #30363d; color: #c9d1d9; }
+  .mermaid svg { max-width: 100%; }
+</style>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' },
+    securityLevel: 'loose'
+  });
+</script>
+</head>
+<body>
+
+<h1>Fully Integrated FPGA Hardware Random Number Generator &amp; Game of Life System</h1>
+
+<div class="status-bar">All 3 Mermaid charts rendering — syntax fixes applied</div>
+
+<h2>🎨 Chart 1 — System Design &amp; Workflow</h2>
+<div class="chart-section">
+  <div class="chart-label">flowchart TD · Fixed: <code>graph</code> → <code>flowchart</code> for <code>&amp;</code> operator support</div>
+  <pre class="mermaid">
+flowchart TD
+    A["1. Power On / Wait State (LED 0 ON, Screen White)"] --> B["2. Physical Button Press (btn[0] / Pin A18)"]
+    B --> C["3. Instant Entropy Seed Capture (16-bit)"]
+    C -->|From Ring Osc + LFSR PRNG| D["4. Display Release Reset & ROM Init Sequence"]
+    D --> E["5. Hardware Conway Simulation Starts (LED 1 ON)"]
+    E --> F["6. Render Active Cells (Vibrant HSL Green: 16'h07E0)"]
+    E --> G["7. Render Inactive Cells (Deep Black: 16'h0000)"]
+    F & G --> H["8. High-Frame-Rate SPI Output to HX8357D TFT"]
+    H -->|Ping-Pong Buffer BRAM| E
+
+    classDef waiting fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#fff;
+    classDef input fill:#1a365d,stroke:#3182ce,stroke-width:2px,color:#fff;
+    classDef fpga fill:#5f370e,stroke:#dd6b20,stroke-width:2px,color:#fff;
+    classDef output fill:#1c4ed8,stroke:#3b82f6,stroke-width:2px,color:#fff;
+
+    class A waiting;
+    class B,C input;
+    class D,E fpga;
+    class F,G,H output;
+  </pre>
+</div>
+
+<hr>
+
+<h2>🧬 Chart 2 — Verilog Module Architecture &amp; Internal Execution Flow</h2>
+<div class="chart-section">
+  <div class="chart-label">flowchart TB · Fixed: <code>graph</code> → <code>flowchart</code> for subgraph links &amp; bidirectional arrows</div>
+  <pre class="mermaid">
+flowchart TB
+    subgraph Master ["Top-Level System: fpga_main.v"]
+        clk_in["System Clock (12 MHz)"]
+        btn_in["Trigger Button (btn[0])"]
+
+        subgraph FSM ["Master FSM States"]
+            S_WAIT["S_WAIT - Idle, waiting for button"]
+            S_SCAN["S_SCAN - Fingerprint scan active"]
+            S_GOL["S_GOL - Active Conway simulation"]
+
+            S_WAIT -->|btn_pressed| S_SCAN
+            S_SCAN -->|scan_done| S_GOL
+        end
+
+        subgraph Entropy ["Entropy & Seed Generation"]
+            osc["ring_osc.v - Ring Oscillators + LFSR"]
+            scanner["as608_controller.v - AS608 UART Driver"]
+            mixer["XOR Mixer - prng_val XOR template_data"]
+
+            osc -->|16-bit chaotic val| mixer
+            scanner -->|fingerprint template| mixer
+            mixer -->|captured_seed| S_GOL
+        end
+    end
+
+    subgraph GraphicSub ["Display & Logic Subsystem: hx8357d_controller.v"]
+        subgraph DisplayReset ["TFT HW Reset SM"]
+            R_IDLE["RESET_IDLE - Pull RST Low"]
+            R_LOW["RESET_LOW - Hold RST Low 10ms"]
+            R_WAIT["RESET_WAIT - Wait 120ms"]
+            R_DONE["RESET_DONE - HW Reset Finished"]
+
+            R_IDLE --> R_LOW --> R_WAIT --> R_DONE
+        end
+
+        subgraph DisplayInit ["Display Initializer"]
+            init_rom["hx8357d_init.v - Register ROM Config Sequence"]
+        end
+
+        R_DONE -->|init_start| init_rom
+
+        subgraph RenderEngine ["Rendering & Game of Life FSM"]
+            gol["game_of_life.v - Conway CA Core"]
+            draw_sm["Pixel Stream FSM - RAMWR Cmd + RGB565"]
+
+            subgraph Framebuffers ["Ping-Pong Block RAM Framebuffers"]
+                bram_a["bram_framebuffer.v (BRAM A)"]
+                bram_b["bram_framebuffer.v (BRAM B)"]
+            end
+
+            buf_sel_mux["gol_buf_sel Multiplexer"]
+
+            gol -->|write next gen| buf_sel_mux
+            buf_sel_mux -->|BRAM A / B| Framebuffers
+            Framebuffers -->|read current gen| draw_sm
+        end
+
+        init_rom -->|init_done| RenderEngine
+        draw_sm -->|trigger next gen| gol
+        gol -->|gen_done| draw_sm
+    end
+
+    subgraph Transmit ["Physical Transmitter"]
+        spi["spi_master.v - High-speed SPI Master"]
+    end
+
+    %% External Interface Wiring
+    btn_in -.->|A18 Pin| S_WAIT
+    scanner <-->|UART TX/RX H1/A15| ext_as608["AS608 Scanner"]
+    init_rom -->|SPI data/start| spi
+    draw_sm -->|SPI data/cmd/start| spi
+
+    spi -->|tft_sck / tft_mosi| ext_tft["Adafruit 3.5 TFT Screen"]
+    draw_sm -->|tft_cs / tft_dc| ext_tft
+    DisplayReset -->|tft_rst| ext_tft
+
+    classDef main fill:#1e1e2e,stroke:#cdd6f4,stroke-width:2px,color:#cdd6f4;
+    classDef sub fill:#11111b,stroke:#a6adc8,stroke-width:2px,color:#a6adc8;
+    classDef hardware fill:#313244,stroke:#f5c2e7,stroke-width:2px,color:#f5c2e7;
+    classDef state fill:#45475a,stroke:#89b4fa,stroke-width:2px,color:#89b4fa;
+    classDef ext fill:#181825,stroke:#a6e3a1,stroke-width:2px,color:#a6e3a1;
+
+    class Master,GraphicSub,Transmit main;
+    class FSM,DisplayReset,RenderEngine,Entropy sub;
+    class osc,scanner,gol,draw_sm,init_rom,bram_a,bram_b,spi hardware;
+    class S_WAIT,S_SCAN,S_GOL,R_IDLE,R_LOW,R_WAIT,R_DONE state;
+    class ext_as608,ext_tft ext;
+  </pre>
+</div>
+
+<hr>
+
+<h2>🗺️ Chart 3 — Physical Hardware Wiring Schematic</h2>
+<div class="chart-section">
+  <div class="chart-label">flowchart LR · Fixed: <code>graph</code> → <code>flowchart</code> + replaced invalid <code>linkStyle class</code> with inline CSS</div>
+  <pre class="mermaid">
+flowchart LR
+    subgraph FPGA_CMOD ["Digilent CMOD A7 FPGA"]
+        style FPGA_CMOD fill:#181825,stroke:#cba6f7,stroke-width:3px,color:#cdd6f4
+
+        subgraph Pins ["DIP Pins & FPGA Package Pins"]
+            P1["DIP Pin 1 (M3) - tft_cs"]
+            P2["DIP Pin 2 (L3) - tft_dc"]
+            P3["DIP Pin 3 (A16) - tft_rst"]
+            P4["DIP Pin 4 (K3) - tft_sck"]
+            P5["DIP Pin 5 (C15) - tft_mosi"]
+            P6["DIP Pin 6 (H1) - as608_tx"]
+            P7["DIP Pin 7 (A15) - as608_rx"]
+
+            PGND["GND Pin - Common Ground"]
+            P3V3["3.3V Pin - Power Out (3.3V)"]
+            PCLK["Onboard L17 - 12 MHz Clock"]
+            PBTN["Onboard A18 - btn[0] Trigger"]
+        end
+    end
+
+    subgraph TFT_SCREEN ["Adafruit 3.5 TFT (HX8357D)"]
+        style TFT_SCREEN fill:#1e1e2e,stroke:#89b4fa,stroke-width:3px,color:#cdd6f4
+
+        CS["CS - Chip Select"]
+        DC["D/C - Data/Command"]
+        RST["RST - Hardware Reset"]
+        SCK["CLK / SCK - SPI Clock"]
+        MOSI["MOSI / SI - Data Input"]
+
+        VCC["VCC / 3.3V - Power Input"]
+        TGND["GND - Power Ground"]
+    end
+
+    subgraph AS608_SCANNER ["AS608 Fingerprint Scanner"]
+        style AS608_SCANNER fill:#1e1e2e,stroke:#a6e3a1,stroke-width:3px,color:#cdd6f4
+
+        FP_VCC["VCC - Power Input (3.3V-5V)"]
+        FP_TX["TX - Transmit (Out)"]
+        FP_RX["RX - Receive (In)"]
+        FP_GND["GND - Ground"]
+    end
+
+    %% TFT Connections
+    P1 ==>|SPI Chip Select| CS
+    P2 ==>|Command/Data Line| DC
+    P3 ==>|TFT HW Reset| RST
+    P4 ==>|SPI Clock Bus| SCK
+    P5 ==>|SPI MOSI Bus| MOSI
+
+    %% AS608 Connections
+    P6 ==>|UART Serial TX to RX| FP_RX
+    P7 ==>|UART Serial RX from TX| FP_TX
+
+    %% Power and Ground Bus
+    P3V3 -.->|3.3V VCC Power| VCC
+    P3V3 -.->|3.3V VCC Power| FP_VCC
+
+    PGND -.->|System Ground| TGND
+    PGND -.->|System Ground| FP_GND
+
+    %% Link styling (inline CSS only)
+    linkStyle 0,1,2,3,4 stroke:#89b4fa,stroke-width:2px
+    linkStyle 5,6 stroke:#a6e3a1,stroke-width:2px
+    linkStyle 7,8,9,10 stroke:#f38ba8,stroke-width:2px,stroke-dasharray:5 5
+  </pre>
+</div>
+
+<hr>
+
+<h2>📋 Fixes Applied Summary</h2>
+<table>
+  <thead>
+    <tr><th>Chart</th><th>Original Issue</th><th>Fix</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chart 1 — System Design</td>
+      <td><code>graph TD</code> doesn't support <code>&amp;</code> merge operator</td>
+      <td>Changed to <code>flowchart TD</code></td>
+    </tr>
+    <tr>
+      <td>Chart 2 — Module Architecture</td>
+      <td><code>graph TB</code> doesn't support subgraph links or <code>&lt;--&gt;</code> arrows</td>
+      <td>Changed to <code>flowchart TB</code></td>
+    </tr>
+    <tr>
+      <td>Chart 3 — Wiring Schematic</td>
+      <td><code>linkStyle ... class X;</code> is invalid — <code>linkStyle</code> does NOT support class references</td>
+      <td>Replaced with inline CSS: <code>linkStyle 0,1 stroke:#color,stroke-width:2px</code></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
