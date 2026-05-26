@@ -267,21 +267,47 @@ graph LR
 ## 🚀 Setup & Deployment Instructions
 
 ### Prerequisites
-- **Xilinx Vivado ML Edition** (2022.2 or newer) installed and added to your system `PATH`.
-- Connected Digilent CMOD A7-35T FPGA over USB.
-- Digilent board files installed in Vivado.
+- **Xilinx Vivado ML Edition** (2022.2 or newer) installed.
+  The deploy script auto-detects Vivado from common install paths (`C:\AMDDesignTools\2025.2`, `C:\Xilinx\Vivado\2023.2`, etc.). If yours is non-standard, add the path to the `$vivadoPaths` array in [deploy.ps1](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/scripts/deployment/deploy.ps1) (around line 34).
+- **Digilent CMOD A7-35T FPGA** connected to the host PC via USB.
+- Digilent board files and USB serial drivers installed.
 
-### Deployment in One Command
-To build the verilog co-processor, compile the bitstream, and program the FPGA flash persistently, run the following automated PowerShell script:
+### One-Command Deployment
+
+The primary deployment script synthesizes, implements, and programs the FPGA in a single step:
+
 ```powershell
-.\scripts\deployment\run_program.ps1
-```
-Or use the direct project synthesis deployment tool:
-```powershell
-.\scripts\build_and_deploy.bat
+.\scripts\deployment\deploy.ps1
 ```
 
-For advanced CLI options or troubleshooting, see the [QUICK_START.md](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/QUICK_START.md) guide.
+**Alternative — double-click deployment:** Run `scripts\deployment\deploy.bat` from Windows Explorer. This is a thin wrapper that calls `deploy.ps1` with execution policy bypass.
+
+### Deploy Script Options
+
+| Flag | Description |
+|---|---|
+| *(no flags)* | Full pipeline: clean → build → program FPGA (volatile SRAM) |
+| `-SkipBuild` | Skip synthesis/implementation, program using the last built bitstream |
+| `-BuildOnly` | Run synthesis and implementation only, do not program the FPGA |
+| `-Flash` | Program the FPGA flash for **persistent** (power-cycle-safe) deployment |
+| `-BitstreamPath <path>` | Use a custom `.bit` file instead of building (auto-enables `-SkipBuild`) |
+
+**Examples:**
+```powershell
+# Build only — verify synthesis without touching the board
+.\scripts\deployment\deploy.ps1 -BuildOnly
+
+# Re-program instantly with the last bitstream (no rebuild)
+.\scripts\deployment\deploy.ps1 -SkipBuild
+
+# Permanent flash deployment
+.\scripts\deployment\deploy.ps1 -Flash
+
+# Program from a specific bitstream file
+.\scripts\deployment\deploy.ps1 -BitstreamPath .\ring_osc.bit
+```
+
+For the full FSM testing workflow and advanced configuration, see the [QUICK_START.md](file:///c:/Users/DarkMidget/Desktop/temp/PRNG_V2/QUICK_START.md) guide.
 
 ---
 
