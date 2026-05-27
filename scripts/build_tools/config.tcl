@@ -21,7 +21,7 @@ set PART_NAME "xc7a35tcpg236-1"
 # Newer Macronix revisions:  "mx25l3273f-spi-x1_x2_x4"
 # ISSI revisions:           "is25lp032d-spi-x1_x2_x4"
 # Micron (older) revisions: "n25q32-3.3v-spi-x1_x2_x4"
-set FLASH_PART "mx25l3233f-spi-x1_x2_x4"
+set FLASH_PART "n25q32-3.3v-spi-x1_x2_x4"
 
 # Source files configuration
 # Option 1: Specific file (recommended for single-file projects)

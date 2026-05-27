@@ -50,7 +50,7 @@ current_hw_device $device
 puts "Configuring hardware for flash programming..."
 # Cmod A7-35T uses either Macronix or ISSI 32Mbit SPI Flash depending on the board revision.
 if {![info exists FLASH_PART]} {
-    set FLASH_PART "mx25l3233f-spi-x1_x2_x4"
+    set FLASH_PART "n25q32-3.3v-spi-x1_x2_x4"
 }
 puts "Targeting Flash Part: $FLASH_PART"
 set mem_device [lindex [get_cfgmem_parts $FLASH_PART] 0]
